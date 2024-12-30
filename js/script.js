@@ -4,8 +4,8 @@ const questions = [
     choices: ["Berlin", "Madrid", "Paris", "Lisbon"],
     correctAnswer: "Paris",
     explanation: "Paris is the capital and most populous city of France.",
-    questionImage: "question1.png",
-    explanationImage: "explanation1.png",
+    questionImage: "smaller_images/placeholder.png",
+    explanationImage: "smaller_images/placeholder.png",
   },
   {
     question: "What is 2 + 2?",
