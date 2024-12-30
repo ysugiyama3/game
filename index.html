@@ -1,139 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>How Knowledgeable Are You?</title>
-      <link rel="icon" href="smaller_images/ys_e_icon.png" type="image/png">
-      <style>
-         @font-face {
-         font-family: 'PixelFont';
-         src: url('Pixelify_Sans/pixel_font.ttf') format('truetype');
-         }
-         body, html {
-         height: 100%;
-         margin: 0;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         font-family: 'PixelFont', sans-serif;
-         background: #faf5e2;
-         }
-         .container {
-         width: 100vw; /* full viewport width */
-         height: calc(100vw * (16 / 9)); /* maintain 9:16 aspect ratio */
-         max-height: 150vh; /* full viewport height */
-         max-width: calc(100vh * (9 / 16));
-         padding: 20px;
-         border-radius: 10px;
-         background: #a6e6b5;
-         /* background: #e5f2d2; */
-         box-shadow: 0 0 10px rgba(0,0,0,0.1);
-         text-align: center;
-         box-sizing: border-box;
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         /* overflow-y: auto;   */
-         }
-         .hide {
-         display: none;
-         }
-         .title {
-         font-size: 21px;
-         margin-bottom: 3vh;
-         }
-         .nav-button {
-         font-size: 21px;
-         padding: 1vh 2vw;
-         /* border: 2px solid #fcf0c0; */
-         background-color: #f8eab6;
-         cursor: pointer;
-         text-decoration: none;
-         margin-bottom: 3vh;
-         }
-         .nav-button:hover {
-         background-color: #ddd;
-         }
-         .game-container {
-         display: none;
-         margin-top: 10%;
-         overflow: auto;
-         }
-         .question, .explanation, .result, .score {
-         font-size: 20px;
-         margin-bottom: 1rem; /* Space above the choices container */
-         /* padding-bottom: 5rem; */
-         }
-         .image-container {
-         max-width: 70%; /* Set max width of image container */
-         margin: 0 auto; /* Center the image horizontally */
-         }
-         .image-container img {
-         width: 100%; /* Make the image fill its container */
-         height: auto; /* Maintain aspect ratio */
-         display: block; /* Remove any extra space */
-         max-width: 100%; /* Ensure image does not exceed its container */
-         }
-         .choices {
-         display: flex;
-         flex-direction: column; /* Arrange buttons in a column */
-         align-items: center; /* Center the buttons horizontally */
-         gap: 10px; /* Space between the buttons */
-         margin-top: 2rem; /* Space above the choices container */
-         }
-         .choice-button {
-         font-family: 'PixelFont', sans-serif;
-         font-size: 18px; /* Adjust font size to be smaller */
-         padding: 1vh 1vw; /* Adjust padding based on viewport height and width */
-         border: 0.5px solid #f2d79e; /* Solid border */
-         background-color: #f6e9bd; /* White background */
-         cursor: pointer; /* Pointer cursor on hover */
-         transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
-         }
-         @media (hover: hover) {
-         .choice-button:hover {
-         background-color: #f3dba7; /* Slightly darker background on hover */
-         }
-         }
-         .choice-button:focus {
-         background-color: #fff; /* Slightly darker background on hover */
-         }
-      </style>
-   </head>
-   <body>
-      <div class="container">
-         <div class="game-container" id="intro">
-            <div class="title">How Knowledgeable are you?</div>
-            <img id="homescreen" style="padding-bottom: 15px" src="smaller_images/homepage.png" alt="Story Image"/>
-            <div></div>
-            <a href="#" class="nav-button" onclick="startQuiz()">Start</a>
-         </div>
-         <div class="game-container hide" id="question">
-            <div class="question" id="question-text"></div>
-            <div class="image-container">
-               <img id="question-image" alt="Question Image">
-            </div>
-            <ul id="choices"></ul>
-         </div>
-         <div class="game-container hide" id="explanation">
-            <div class="result" id="result-text"></div>
-            <div class="explanation" id="explanation-text"></div>
-            <div class="image-container">	
-               <img id="explanation-image" alt="Explanation Image">
-            </div>
-            <a href="#" class="nav-button" onclick="nextQuestion()">Next</a>
-         </div>
-         <div class="game-container hide" id="score">
-            <div class="score" id="score-text"></div>
-            <div class="image-container">	
-               <img src="score.png" alt="Score Image">
-            </div>
-            <a href="#" class="nav-button" onclick="restartQuiz()">Play Again</a>
-         </div>
-      </div>
-      <script src="js/script.js"></script>
-      <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-      <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-   </body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive Quiz Game</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+      }
+	  .wider-container {
+        width: 100hv;
+        padding: 10px;
+        background-color: yellow;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .container {
+        width: 80hv;
+        padding: 10px;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .hide {
+        display: none;
+      }
+      .question,
+      .result,
+      .score {
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        margin: 5px;
+        cursor: pointer;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+	<div class="wider-container">  
+    <div class="container" id="intro">
+      <h3>Welcome to the Interactive Quiz Game</h3>
+      <p>Press the start button to begin</p>
+      <img src="intro.png" alt="Intro Image" />
+      <button onclick="startQuiz()">Start</button>
+    </div>
+
+    <div class="container hide" id="question">
+      <img id="question-image" alt="Question Image" />
+      <div class="question" id="question-text"></div>
+      <div class="choices" id="choices"></div>
+    </div>
+
+    <div class="container hide" id="explanation">
+      <img id="explanation-image" alt="Explanation Image" />
+      <div class="result" id="result-text"></div>
+      <div class="explanation" id="explanation-text"></div>
+      <button onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <div class="container hide" id="score">
+      <img src="score.png" alt="Score Image" />
+      <div class="score" id="score-text"></div>
+      <button onclick="restartQuiz()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+	</div>
+  </body>
 </html>
