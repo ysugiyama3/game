@@ -19,12 +19,21 @@
         height: 100%;
         background-color: #faf5e2;
       }
+    
       .wider-container {
-        width: 100hv;
+        width: 100vw; /* 100hv; */
+	height: calc(100vw * (16 / 9)); /* maintain 9:16 aspect ratio */
+	max-height: 150vh; /* full viewport height */
+        max-width: calc(100vh * (9 / 16));
         padding: 10px;
-        background-color: yellow;
+	border-radius: 10px;
+        background-color: #a6e6b5;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         text-align: center;
+	box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
       .container {
         width: 80hv;
@@ -42,7 +51,8 @@
         margin-bottom: 20px;
       }
       button {
-        padding: 10px 20px;
+        font-family: 'PixelFont', sans-serif;
+	padding: 10px 20px;
         margin: 5px;
         cursor: pointer;
       }
