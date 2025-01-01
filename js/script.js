@@ -39,10 +39,12 @@ function showQuestion() {
     questionImage.src = questions[currentQuestionIndex].questionImage;
 
     questions[currentQuestionIndex].choices.forEach((choice) => {
+      const li = document.createElement('li');
       const button = document.createElement("button");
       button.textContent = choice;
       button.onclick = () => checkAnswer(choice);
-      choicesContainer.appendChild(button);
+      li.appendChild(button);
+      choicesContainer.appendChild(li);
     });
   } else {
     showScore();
