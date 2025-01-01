@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Interactive Quiz Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Knowledgeable Are You?</title>
+    <link rel="icon" href="smaller_images/ys_e_icon.png" type="image/png">
     <style>
       @font-face {
             font-family: 'PixelFont';
@@ -56,11 +58,14 @@
     	margin:0px;
       }	    
       button {
-        font-family: 'PixelFont', sans-serif;
-	font-size: 18px; 
-	padding: 10px 20px;
-        margin: 5px;
-        cursor: pointer;
+	    font-family: 'PixelFont', sans-serif;
+	    font-size: 18px; /* Adjust font size to be smaller */
+	    padding: 1vh 1vw; /* Adjust padding based on viewport height and width */
+	    border: 0.5px solid #f2d79e; /* Solid border */
+	    margin: 5px;
+	    background-color: #f6e9bd; /* White background */
+	    cursor: pointer; /* Pointer cursor on hover */
+	    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
       }
       img {
         max-width: 70%;
@@ -79,21 +84,21 @@
     </div>
 
     <div class="container hide" id="question">
-      <img id="question-image" alt="Question Image" />
       <div class="question" id="question-text"></div>
+      <img id="question-image" alt="Question Image" />      
       <ul class="choices" id="choices"></ul>
     </div>
 
-    <div class="container hide" id="explanation">
-      <img id="explanation-image" alt="Explanation Image" />
+    <div class="container hide" id="explanation">     
       <div class="result" id="result-text"></div>
       <div class="explanation" id="explanation-text"></div>
+      <img id="explanation-image" alt="Explanation Image" />
       <button onclick="nextQuestion()">Next</button>
     </div>
 
-    <div class="container hide" id="score">
-      <img src="score.png" alt="Score Image" />
+    <div class="container hide" id="score">      
       <div class="score" id="score-text"></div>
+      <img src="score.png" alt="Score Image" />
       <button onclick="restartQuiz()">Play Again</button>
     </div>
 
