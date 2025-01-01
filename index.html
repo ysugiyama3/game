@@ -21,7 +21,7 @@
       }
     
       .wider-container {
-        width: 100vw; /* 100hv; */
+        width: 100vh; /* 100hv; */
 	height: calc(100vw * (16 / 9)); /* maintain 9:16 aspect ratio */
 	max-height: 150vh; /* full viewport height */
         max-width: calc(100vh * (9 / 16));
@@ -57,7 +57,7 @@
         cursor: pointer;
       }
       img {
-        max-width: 20%;
+        max-width: 70%;
         height: auto;
       }
     </style>
@@ -82,7 +82,7 @@
       <img id="explanation-image" alt="Explanation Image" />
       <div class="result" id="result-text"></div>
       <div class="explanation" id="explanation-text"></div>
-      <button onclick="nextQuestion()">Next Question</button>
+      <button onclick="nextQuestion()">Next</button>
     </div>
 
     <div class="container hide" id="score">
