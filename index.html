@@ -21,7 +21,10 @@
         height: 100%;
         background-color: #faf5e2;
       }
-    
+      .title {
+            font-size: 21px;
+            margin-bottom: 3vh;
+      }    
       .wider-container {
         width: 100vh; /* 100hv; */
 	height: calc(100vw * (16 / 9)); /* maintain 9:16 aspect ratio */
@@ -68,15 +71,15 @@
 	    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
       }
       img {
-        max-width: 70%;
-        height: auto;
+	    max-width: 70%; /* Set max width of image container */
+            margin: 0 auto; /* Center the image horizontally */
       }
     </style>
   </head>
   <body>
 	<div class="wider-container">  
     <div class="container" id="intro">
-      <h3>Welcome to the Interactive Quiz Game</h3>
+      <div class="title">How Knowledgeable are you?</div>
       <p>Press the start button to begin</p>
       <img src="smaller_images/homepage.png" alt="Intro Image" />
       <div></div>
