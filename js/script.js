@@ -1,10 +1,10 @@
 const questions = [
   {
-    question: "What is the capital of France?",
-    choices: ["Berlin", "Madrid", "Paris", "Lisbon"],
-    correctAnswer: "Paris",
-    explanation: "Paris is the capital and most populous city of France.",
-    questionImage: "smaller_images/placeholder.png",
+    question: "A student has trouble accessing [oxford handbook] from their personal laptop from their residential college. They get routed to a 404-error message. But you cannot replicate the problem both from on- and off-campus. What would you suggest the patron does first?",
+    choices: ["Reboot the laptop", "Clear browser cache and cookies or use the incognito/private mode", "Request ILL", "Contact IT"],
+    correctAnswer: "Clear browser cache and cookies or use the incognito/private mode",
+    explanation: "If a user is having trouble accessing online databases or other electronic library resources, one of the first troubleshooting steps is to clear their browser’s cache and cookies. If a user prefers not to clear their browser’s cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh. For more information, go to https://ask.library.yale.edu/faq/174879",
+    questionImage: "question1.png",
     explanationImage: "smaller_images/placeholder.png",
   },
   {
