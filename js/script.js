@@ -4,7 +4,7 @@ const questions = [
     choices: ["Reboot the laptop", "Clear browser cache and cookies or use the incognito/private mode", "Request ILL", "Contact IT"],
     correctAnswer: "Clear browser cache and cookies or use the incognito/private mode",
     explanation: "If a user is having trouble accessing online databases or other electronic library resources, one of the first troubleshooting steps is to clear their browser’s cache and cookies. If a user prefers not to clear their browser’s cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh. For more information, go to https://ask.library.yale.edu/faq/174879",
-    questionImage: "question1.png",
+    questionImage: "smaller_images/question1.png",
     explanationImage: "smaller_images/placeholder.png",
   },
   {
