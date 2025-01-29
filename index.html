@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How Knowledgeable Are You?</title>
+    <title>How Knowledgeable Are You About E-resource Access?</title>
     <link rel="icon" href="smaller_images/ys_e_icon.png" type="image/png">
     <style>
       @font-face {
@@ -19,8 +19,11 @@
         align-items: center;
         height: 100%;
         background-color: #faf5e2;
+	font-size: 20px;
       }
-      .title {
+      .title,
+      .subtitle
+	    {
             font-size: 21px;
             margin-bottom: 3vh;
       }    
@@ -48,7 +51,6 @@
       .hide {
         display: none;
       }
-
       ul {
     	list-style-type:none;
     	padding:0px;
@@ -73,8 +75,8 @@
   <body>
 	<div class="wider-container">  
     <div class="container" id="intro">
-      <div class="title">How Knowledgeable are you?</div>
-      <p>Press the start button to begin</p>
+      <div class="title">How Knowledgeable Are You About E-resource Access?</div>
+      <p class="subtitle">Press the start button to begin</p>
       <img src="smaller_images/homepage.png" alt="Intro Image" />
       <div></div>
       <button onclick="startQuiz()">Start</button>
