@@ -13,7 +13,7 @@ const questions = [
     question: "A professor has difficulty accessing a French newspaper, Le Monde, though Eureka.cc. But you are not able to replicate the problem. This database is known to be:",
     choices: ["Aggregator database", "Limited to 3 simultaneous users", "Limited to valid NetID holders of Yale University and walk-in users", "All of the above"],
     correctAnswer: "All of the above",
-    explanation: "Eureka.cc (https://search.library.yale.edu/databases/12923859) is an aggregator database of Canadian and European newspapers, trade publications, news wires, radio and television program transcripts, websites and blogs, and social media. Access is limited to 3 users at a time. When the user tried to access the resource, the limit may have been reached, and there may have been no available sessions. The problem should be resolved once other users log off.",
+    explanation: "<a href="https://search.library.yale.edu/databases/12923859">Eureka.cc</a> is an aggregator database of Canadian and European newspapers, trade publications, news wires, radio and television program transcripts, websites and blogs, and social media. Access is limited to 3 users at a time. When the user tried to access the resource, the limit may have been reached, and there may have been no available sessions. The problem should be resolved once other users log off.",
     questionImage: "smaller_images/question2.png",
     explanationImage: "explanation2.png",
   },
