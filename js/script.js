@@ -61,6 +61,7 @@ function showQuestion() {
     questions[currentQuestionIndex].choices.forEach((choice) => {
       const li = document.createElement('li');
       const button = document.createElement("button");
+      button.classList.add("button");
       button.textContent = choice;
       button.onclick = () => checkAnswer(choice);
       li.appendChild(button);
