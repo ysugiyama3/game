@@ -68,10 +68,10 @@
 	    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
       }
       @media (hover: hover) {
-            button:hover {
+            .button:hover {
                 background-color: #f3dba7; /* Slightly darker background on hover */
             }
-      button:focus {
+      .button:focus {
             background-color: #fff; /* Slightly darker background on hover */
         }	
       img {
@@ -87,7 +87,7 @@
       <p class="subtitle">Press the start button to begin</p>
       <img src="smaller_images/homepage.png" alt="Intro Image" />
       <div></div>
-      <button onclick="startQuiz()">Start</button>
+      <button class="button" onclick="startQuiz()">Start</button>
     </div>
 
     <div class="container hide" id="question">
@@ -101,14 +101,14 @@
       <div class="explanation" id="explanation-text"></div>
       <img id="explanation-image" alt="Explanation Image" />
       <div></div>
-      <button onclick="nextQuestion()">Next</button>
+      <button class="button" onclick="nextQuestion()">Next</button>
     </div>
 
     <div class="container hide" id="score">      
       <div class="score" id="score-text"></div>
       <img src="score.png" alt="Score Image" />
       <div></div>
-      <button onclick="restartQuiz()">Play Again</button>
+      <button class="button" onclick="restartQuiz()">Play Again</button>
     </div>
 
     <script src="js/script.js"></script>
