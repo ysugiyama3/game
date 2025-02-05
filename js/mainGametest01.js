@@ -1,7 +1,7 @@
 const gameData = {
     "1": {
         "topic" : "Browser issue",
-        "text" : "A student has trouble accessing [oxford handbook] from their personal laptop from their residential college. They get routed to a 404-error message. But you cannot replicate the problem both from on- and off-campus. What would you suggest the patron does first?",
+        "text" : "A student has trouble accessing an ebook from their laptop from their residential college. They get routed to a 404-error message. But you cannot replicate the problem. What would you suggest them do first?",
         "image" : "smaller_images/snackies.png",
 "choices": {    
             "Reboot the laptop": [2,["Jalapeno","Bok Choy"]],
@@ -11,7 +11,7 @@ const gameData = {
         }
     },
     "2": {
-        "text": "If a user is having trouble accessing online databases or other electronic library resources, one of the first troubleshooting steps is to clear their browser’s cache and cookies. If a user prefers not to clear their browser’s cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh. For more information, go to https://ask.library.yale.edu/faq/174879",
+        "text": "One of the first troubleshooting steps is to clear their browser’s cache and cookies. If a user prefers not to clear their browser’s cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh. For more information, go to https://ask.library.yale.edu/faq/174879",
         "image" : "smaller_images/where_to.png",
 "choices": {
             "Continue": [3,[]],
