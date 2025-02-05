@@ -5,7 +5,7 @@ const gameData = {
         "image" : "smaller_images/snackies.png",
 "choices": {    
             "Reboot the laptop": [2,["Jalapeno","Bok Choy"]],
-            "Clear browser cache and cookies: [2,["Broccoli", "Garlic", "Pumpkin"]],
+            "Clear browser cache and cookies": [2,["Broccoli", "Garlic", "Pumpkin"]],
             "Request ILL": [2,["Potato", "Leek", "Tomato"]],
             "Contact IT": [2, ["Green Bean", "Carrot"]]
         }
