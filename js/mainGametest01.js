@@ -1,22 +1,20 @@
 const gameData = {
     "1": {
-        "text": "You and your veggie friends want to hangout in VeggieVille. What snacks are you bringing?",
+        "topic" : "Browser issue",
+        "text" : "A student has trouble accessing [oxford handbook] from their personal laptop from their residential college. They get routed to a 404-error message. But you cannot replicate the problem both from on- and off-campus. What would you suggest the patron does first?",
         "image" : "smaller_images/snackies.png",
-"choices": {
-            "Beef sticks": [2,["Jalapeno","Bok Choy"]],
-            "Granola": [2,["Broccoli", "Garlic", "Pumpkin"]],
-            "Cucumbers and carrots": [2,["Potato", "Leek", "Tomato"]],
-            "Crackers and cheese": [2, ["Green Bean", "Carrot"]]
+"choices": {    
+            "Reboot the laptop": [2,["Jalapeno","Bok Choy"]],
+            "Clear browser cache and cookies or use the incognito/private mode": [2,["Broccoli", "Garlic", "Pumpkin"]],
+            "Request ILL": [2,["Potato", "Leek", "Tomato"]],
+            "Contact IT": [2, ["Green Bean", "Carrot"]]
         }
     },
     "2": {
-        "text": " Where are you guys going to go?",
+        "text": "If a user is having trouble accessing online databases or other electronic library resources, one of the first troubleshooting steps is to clear their browser’s cache and cookies. If a user prefers not to clear their browser’s cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh. For more information, go to https://ask.library.yale.edu/faq/174879",
         "image" : "smaller_images/where_to.png",
 "choices": {
-            "The beach": [3, ["Onion", "Green Bean", "Bok Choy"]],
-            "A cute book store": [4,["Broccoli", "Tomato","Leek", "Carrot"]],
-            "Your friend's apartment": [5,["Pumpkin", "Potato", "Napa Cabbage"]],
-            "Mount Evergetable": [6, ["Garlic", "Jalapeno"]]
+            "Continue": [3,[]],
         }
     },
     "3": {
