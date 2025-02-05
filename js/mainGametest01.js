@@ -5,13 +5,13 @@ const gameData = {
         "image" : "smaller_images/snackies.png",
 "choices": {    
             "Reboot the laptop": [2,["Jalapeno","Bok Choy"]],
-            "Clear browser cache and cookies or use the incognito/private mode": [2,["Broccoli", "Garlic", "Pumpkin"]],
+            "Clear browser cache and cookies: [2,["Broccoli", "Garlic", "Pumpkin"]],
             "Request ILL": [2,["Potato", "Leek", "Tomato"]],
             "Contact IT": [2, ["Green Bean", "Carrot"]]
         }
     },
     "2": {
-        "text": "One of the first troubleshooting steps is to clear their browser’s cache and cookies. If a user prefers not to clear their browser’s cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh. For more information, go to https://ask.library.yale.edu/faq/174879",
+        "text": "One of the first troubleshooting steps is to clear their browser’s cache and cookies. If a user prefers not to clear their browser’s cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh.",
         "image" : "smaller_images/where_to.png",
 "choices": {
             "Continue": [3,[]],
