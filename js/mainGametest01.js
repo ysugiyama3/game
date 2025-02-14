@@ -18,23 +18,21 @@ const gameData = {
         }
     },
     "3": {
-        "text": "After gearing up with sunglasses and sunscreen, what beach activity are you looking forward to?",
+        "topic" : "Simultaneous user limit",
+        "text": "A professor has difficulty accessing a French newspaper, Le Monde, though Eureka.cc. But you are not able to replicate the problem. This database is known to be:",
         "image" : "smaller_images/at_beach.png",
 "choices": {
-            "Build a sandcastle with your friends!": [41,["Garlic"]],
-            "Set up a beach picnic": [41,["Green Bean", "Bok Choy", "Pumpkin"]],
-            "Explore tide pools and collect shells": [41,["Leek", "Carrot"]],
-            "Read the book you've been eyeing": [41,[ "Broccoli", "Tomato"]],
+            "Aggregator database": [41,["Garlic"]],
+            "Limited to 3 simultaneous users": [41,["Green Bean", "Bok Choy", "Pumpkin"]],
+            "Limited to valid NetID holders of Yale University and walk-in users": [41,["Leek", "Carrot"]],
+            "All of the above": [41,[ "Broccoli", "Tomato"]],
         }
     },
     "41": {
-        "text": "The sun feels so nice, everyone is having a blast! You start to think: ",
+        "text": "Eureka.cc is an aggregator database of Canadian and European newspapers and other publications. Access is limited to 3 users at a time. When the user tried to access the resource, the limit may have been reached, and there may have been no available sessions. The problem should be resolved once other users log off. ",
         "image" : "smaller_images/having_beach_fun.png",
 "choices": {
-            "This is fun, I'm grateful for my friends": [7,["Garlic", "Napa Cabbage"]],
-            "This shell is so funky lol": [7,["Green Bean", "Bok Choy", "Pumpkin", "Tomato"]],
-            "Love my friends, but I wanna go home": [7,["Leek", "Carrot"]],
-            "What if we all went scuba diving": [7,["Broccoli", "Onion"]],
+            "Continue": [7,[]],
         }
     },
     "7": {
