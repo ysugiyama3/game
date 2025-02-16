@@ -506,10 +506,10 @@ let currentState = 1;
 function renderState(state) {
     const storyText = document.getElementById('story-text');
     const storyImage = document.getElementById('story-image');
-    const a = document.getElementById('link');
+    let a = document.getElementById('link');
     const choicesContainer = document.getElementById('choices');
 
-    const linkText = gameData[state].linktext;
+    let linkText = gameData[state].linktext;
     
     const img = new Image();
     img.src = gameData[state].image;
