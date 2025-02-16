@@ -515,7 +515,7 @@ function renderState(state) {
     const a = document.getElementById('link');
     const choicesContainer = document.getElementById('choices');
     
-    let linkText = gameData[state].linktext;
+    const linkText = gameData[state].linktext;
     
     const img = new Image();
     img.src = gameData[state].image;
@@ -526,6 +526,8 @@ function renderState(state) {
         if (linkText) {
             a.href = gameData[state].link;
             a.textContent = linkText;
+        } else {
+            a.innerHTML = '';
         }
         choicesContainer.innerHTML = '';
 
