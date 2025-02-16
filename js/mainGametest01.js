@@ -523,7 +523,7 @@ function renderState(state) {
     img.onload = () => {
         storyImage.src = img.src;
         storyText.textContent = gameData[state].text;
-        if (linkText === "") {
+        if (linkText !== "") {
             a.href = gameData[state].link;
             a.textContent = linkText;
         } else {
