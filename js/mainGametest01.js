@@ -2,6 +2,8 @@ const gameData = {
     "1": {
         "topic" : "Browser issue",
         "text" : "A student has trouble accessing an ebook from their laptop from their residential college. They get routed to a 404-error message. But you cannot replicate the problem. What would you suggest them do first?",
+        "linktext" : "",
+        "link" : "",
         "image" : "smaller_images/snackies.png",
 "choices": {    
             "Reboot the laptop": [2,["Jalapeno","Bok Choy"]],
@@ -22,6 +24,8 @@ const gameData = {
     "3": {
         "topic" : "Simultaneous user limit",
         "text": "A professor has difficulty accessing a French newspaper, Le Monde, though Eureka.cc. But you are not able to replicate the problem. This database is known to be:",
+        "linktext" : "",
+        "link" : "",
         "image" : "smaller_images/at_beach.png",
 "choices": {
             "Aggregator database": [41,["Garlic"]],
@@ -43,6 +47,8 @@ const gameData = {
         "text": "Suddenly, a large shadow falls over the beach. \
                  A giant hand reaches down from the sky, and scoops you and \
                  your friends up, and the world turns dark...",
+        "linktext" : "",
+        "link" : "",
         "image" : "smaller_images/beach_disaster.png",
 "choices": {
             "Continue": [8,[]]
@@ -506,10 +512,8 @@ let currentState = 1;
 function renderState(state) {
     const storyText = document.getElementById('story-text');
     const storyImage = document.getElementById('story-image');
-    let a = document.getElementById('link');
+    const a = document.getElementById('link');
     const choicesContainer = document.getElementById('choices');
-
-    a.innerHTML = '';
     
     let linkText = gameData[state].linktext;
     
@@ -519,7 +523,7 @@ function renderState(state) {
     img.onload = () => {
         storyImage.src = img.src;
         storyText.textContent = gameData[state].text;
-        if (typeof linkText !== "undefined") {
+        if (linkText) {
             a.href = gameData[state].link;
             a.textContent = linkText;
         }
