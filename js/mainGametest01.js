@@ -509,6 +509,8 @@ function renderState(state) {
     let a = document.getElementById('link');
     const choicesContainer = document.getElementById('choices');
 
+    a.innerHTML = '';
+    
     let linkText = gameData[state].linktext;
     
     const img = new Image();
