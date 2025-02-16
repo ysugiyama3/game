@@ -502,14 +502,18 @@ let currentState = 1;
 function renderState(state) {
     const storyText = document.getElementById('story-text');
     const storyImage = document.getElementById('story-image');
+    const link = document.getElementById('link');
     const choicesContainer = document.getElementById('choices');
 
+    const reference = "<a href='https://www.w3schools.com'>" + "Click here for more information" + "</a>";
+    
     const img = new Image();
     img.src = gameData[state].image;
 
     img.onload = () => {
         storyImage.src = img.src;
         storyText.textContent = gameData[state].text;
+        link.innerHTML = reference;
         choicesContainer.innerHTML = '';
 
         for (const [choice, info] of Object.entries(gameData[state].choices)) {
