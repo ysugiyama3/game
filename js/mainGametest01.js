@@ -517,6 +517,7 @@ function renderState(state) {
     img.onload = () => {
         storyImage.src = img.src;
         storyText.textContent = gameData[state].text;
+        link.innerHTML = '';
         if (typeof linkText !== "undefined") {
             const reference = "<a href='" + gameData[state].link + "'>" + gameData[state].linktext + "</a>";
             link.innerHTML = reference;
