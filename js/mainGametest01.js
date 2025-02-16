@@ -507,7 +507,7 @@ function renderState(state) {
     const link = document.getElementById('link');
     const choicesContainer = document.getElementById('choices');
 
-    
+    const linkText = gameData[state].linktext;
     
     const img = new Image();
     img.src = gameData[state].image;
@@ -515,7 +515,7 @@ function renderState(state) {
     img.onload = () => {
         storyImage.src = img.src;
         storyText.textContent = gameData[state].text;
-        if (gameData[state].linktext !== undefined) {
+        if (typeof linkText !== "undefined") {
             const reference = "<a href='" + gameData[state].link + "'>" + gameData[state].linktext + "</a>";
             link.innerHTML = reference;
         }
