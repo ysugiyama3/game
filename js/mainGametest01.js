@@ -12,6 +12,8 @@ const gameData = {
     },
     "2": {
         "text": "One of the first troubleshooting steps is to clear their browser’s cache and cookies. If a user prefers not to clear their browser’s cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh.",
+        "linktext" : "More about browser cache and cookies",
+        "link" : "https://ask.library.yale.edu/faq/174879",    
         "image" : "smaller_images/where_to.png",
 "choices": {
             "Continue": [3,[]],
@@ -505,7 +507,7 @@ function renderState(state) {
     const link = document.getElementById('link');
     const choicesContainer = document.getElementById('choices');
 
-    const reference = "<a href='https://www.w3schools.com'>" + "Click here for more information" + "</a>";
+    
     
     const img = new Image();
     img.src = gameData[state].image;
@@ -513,7 +515,10 @@ function renderState(state) {
     img.onload = () => {
         storyImage.src = img.src;
         storyText.textContent = gameData[state].text;
-        link.innerHTML = reference;
+        if (gameData[state].linktext !== null) {
+            const reference = "<a href='" + gameData[state].link + "'>" + gameData[state].linktext + "</a>";
+            link.innerHTML = reference;
+        }
         choicesContainer.innerHTML = '';
 
         for (const [choice, info] of Object.entries(gameData[state].choices)) {
