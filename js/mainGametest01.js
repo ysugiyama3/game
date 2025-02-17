@@ -528,7 +528,6 @@ function renderState(state) {
             a.href = gameData[state].link;
             a.textContent = linkText;
             link.appendChild(a);
-            link.innerHTML = element.innerHTML + "<br>";
         } else {
             link.innerHTML = '';
         }
