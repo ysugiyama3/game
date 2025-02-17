@@ -524,13 +524,13 @@ function renderState(state) {
         storyImage.src = img.src;
         storyText.textContent = gameData[state].text;
         if (linkText !== "") {
-            const newElement = document.createElement('a');
+            const a = document.createElement('a');
             a.href = gameData[state].link;
             a.textContent = linkText;
-            link.appendChild(newElement);
-            element.innerHTML = element.innerHTML + "<br>";
+            link.appendChild(a);
+            link.innerHTML = element.innerHTML + "<br>";
         } else {
-            a.innerHTML = '';
+            link.innerHTML = '';
         }
         choicesContainer.innerHTML = '';
 
