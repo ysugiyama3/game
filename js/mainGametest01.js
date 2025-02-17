@@ -1,7 +1,7 @@
 const gameData = {
     "1": {
         "topic" : "Browser issue",
-        "text" : "TEST!!<br>TEST!!!\nA student has trouble accessing an ebook from their laptop from their residential college. They get routed to a 404-error message. But you cannot replicate the problem. What would you suggest them do first?",
+        "text" : "TEST!!!\nA student has trouble accessing an ebook from their laptop from their residential college. They get routed to a 404-error message. But you cannot replicate the problem. What would you suggest them do first?",
         "linktext" : "",
         "link" : "",
         "image" : "smaller_images/snackies.png",
@@ -512,7 +512,7 @@ let currentState = 1;
 function renderState(state) {
     const storyText = document.getElementById('story-text');
     const storyImage = document.getElementById('story-image');
-    const a = document.getElementById('link');
+    const link = document.getElementById('link');
     const choicesContainer = document.getElementById('choices');
     
     const linkText = gameData[state].linktext;
@@ -524,8 +524,11 @@ function renderState(state) {
         storyImage.src = img.src;
         storyText.textContent = gameData[state].text;
         if (linkText !== "") {
+            const newElement = document.createElement('a');
             a.href = gameData[state].link;
             a.textContent = linkText;
+            link.appendChild(newElement);
+            element.innerHTML = element.innerHTML + "<br>";
         } else {
             a.innerHTML = '';
         }
