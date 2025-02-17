@@ -1,7 +1,7 @@
 const gameData = {
     "1": {
         "topic" : "Browser issue",
-        "text" : "TEST!%0D%0A A student has trouble accessing an ebook from their laptop from their residential college. They get routed to a 404-error message. But you cannot replicate the problem. What would you suggest them do first?",
+        "text" : "TEST!\n\n A student has trouble accessing an ebook from their laptop from their residential college. They get routed to a 404-error message. But you cannot replicate the problem. What would you suggest them do first?",
         "linktext" : "",
         "link" : "",
         "image" : "smaller_images/snackies.png",
