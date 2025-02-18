@@ -522,8 +522,7 @@ function renderState(state) {
     
     const linkText = gameData[state].linktext;
     const answer = gameData[state].answer;
-    const retrievedResponse = localStorage.getItem("response");
-    alart("answer: " + answer + "- response: " + retrievedResponse);
+    const retrievedResponse = localStorage.getItem("response");    
     
     const img = new Image();
     img.src = gameData[state].image;
@@ -532,6 +531,7 @@ function renderState(state) {
         storyImage.src = img.src;
 
         /* test YS*/
+        alart("answer: " + answer + "- response: " + retrievedResponse);
         if (retrievedResponse === answer) {
             resultText.textContent = "Correct!";
             localStorage.removeItem("response");
