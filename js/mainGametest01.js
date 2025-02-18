@@ -5,6 +5,7 @@ const gameData = {
         "linktext" : "",
         "link" : "",
         "image" : "smaller_images/snackies.png",
+        "answer" : "Clear browser cache and cookies or use the incognito/private mode",
 "choices": {    
             "Reboot the laptop": [2,["Jalapeno","Bok Choy"]],
             "Clear cache and cookies": [2,["Broccoli", "Garlic", "Pumpkin"]],
@@ -538,7 +539,10 @@ function renderState(state) {
             button.textContent = choice;
             button.className = 'choice-button';
             let nextState = info[0];
-            button.onclick = () => changeState(nextState, info[1]); //each time you change state you update the personalities dictionary
+            button.onclick = () => {
+                changeState(nextState, info[1]); //each time you change state you update the personalities dictionary
+                alert(choice);
+            };
             choicesContainer.appendChild(button);
         }
     };
