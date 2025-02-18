@@ -523,6 +523,7 @@ function renderState(state) {
     const linkText = gameData[state].linktext;
     const answer = gameData[state].answer;
     const retrievedResponse = localStorage.getItem("response");
+    alart("answer: " + answer + "- response: " + retrievedResponse);
     
     const img = new Image();
     img.src = gameData[state].image;
