@@ -531,15 +531,14 @@ function renderState(state) {
         storyImage.src = img.src;
 
         /* test YS*/
-        alart("answer: " + answer + "- response: " + retrievedResponse);
         if (retrievedResponse === answer) {
-            resultText.textContent = "Correct!";
+            resultText.textContent = "Correct!"+answer+retrievedResponse;
             localStorage.removeItem("response");
         } else if (!answer) {
             resultText.innerHTML = '';
             localStorage.removeItem("response");
         } else {
-            resultText.textContent = "Incorrect.";
+            resultText.textContent = "Incorrect."+answer+retrievedResponse;
             localStorage.removeItem("response");
         }
         
