@@ -18,7 +18,7 @@ const gameData = {
         "linktext" : "More about browser cache and cookies",
         "link" : "https://ask.library.yale.edu/faq/174879",    
         "image" : "smaller_images/where_to.png",
-        "answer" : "Clear browser cache and cookies or use the incognito/private mode",
+        "answer" : "Clear cache and cookies",
 "choices": {
             "Continue": [3,[]],
         }
