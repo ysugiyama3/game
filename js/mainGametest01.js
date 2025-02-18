@@ -1,7 +1,7 @@
 const gameData = {
     "1": {
         "topic" : "Browser issue",
-        "text" : "TEST!!!\nA student has trouble accessing an ebook from their laptop from their residential college. They get routed to a 404-error message. But you cannot replicate the problem. What would you suggest them do first?",
+        "text" : "A student has trouble accessing an ebook from their laptop from their residential college. They get routed to a 404-error message. But you cannot replicate the problem. What would you suggest them do first?",
         "linktext" : "",
         "link" : "",
         "image" : "smaller_images/snackies.png",
@@ -522,8 +522,8 @@ function renderState(state) {
     
     const linkText = gameData[state].linktext;
     const answer = gameData[state].answer;
-    let retrievedResponse = sessionStorage.getItem("response"); /*test YS 218*/
-    console.log(retrievedResponse); /*test YS 218*/
+    let retrievedResponse = sessionStorage.getItem("response"); 
+    console.log(retrievedResponse); 
     
     
     const img = new Image();
@@ -533,14 +533,14 @@ function renderState(state) {
         storyImage.src = img.src;
 
         if (retrievedResponse === answer) {
-            resultText.textContent = "Correct!"+answer+retrievedResponse;
-            sessionStorage.clear(); /*test YS 218*/
+            resultText.textContent = "Correct!";
+            sessionStorage.clear();
         } else if (!answer) {
             resultText.innerHTML = '';
-            sessionStorage.clear(); /*test YS 218*/
+            sessionStorage.clear();
         } else {
-            resultText.textContent = "Incorrect."+answer+retrievedResponse;
-            sessionStorage.clear(); /*test YS 218*/
+            resultText.textContent = "Incorrect.";
+            sessionStorage.clear();
         }
         
         storyText.textContent = gameData[state].text;
@@ -560,8 +560,7 @@ function renderState(state) {
             button.className = 'choice-button';
             let nextState = info[0];
             button.onclick = () => {
-                alert(choice); /*test YS 218*/
-                sessionStorage.setItem("response", choice); /*test YS 218*/
+                sessionStorage.setItem("response", choice);
                 changeState(nextState, info[1]); /*each time you change state you update the personalities dictionary*/
             }                    
             choicesContainer.appendChild(button);
