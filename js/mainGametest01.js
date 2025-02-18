@@ -524,7 +524,7 @@ function renderState(state) {
     const answer = gameData[state].answer;
     let retrievedResponse = sessionStorage.getItem("response"); /*test YS 218*/
     console.log(retrievedResponse); /*test YS 218*/
-    sessionStorage.clear(); /*test YS 218*/
+    
     
     const img = new Image();
     img.src = gameData[state].image;
@@ -534,13 +534,13 @@ function renderState(state) {
 
         if (retrievedResponse === answer) {
             resultText.textContent = "Correct!"+answer+retrievedResponse;
-            localStorage.removeItem("response");
+            sessionStorage.clear(); /*test YS 218*/
         } else if (!answer) {
             resultText.innerHTML = '';
-            localStorage.removeItem("response");
+            sessionStorage.clear(); /*test YS 218*/
         } else {
             resultText.textContent = "Incorrect."+answer+retrievedResponse;
-            localStorage.removeItem("response");
+            sessionStorage.clear(); /*test YS 218*/
         }
         
         storyText.textContent = gameData[state].text;
