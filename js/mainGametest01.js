@@ -561,6 +561,11 @@ function renderState(state) {
             button.onclick = () => {
                 changeState(nextState, info[1]); //each time you change state you update the personalities dictionary
                 localStorage.setItem("response", choice);
+
+                /* test YS */
+                const y = localStorage.getItem("response");
+                alart(y);
+                
             };
             choicesContainer.appendChild(button);
         }
