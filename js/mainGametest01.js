@@ -5,7 +5,7 @@ const gameData = {
         "linktext" : "",
         "link" : "",
         "image" : "smaller_images/snackies.png",
-        "answer" : "Clear browser cache and cookies or use the incognito/private mode",
+        "answer" : "",
 "choices": {    
             "Reboot the laptop": [2,["Jalapeno","Bok Choy"]],
             "Clear cache and cookies": [2,["Broccoli", "Garlic", "Pumpkin"]],
@@ -18,6 +18,7 @@ const gameData = {
         "linktext" : "More about browser cache and cookies",
         "link" : "https://ask.library.yale.edu/faq/174879",    
         "image" : "smaller_images/where_to.png",
+        "answer" : "Clear browser cache and cookies or use the incognito/private mode",
 "choices": {
             "Continue": [3,[]],
         }
@@ -28,6 +29,7 @@ const gameData = {
         "linktext" : "",
         "link" : "",
         "image" : "smaller_images/at_beach.png",
+        "answer" : "",
 "choices": {
             "Aggregator database": [41,["Garlic"]],
             "Limited to 3 simultaneous users": [41,["Green Bean", "Bok Choy", "Pumpkin"]],
@@ -40,6 +42,7 @@ const gameData = {
         "linktext" : "More about Eureka.cc",
         "link" : "https://search.library.yale.edu/databases/12923859",
         "image" : "smaller_images/having_beach_fun.png",
+        "answer" : "All of the above",
 "choices": {
             "Continue": [7,[]],
         }
@@ -511,18 +514,34 @@ const personalities = {
 let currentState = 1;
 
 function renderState(state) {
+    const resultText = document.getElementById('result-text');
     const storyText = document.getElementById('story-text');
     const storyImage = document.getElementById('story-image');
     const link = document.getElementById('link');
     const choicesContainer = document.getElementById('choices');
     
     const linkText = gameData[state].linktext;
+    const answer = gameData[state].answer;
+    const retrievedResponse = localStorage.getItem("response");
     
     const img = new Image();
     img.src = gameData[state].image;
 
     img.onload = () => {
         storyImage.src = img.src;
+
+        /* test YS*/
+        if (retrievedResponse === answer) {
+            resultText.textContent = "Correct!";
+            localStorage.removeItem("response");
+        } else if (!answer) {
+            resultText.innerHTML = '';
+            localStorage.removeItem("response");
+        } else {
+            resultText.textContent = "Incorrect.";
+            localStorage.removeItem("response");
+        }
+        
         storyText.textContent = gameData[state].text;
         if (linkText) {
             const a = document.createElement('a');
@@ -541,7 +560,7 @@ function renderState(state) {
             let nextState = info[0];
             button.onclick = () => {
                 changeState(nextState, info[1]); //each time you change state you update the personalities dictionary
-                alert(choice);
+                localStorage.setItem("response", answer);
             };
             choicesContainer.appendChild(button);
         }
