@@ -522,7 +522,7 @@ function renderState(state) {
     
     const linkText = gameData[state].linktext;
     const answer = gameData[state].answer;
-    /*const retrievedResponse = localStorage.getItem("response");  */  
+    const retrievedResponse = "Clear cache and cookies" /*test YS*/
     
     const img = new Image();
     img.src = gameData[state].image;
@@ -530,7 +530,6 @@ function renderState(state) {
     img.onload = () => {
         storyImage.src = img.src;
 
-        /* test YS
         if (retrievedResponse === answer) {
             resultText.textContent = "Correct!"+answer+retrievedResponse;
             localStorage.removeItem("response");
@@ -541,7 +540,6 @@ function renderState(state) {
             resultText.textContent = "Incorrect."+answer+retrievedResponse;
             localStorage.removeItem("response");
         }
-        */
         
         storyText.textContent = gameData[state].text;
         if (linkText) {
@@ -559,11 +557,7 @@ function renderState(state) {
             button.textContent = choice;
             button.className = 'choice-button';
             let nextState = info[0];
-            button.onclick = () => {
-                /* localStorage.setItem("response", choice); */
-                alart(choice);
-                changeState(nextState, info[1]); /* each time you change state you update the personalities dictionary */                         
-            };
+            button.onclick = () => changeState(nextState, info[1]); //each time you change state you update the personalities dictionary
             choicesContainer.appendChild(button);
         }
     };
