@@ -522,10 +522,8 @@ function renderState(state) {
     
     const linkText = gameData[state].linktext;
     const answer = gameData[state].answer;
-    const retrievedResponse = "Clear cache and cookies" /*test YS*/
-
-    let data = sessionStorage.getItem("response"); /*test YS 218*/
-    console.log(data); /*test YS 218*/
+    let retrievedResponse = sessionStorage.getItem("response"); /*test YS 218*/
+    console.log(retrievedResponse); /*test YS 218*/
     sessionStorage.clear(); /*test YS 218*/
     
     const img = new Image();
