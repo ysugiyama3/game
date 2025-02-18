@@ -523,6 +523,10 @@ function renderState(state) {
     const linkText = gameData[state].linktext;
     const answer = gameData[state].answer;
     const retrievedResponse = "Clear cache and cookies" /*test YS*/
+
+    let data = sessionStorage.getItem("response"); /*test YS 218*/
+    console.log(data); /*test YS 218*/
+    sessionStorage.clear(); /*test YS 218*/
     
     const img = new Image();
     img.src = gameData[state].image;
@@ -557,7 +561,11 @@ function renderState(state) {
             button.textContent = choice;
             button.className = 'choice-button';
             let nextState = info[0];
-            button.onclick = () => changeState(nextState, info[1]); //each time you change state you update the personalities dictionary
+            button.onclick = () => {
+                alert(choice); /*test YS 218*/
+                sessionStorage.setItem("response", choice); /*test YS 218*/
+                changeState(nextState, info[1]); /*each time you change state you update the personalities dictionary*/
+            }                    
             choicesContainer.appendChild(button);
         }
     };
