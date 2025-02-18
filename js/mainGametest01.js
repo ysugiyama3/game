@@ -560,7 +560,7 @@ function renderState(state) {
             let nextState = info[0];
             button.onclick = () => {
                 changeState(nextState, info[1]); //each time you change state you update the personalities dictionary
-                localStorage.setItem("response", answer);
+                localStorage.setItem("response", choice);
             };
             choicesContainer.appendChild(button);
         }
