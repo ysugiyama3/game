@@ -91,6 +91,33 @@ const gameData = {
         "image" : "smaller_images/having_beach_fun.png",
         "answer" : "https://yale.idm.oclc.org/login?url=",
 "choices": {
+            "Continue": [9,[]],
+        }
+    },
+    "9": {
+        "topic" : "Major newspapers/magazines",
+        "text": "To which websites/apps can current faculty, student, and staff sign up for a free digital subscription?",
+        "linktext" : "",
+        "link" : "",
+        "image" : "smaller_images/beach_disaster.png",
+        "answer" : "",
+"choices": {
+            "Economist (www.economist.com)": [10,["Garlic"]],
+            "Financial Times (www.ft.com)": [10,["Green Bean", "Bok Choy", "Pumpkin"]],
+            "New York Times (www.nytimes.com)": [10,["Leek", "Carrot"]],
+            "The Atlantic (www.theatlantic.com)": [10,["Carrot"]],
+            "Wall street Journal (www.wsj.com)": [10,["Garlic"]],
+            "Washington Post (www.washingtonpost.com)": [10,["Green Bean", "Bok Choy", "Pumpkin"]],
+            "All of the above": [10,["Jalapeno","Bok Choy"]],
+        }
+    },
+    "10": {
+        "text": "Yale offers current faculty, staff, and students access to several major newspapers and magazines. Use your @yale.edu email address to set up an account. Please note that authorized users do not include affiliates of Yale New Haven Hospital. Use Quicksearch to access each resource.",
+        "linktext" : "Use Quicksearch to register for and access them",
+        "link" : "https://search.library.yale.edu/",
+        "image" : "smaller_images/having_beach_fun.png",
+        "answer" : "All of the above",
+"choices": {
             "Continue": [100,[]],
         }
     },
