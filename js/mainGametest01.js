@@ -1,7 +1,7 @@
 const gameData = {
     "1": {
         "topic" : "Browser issue",
-        "text" : "A student has <b>trouble</b> accessing an ebook from their laptop from their residential college. They get routed to a 404 error message. But you cannot replicate the problem. What would you suggest them do first?",
+        "text" : "A student has trouble accessing an ebook from their laptop from their residential college. They get routed to a 404 error message. But you cannot replicate the problem. What would you suggest them do first?",
         "linktext" : "",
         "link" : "",
         "image" : "smaller_images/1.PNG",
@@ -52,7 +52,7 @@ const gameData = {
         "text": "A graduate student reported that they could not read full-text of the current issue of the Harvard Business Review magazine at https://hbr.org/magazine.",
         "linktext" : "",
         "link" : "",
-        "image" : "smaller_images/beach_disaster.png",
+        "image" : "smaller_images/5.PNG",
         "answer" : "",
 "choices": {
             "hbr.org is temporarily unavailable due to site upgrade": [6,["Garlic"]],
