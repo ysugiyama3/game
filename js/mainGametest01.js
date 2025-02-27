@@ -20,7 +20,7 @@ const gameData = {
         "image" : "",
         "answer" : "Clear cache and cookies",
 "choices": {
-            "Continue": [3,[]],
+             "Continue": [3, []]
         }
     },
     "3": {
@@ -34,7 +34,7 @@ const gameData = {
             "Aggregator database": [4,["Garlic"]],
             "Limited to 3 simultaneous users": [4,["Green Bean", "Bok Choy", "Pumpkin"]],
             "Limited to valid NetID holders of Yale University and walk-in users": [4,["Leek", "Carrot"]],
-            "All of the above": [4,[ "Broccoli", "Tomato"]],
+            "All of the above": [4,[ "Broccoli", "Tomato"]]
         }
     },
     "4": {
@@ -44,7 +44,7 @@ const gameData = {
         "image" : "smaller_images/having_beach_fun.png",
         "answer" : "All of the above",
 "choices": {
-            "Continue": [5,[]],
+            "Continue": [5,[]]
         }
     },
     "5": {
@@ -57,7 +57,7 @@ const gameData = {
 "choices": {
             "hbr.org is temporarily unavailable due to site upgrade": [6,["Garlic"]],
             "Yale’s access to the current issue is through Business Source Complete only": [6,["Green Bean", "Bok Choy", "Pumpkin"]],
-            "Yale does not have access to Harvard Business Review at all": [6,["Leek", "Carrot"]],
+            "Yale does not have access to Harvard Business Review at all": [6,["Leek", "Carrot"]]
         }
     },
     "6": {
@@ -67,7 +67,7 @@ const gameData = {
         "image" : "smaller_images/having_beach_fun.png",
         "answer" : "Yale’s access to the current issue is through Business Source Complete only",
 "choices": {
-            "Continue": [7,[]],
+            "Continue": [7,[]]
         }
     },
     "7": {
@@ -81,7 +81,7 @@ const gameData = {
             "https://yale.ezproxy.org/login?url=": [8,["Garlic"]],
             "https://yale.oclc.org/login?url=": [8,["Green Bean", "Bok Choy", "Pumpkin"]],
             "https://yale.idm.oclc.org/login?url=": [8,["Leek", "Carrot"]],
-            "https://yale.ezproxy.oclc.org/login?url=": [8,["Carrot"]],
+            "https://yale.ezproxy.oclc.org/login?url=": [8,["Carrot"]]
         }
     },
     "8": {
@@ -91,7 +91,7 @@ const gameData = {
         "image" : "smaller_images/having_beach_fun.png",
         "answer" : "https://yale.idm.oclc.org/login?url=",
 "choices": {
-            "Continue": [9,[]],
+            "Continue": [9,[]]
         }
     },
     "9": {
@@ -108,7 +108,7 @@ const gameData = {
             "The Atlantic (www.theatlantic.com)": [10,["Carrot"]],
             "Wall street Journal (www.wsj.com)": [10,["Garlic"]],
             "Washington Post (www.washingtonpost.com)": [10,["Green Bean", "Bok Choy", "Pumpkin"]],
-            "All of the above": [10,["Jalapeno","Bok Choy"]],
+            "All of the above": [10,["Jalapeno","Bok Choy"]]
         }
     },
     "10": {
@@ -118,7 +118,7 @@ const gameData = {
         "image" : "smaller_images/having_beach_fun.png",
         "answer" : "All of the above",
 "choices": {
-            "Continue": [100,[]],
+            "Continue": [100,[]]
         }
     },
     "100": {
