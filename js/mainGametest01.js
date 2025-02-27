@@ -17,7 +17,7 @@ const gameData = {
         "text": "One of the first troubleshooting steps is to clear their browser’s cache and cookies. If a user prefers not to clear their browser’s cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh.",
         "linktext" : "More about browser cache and cookies",
         "link" : "https://ask.library.yale.edu/faq/174879",    
-        "image" : "",
+        "image" : "smaller_images/where_to.png",
         "answer" : "Clear cache and cookies",
 "choices": {
              "Continue": [3, []]
@@ -179,8 +179,7 @@ function renderState(state) {
             sessionStorage.clear();
         }
         
-        storyText.textContent = gameData[state].text; 
-        
+        storyText.textContent = gameData[state].text;
         if (linkText) {
             const a = document.createElement('a');
             a.href = gameData[state].link;
