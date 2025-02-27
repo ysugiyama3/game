@@ -38,7 +38,7 @@ const gameData = {
         }
     },
     "4": {
-        "text": "Eureka.cc is an <b>aggregator database</b> of Canadian and European newspapers and other publications. Access is limited to 3 users at a time. When the user tried to access the resource, the limit may have been reached, and there may have been no available sessions. The problem should be resolved once other users log off. ",
+        "text": "Eureka.cc is an aggregator database of Canadian and European newspapers and other publications. Access is limited to 3 users at a time. When the user tried to access the resource, the limit may have been reached, and there may have been no available sessions. The problem should be resolved once other users log off. ",
         "linktext" : "More about Eureka.cc",
         "link" : "https://search.library.yale.edu/databases/12923859",
         "image" : "smaller_images/having_beach_fun.png",
