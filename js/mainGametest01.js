@@ -179,7 +179,8 @@ function renderState(state) {
             sessionStorage.clear();
         }
         
-        storyText.innerHTML = gameData[state].text; /* storyText.textContent = gameData[state].text; */
+        storyText.textContent = gameData[state].text; 
+        
         if (linkText) {
             const a = document.createElement('a');
             a.href = gameData[state].link;
