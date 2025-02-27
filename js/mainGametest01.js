@@ -1,7 +1,7 @@
 const gameData = {
     "1": {
         "topic" : "Browser issue",
-        "text" : "A student has <b>trouble</b> accessing an ebook from their laptop from their residential college. They get routed to a 404-error message. But you cannot replicate the problem. What would you suggest them do first?",
+        "text" : "A student has <b>trouble</b> accessing an ebook from their laptop from their residential college. They get routed to a 404 error message. But you cannot replicate the problem. What would you suggest them do first?",
         "linktext" : "",
         "link" : "",
         "image" : "smaller_images/1.PNG",
@@ -17,7 +17,7 @@ const gameData = {
         "text": "One of the first troubleshooting steps is to clear their browser’s cache and cookies. If a user prefers not to clear their browser’s cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh.",
         "linktext" : "More about browser cache and cookies",
         "link" : "https://ask.library.yale.edu/faq/174879",    
-        "image" : "smaller_images/where_to.png",
+        "image" : "",
         "answer" : "Clear cache and cookies",
 "choices": {
             "Continue": [3,[]],
@@ -28,7 +28,7 @@ const gameData = {
         "text": "A professor has difficulty accessing a French newspaper, Le Monde, though Eureka.cc. But you are not able to replicate the problem. This database is known to be:",
         "linktext" : "",
         "link" : "",
-        "image" : "smaller_images/at_beach.png",
+        "image" : "smaller_images/3.PNG",
         "answer" : "",
 "choices": {
             "Aggregator database": [4,["Garlic"]],
@@ -38,7 +38,7 @@ const gameData = {
         }
     },
     "4": {
-        "text": "Eureka.cc is an aggregator database of Canadian and European newspapers and other publications. Access is limited to 3 users at a time. When the user tried to access the resource, the limit may have been reached, and there may have been no available sessions. The problem should be resolved once other users log off. ",
+        "text": "Eureka.cc is an <b>aggregator database</b> of Canadian and European newspapers and other publications. Access is limited to 3 users at a time. When the user tried to access the resource, the limit may have been reached, and there may have been no available sessions. The problem should be resolved once other users log off. ",
         "linktext" : "More about Eureka.cc",
         "link" : "https://search.library.yale.edu/databases/12923859",
         "image" : "smaller_images/having_beach_fun.png",
@@ -179,7 +179,7 @@ function renderState(state) {
             sessionStorage.clear();
         }
         
-        storyText.textContent = gameData[state].text;
+        storyText.innerHTML = gameData[state].text; /* storyText.textContent = gameData[state].text; */
         if (linkText) {
             const a = document.createElement('a');
             a.href = gameData[state].link;
