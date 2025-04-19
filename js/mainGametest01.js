@@ -155,10 +155,11 @@ function renderState(state) {
     const resultText = document.getElementById('result-text');
     const storyText = document.getElementById('story-text');
     const storyImage = document.getElementById('story-image');
-    const link = document.getElementById('link');
+    
     const choicesContainer = document.getElementById('choices');
     
-    const linkText = gameData[state].linktext;
+    /* const link = document.getElementById('link');
+    const linkText = gameData[state].linktext; */
     const answer = gameData[state].answer;
     let retrievedResponse = sessionStorage.getItem("response"); 
     console.log(retrievedResponse); 
@@ -182,14 +183,14 @@ function renderState(state) {
         }
         
         storyText.innerHTML = gameData[state].text; /* storyText.textContent = gameData[state].text; */
-        if (linkText) {
+        /*if (linkText) {
             const a = document.createElement('a');
             a.href = gameData[state].link;
             a.textContent = linkText;
             link.appendChild(a);
         } else {
             link.innerHTML = '';
-        }
+        } */
         choicesContainer.innerHTML = '';
 
         for (const [choice, info] of Object.entries(gameData[state].choices)) {
