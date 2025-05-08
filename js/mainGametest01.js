@@ -4,8 +4,6 @@ const gameData = {
     "1": {
         "topic" : "Browser issue",
         "text" : "A student<br>\ has <strong>trouble</strong> accessing an ebook from their laptop from their residential college. They get routed to a 404 error message. But you cannot replicate the problem. What would you suggest them do first?",
-        "linktext" : "",
-        "link" : "",
         "image" : "smaller_images/1.PNG",
         "answer" : "",
 "choices": {    
@@ -16,9 +14,7 @@ const gameData = {
         }
     },
     "2": {
-        "text": "One of the first troubleshooting steps is to clear their browser’s cache and cookies. If a user prefers not to clear their browser’s cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh.",
-        "linktext" : "More about browser cache and cookies",
-        "link" : "https://ask.library.yale.edu/faq/174879",    
+        "text": "If a user is having trouble accessing online databases or other electronic library resources, one of the first troubleshooting steps is to clear their browser’s cache and cookies. If a user prefers not to clear their browser’s cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh. For more information, go to <a href='https://ask.library.yale.edu/faq/174879'>this FAQ page</a>.",
         "image" : "smaller_images/where_to.png",
         "answer" : "Clear cache and cookies",
 "choices": {
@@ -28,8 +24,6 @@ const gameData = {
     "3": {
         "topic" : "Simultaneous user limit",
         "text": "A professor has difficulty accessing a French newspaper, Le Monde, though Eureka.cc. But you are not able to replicate the problem. This database is known to be:",
-        "linktext" : "",
-        "link" : "",
         "image" : "smaller_images/3.PNG",
         "answer" : "",
 "choices": {
@@ -40,9 +34,7 @@ const gameData = {
         }
     },
     "4": {
-        "text": "Eureka.cc is an aggregator database of Canadian and European newspapers and other publications. Access is limited to 3 users at a time. When the user tried to access the resource, the limit may have been reached, and there may have been no available sessions. The problem should be resolved once other users log off. ",
-        "linktext" : "More about Eureka.cc",
-        "link" : "https://search.library.yale.edu/databases/12923859",
+        "text": "<a href='https://search.library.yale.edu/databases/12923859'>Eureka.cc</a> is an aggregator database of Canadian and European newspapers and other publications. Access is limited to 3 users at a time. When the user tried to access the resource, the limit may have been reached, and there may have been no available sessions. The problem should be resolved once other users log off.",
         "image" : "smaller_images/having_beach_fun.png",
         "answer" : "All of the above",
 "choices": {
@@ -51,9 +43,7 @@ const gameData = {
     },
     "5": {
         "topic" : "Not starting the search from the library site",
-        "text": "A graduate student reported that they could not read full-text of the current issue of the Harvard Business Review magazine at https://hbr.org/magazine.",
-        "linktext" : "",
-        "link" : "",
+        "text": "A graduate student reported that they could not read full-text of the current issue of the Harvard Business Review magazine at <a href='https://hbr.org/magazine'>https://hbr.org/magazine</a>.",
         "image" : "smaller_images/5.PNG",
         "answer" : "",
 "choices": {
@@ -63,9 +53,7 @@ const gameData = {
         }
     },
     "6": {
-        "text": "When users know that their institution subscribes to a specific journal, they may go directly to the publisher’s website, such as hbr.org, rather than starting their search on the library catalog or E-journal A-Z page. While search engines like Google can find resources, they do not connect the users to the institution’s subscription, often resulting in a paywall. Searches via the library catalog direct users to the appropriate subscription and provide important information like access method, simultaneous user limit, content coverage, and embargo periods.",
-        "linktext" : "Harvard Business Review",
-        "link" : "https://search.library.yale.edu/catalog/12026052",
+        "text": "When users know that their institution subscribes to a specific journal, they may go directly to the publisher’s website, such as hbr.org, rather than starting their search on the library catalog or E-journal AZ list. Not starting the search from the library sites can cause access problems and confusion. While search engines like Google can find resources, they do not connect the users to the institution’s subscription, often resulting in a paywall. Searches via the library catalog direct users to the appropriate subscription and provide important information like access method, simultaneous user limit, content coverage, and embargo periods. See a <a href='https://search.library.yale.edu/catalog/12026052'>catalog record for Harvard Business Review</a>",
         "image" : "smaller_images/having_beach_fun.png",
         "answer" : "Yale’s access to the current issue is through Business Source Complete only",
 "choices": {
@@ -75,8 +63,6 @@ const gameData = {
     "7": {
         "topic" : "EZProxy",
         "text": "Which is the correct YUL EZProxy prefix?",
-        "linktext" : "",
-        "link" : "",
         "image" : "smaller_images/beach_disaster.png",
         "answer" : "",
 "choices": {
@@ -87,9 +73,7 @@ const gameData = {
         }
     },
     "8": {
-        "text": "The YUL EZProxy Prefix is “https://yale.idm.oclc.org/login?url=.” The prefix is used with a link to a resource that allows remote access through IP authentication. For example, Yale’s proxied link to JSTOR is https://yale.idm.oclc.org/login?url=https://www.jstor.org/search",
-        "linktext" : "More about EZProxy",
-        "link" : "https://guides.library.yale.edu/ezproxy/atyul",
+        "text": "The YUL EZProxy Prefix is https://yale.idm.oclc.org/login?url=. The prefix is used with a link to a resource that allows remote access through IP authentication. For example, Yale’s proxied link to JSTOR is <a href='https://yale.idm.oclc.org/login?url=https://www.jstor.org/search'>https://yale.idm.oclc.org/login?url=https://www.jstor.org/search</a>. Visit <a href='https://guides.library.yale.edu/ezproxy/atyul'>here</a> to learn more about EZProxy",
         "image" : "smaller_images/having_beach_fun.png",
         "answer" : "https://yale.idm.oclc.org/login?url=",
 "choices": {
@@ -99,8 +83,6 @@ const gameData = {
     "9": {
         "topic" : "Major newspapers/magazines",
         "text": "To which websites/apps can current faculty, student, and staff sign up for a free digital subscription?",
-        "linktext" : "",
-        "link" : "",
         "image" : "smaller_images/beach_disaster.png",
         "answer" : "",
 "choices": {
@@ -114,9 +96,7 @@ const gameData = {
         }
     },
     "10": {
-        "text": "Yale offers current faculty, staff, and students access to several major newspapers and magazines. Use your @yale.edu email address to set up an account. Please note that authorized users do not include affiliates of Yale New Haven Hospital. Use Quicksearch to access each resource.",
-        "linktext" : "Use Quicksearch to register for and access them",
-        "link" : "https://search.library.yale.edu/",
+        "text": "Yale offers current faculty, staff, and students access to several major newspapers and magazines. Use your @yale.edu email address to set up an account. Please note that authorized users do not include affiliates of Yale New Haven Hospital. For more info, check the links below:<br>\<a href='https://library.yale.edu/eresources/access/access-economist'>Economist</a>",
         "image" : "smaller_images/having_beach_fun.png",
         "answer" : "All of the above",
 "choices": {
@@ -158,8 +138,6 @@ function renderState(state) {
     
     const choicesContainer = document.getElementById('choices');
     
-    /* const link = document.getElementById('link');
-    const linkText = gameData[state].linktext; */
     const answer = gameData[state].answer;
     let retrievedResponse = sessionStorage.getItem("response"); 
     console.log(retrievedResponse); 
@@ -183,14 +161,7 @@ function renderState(state) {
         }
         
         storyText.innerHTML = gameData[state].text; /* storyText.textContent = gameData[state].text; */
-        /*if (linkText) {
-            const a = document.createElement('a');
-            a.href = gameData[state].link;
-            a.textContent = linkText;
-            link.appendChild(a);
-        } else {
-            link.innerHTML = '';
-        } */
+
         choicesContainer.innerHTML = '';
 
         for (const [choice, info] of Object.entries(gameData[state].choices)) {
