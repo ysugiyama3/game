@@ -153,7 +153,7 @@ function renderState(state) {
             resultText.textContent = "Correct!";
             sessionStorage.clear();
         } else if (!answer) {
-            resultText.innerHTML = null;
+            resultText.innerHTML = "";
             sessionStorage.clear();
         } else {
             resultText.textContent = "Incorrect.";
