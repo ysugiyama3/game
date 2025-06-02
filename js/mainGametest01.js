@@ -14,7 +14,7 @@ const gameData = {
         }
     },
     "2": {
-        "text": "One of the first e-resource troubleshooting steps is to clear browser cache and cookies. If a user prefers not to clear their browser cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh. For more information, go to &lt;a href=&quot;https://ask.library.yale.edu/faq/174879\&quot;&gt;this FAQ page&lt;/a&gt;.",
+        "text": "One of the first e-resource troubleshooting steps is to clear browser cache and cookies. If a user prefers not to clear their browser cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh. For more information, go to https://ask.library.yale.edu/faq/174879.",
         "image" : "smaller_images/1.png",
         "answer" : "Clear cache and cookies",
 "choices": {
