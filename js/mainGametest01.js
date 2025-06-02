@@ -14,7 +14,7 @@ const gameData = {
         }
     },
     "2": {
-        "text": "One of the first e-resource troubleshooting steps is to clear browser’s cache and cookies. If a user prefers not to clear their browser’s cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh. For more information, go to &lt;a href='https://ask.library.yale.edu/faq/174879'&gt;this FAQ page&lt;/a&gt;.",
+        "text": "One of the first e-resource troubleshooting steps is to clear browser cache and cookies. If a user prefers not to clear their browser cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh. For more information, go to &lt;a href=&quot;https://ask.library.yale.edu/faq/174879\&quot;&gt;this FAQ page&lt;/a&gt;.",
         "image" : "smaller_images/1.png",
         "answer" : "Clear cache and cookies",
 "choices": {
@@ -160,8 +160,8 @@ function renderState(state) {
             sessionStorage.clear();
         }
         
-        storyText.innerHTML += '<p>' + gameData[state].text + '</p>'; /* storyText.textContent = gameData[state].text; */
-        storyText.innerHTML = storyText.innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+        storyText.innerHTML = gameData[state].text; /* storyText.textContent = gameData[state].text; */
+        storyText.innerHTML = storyText.innerHTML.replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 
         choicesContainer.innerHTML = '';
 
