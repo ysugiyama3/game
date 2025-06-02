@@ -4,7 +4,7 @@ const gameData = {
     "1": {
         "topic" : "Browser issue",
         "text" : "A student<br>\ has trouble accessing an ebook from their residential college. They get routed to the 404 error message. But you cannot replicate the problem. What would you suggest them to do first?",
-        "image" : "smaller_images/1.PNG",
+        "image" : "smaller_images/1.png",
         "answer" : "",
 "choices": {    
             "Reboot the laptop": [2,["Jalapeno","Bok Choy"]],
@@ -15,7 +15,7 @@ const gameData = {
     },
     "2": {
         "text": "One of the first e-resource troubleshooting steps is to clear browser’s cache and cookies. If a user prefers not to clear their browser’s cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh. For more information, go to <a href='https://ask.library.yale.edu/faq/174879'>this FAQ page</a>.",
-        "image" : "",
+        "image" : "smaller_images/1.png",
         "answer" : "Clear cache and cookies",
 "choices": {
              "Continue": [3, []]
@@ -24,7 +24,7 @@ const gameData = {
     "3": {
         "topic" : "Simultaneous user limit",
         "text": "A professor has difficulty accessing a French newspaper, Le Monde, though the Eureka.cc database. But you cannot replicate the problem. This database is known to be:",
-        "image" : "smaller_images/3.PNG",
+        "image" : "smaller_images/3.png",
         "answer" : "",
 "choices": {
             "Aggregator database": [4,["Garlic"]],
@@ -35,7 +35,7 @@ const gameData = {
     },
     "4": {
         "text": "<a href='https://library.yale.edu/eresources/access/access-eurekacc'>Eureka.cc</a> is an aggregator database of Canadian and European newspapers and other publications. Access is limited to 3 users at a time. When the user tried to access the resource, the limit may have been reached, and there may have been no available sessions. The problem should be resolved once other users log off.",
-        "image" : "",
+        "image" : "smaller_images/3.png",
         "answer" : "All of the above",
 "choices": {
             "Continue": [5,[]]
@@ -44,7 +44,7 @@ const gameData = {
     "5": {
         "topic" : "Not starting the search from the library site",
         "text": "A graduate student reported that they could not read full-text of the current issue of the Harvard Business Review magazine at <strong>https://hbr.org/magazine</strong>.",
-        "image" : "smaller_images/5.PNG",
+        "image" : "smaller_images/5.png",
         "answer" : "",
 "choices": {
             "hbr.org is temporarily unavailable due to site upgrade": [6,["Garlic"]],
@@ -54,7 +54,7 @@ const gameData = {
     },
     "6": {
         "text": "When users know their institution subscribes to a journal, they might visit the publisher’s website, such as hbr.org, instead of the library catalog or E-journal AZ list, leading to access issues and confusion. Most journal subscriptions are through aggregator platforms, not publishers. Using the library discovery services directs users to Yale's subscription platforms and provides essential details like access method, user limits, content coverage, and embargo periods.. See a <a href='https://search.library.yale.edu/catalog/12026052'>catalog record for Harvard Business Review</a>",
-        "image" : "",
+        "image" : "smaller_images/5.png",
         "answer" : "Yale’s access to the current issue is through EBSCOhost's Business Source Complete only",
 "choices": {
             "Continue": [7,[]]
@@ -63,7 +63,7 @@ const gameData = {
     "7": {
         "topic" : "EZProxy",
         "text": "Which is the correct YUL EZProxy prefix?",
-        "image" : "smaller_images/beach_disaster.png",
+        "image" : "smaller_images/7.png",
         "answer" : "",
 "choices": {
             "https://yale.ezproxy.org/login?url=": [8,["Garlic"]],
@@ -74,7 +74,7 @@ const gameData = {
     },
     "8": {
         "text": "The YUL EZProxy Prefix is <strong>https://yale.idm.oclc.org/login?url=</strong>. The prefix is used with a link to a resource that allows remote access through IP authentication. For example, Yale’s proxied link to JSTOR is <strong>https://yale.idm.oclc.org/login?url=https://www.jstor.org/search</strong>. Visit <a href='https://guides.library.yale.edu/ezproxy/atyul'>here</a> to learn more about EZProxy",
-        "image" : "",
+        "image" : "smaller_images/7.png",
         "answer" : "https://yale.idm.oclc.org/login?url=",
 "choices": {
             "Continue": [9,[]]
@@ -83,7 +83,7 @@ const gameData = {
     "9": {
         "topic" : "Major newspapers/magazines",
         "text": "To which websites/apps can current faculty, student, and staff sign up for a free digital subscription?",
-        "image" : "smaller_images/beach_disaster.png",
+        "image" : "smaller_images/9.png",
         "answer" : "",
 "choices": {
             "Economist (www.economist.com)": [10,["Garlic"]],
@@ -97,7 +97,7 @@ const gameData = {
     },
     "10": {
         "text": "Yale offers current faculty, staff, and students access to several major newspapers and magazines. Use your @yale.edu email address to set up an account. Please note that authorized users do not include affiliates of Yale New Haven Hospital. For more info, check the links below:<br>\<a href='https://library.yale.edu/eresources/access/access-economist'>Economist</a>",
-        "image" : "smaller_images/having_beach_fun.png",
+        "image" : "smaller_images/9.png",
         "answer" : "All of the above",
 "choices": {
             "Continue": [100,[]]
