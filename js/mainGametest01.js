@@ -24,7 +24,7 @@ const gameData = {
     "3": {
         "topic" : "Simultaneous user limit",
         "text": "A professor has difficulty accessing a French newspaper, Le Monde, though the Eureka.cc database. But you cannot replicate the problem. This database is known to be:",
-        "image" : "smaller_images/3.png",
+        "image" : "smaller_images/5.png",
         "answer" : "",
 "choices": {
             "Aggregator database": [4,["Garlic"]],
@@ -35,7 +35,7 @@ const gameData = {
     },
     "4": {
         "text": "Eureka.cc is an aggregator database of Canadian and European newspapers and other publications. Access is limited to 3 users at a time. When the user tried to access the resource, the limit may have been reached, and there may have been no available sessions. The problem should be resolved once other users log off.",
-        "image" : "smaller_images/3.png",
+        "image" : "smaller_images/5.png",
         "answer" : "All of the above",
 "choices": {
             "Continue": [5,[]]
@@ -160,8 +160,9 @@ function renderState(state) {
             sessionStorage.clear();
         }
         
-        storyText.textContent = gameData[state].text;
-
+        storyText.innerHTML = gameData[state].text; /* storyText.textContent = gameData[state].text; */
+        storyText.innerHTML = storyText.innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+        
         choicesContainer.innerHTML = '';
 
         for (const [choice, info] of Object.entries(gameData[state].choices)) {
