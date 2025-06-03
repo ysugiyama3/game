@@ -160,8 +160,7 @@ function renderState(state) {
             sessionStorage.clear();
         }
         
-        storyText.innerHTML = gameData[state].text; /* storyText.textContent = gameData[state].text; */
-        storyText.innerHTML = storyText.innerHTML.replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+        storyText.textContent = gameData[state].text;
 
         choicesContainer.innerHTML = '';
 
