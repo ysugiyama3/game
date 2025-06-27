@@ -67,13 +67,13 @@ const gameData = {
         "answer" : "",
 "choices": {
             "https://yale.ezproxy.org/login?url=": [8,["Garlic"]],
-            "https://yale.oclc.org/login?url=": [8,["Green Bean", "Bok Choy", "Pumpkin"]],
+            "https://www.oclc.org/yalelogin?url=": [8,["Green Bean", "Bok Choy", "Pumpkin"]],
             "https://yale.idm.oclc.org/login?url=": [8,["Leek", "Carrot"]],
-            "https://search.library.yale.edu/login?url=": [8,["Carrot"]]
+            "https://ezproxy.yale.library.edu/login?url=": [8,["Carrot"]]
         }
     },
     "8": {
-        "text": "The YUL EZProxy Prefix is https://yale.idm.oclc.org/login?url=. The prefix is used with a link to a resource that allows remote access through IP authentication. For example, Yale’s proxied link to JSTOR is https://yale.idm.oclc.org/login?url=https://www.jstor.org/search. Visit https://guides.library.yale.edu/ezproxy/atyul to learn more about EZProxy",
+        "text": "The YUL EZProxy Prefix is https://yale.idm.oclc.org/login?url=. The prefix is used with a link to a resource that allows remote access through IP authentication. <a href='https://guides.library.yale.edu/ezproxy/atyul' target='_blank'>here</a> to learn more about EZProxy",
         "image" : "smaller_images/7.png",
         "answer" : "https://yale.idm.oclc.org/login?url=",
 "choices": {
@@ -85,18 +85,18 @@ const gameData = {
         "text": "To which websites/apps can current faculty, student, and staff sign up for a free digital subscription?",
         "image" : "smaller_images/9.png",
         "answer" : "",
-"choices": {
-            "Economist (www.economist.com)": [10,["Garlic"]],
+"choices": {            
             "Financial Times (www.ft.com)": [10,["Green Bean", "Bok Choy", "Pumpkin"]],
             "New York Times (www.nytimes.com)": [10,["Leek", "Carrot"]],
             "The Atlantic (www.theatlantic.com)": [10,["Carrot"]],
-            "Wall street Journal (www.wsj.com)": [10,["Garlic"]],
+            "The Economist (www.economist.com)": [10,["Garlic"]],
+            "Wall Street Journal (www.wsj.com)": [10,["Garlic"]],
             "Washington Post (www.washingtonpost.com)": [10,["Green Bean", "Bok Choy", "Pumpkin"]],
             "All of the above": [10,["Jalapeno","Bok Choy"]]
         }
     },
     "10": {
-        "text": "Yale offers current faculty, staff, and students access to several major newspapers and magazines. Use your @yale.edu email address to set up an account. Please note that authorized users do not include affiliates of Yale New Haven Hospital. For more info, check the links below:",
+        "text": "Yale offers current faculty, staff, and students access to several major newspapers and magazines. Use your @yale.edu email address to set up an account. Please note that authorized users do not include affiliates of Yale New Haven Hospital. Check the links below to create accounts:<br /><a href='https://library.yale.edu/eresources/access/access-financial-times' target='_blank'>Financial Times</a><br /><a href='https://library.yale.edu/eresources/access/access-nytcom' target='_blank'>New York Times</a>",
         "image" : "smaller_images/9.png",
         "answer" : "All of the above",
 "choices": {
@@ -104,13 +104,14 @@ const gameData = {
         }
     },
     "100": {
-        "text": "Last question! After a night of good rest, the next morning you:",
+        "text": "Last question! How often do you use e-resources licensed by Yale Library?",
         "image" : "smaller_images/another_day.png",
 "choices" : {
-            "Go to a cafe to finally read that book": [0,["Napa Cabbage", "Potato", "Carrot"]],
-            "Head to work, get that bag": [0,["Tomato", "Leek"]],
-            "Organize a community clean up day": [0,["Pumpkin", "Green Bean", "Garlic"]],
-            "Go on a veggie run": [0, ["Jalapeno", "Bok Choy"]]
+            "Always!": [0,["Napa Cabbage", "Potato", "Carrot"]],
+            "Often": [0,["Tomato", "Leek"]],
+            "Sometimes": [0,["Pumpkin", "Green Bean", "Garlic"]],
+            "Rarely": [0, ["Jalapeno", "Bok Choy"]],
+            "Never": [0,["Tomato", "Leek"]]
         } 
     }
 };
