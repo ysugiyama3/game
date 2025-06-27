@@ -14,7 +14,7 @@ const gameData = {
         }
     },
     "2": {
-        "text": "One of the first e-resource troubleshooting steps is to clear browser cache and cookies. If a user prefers not to clear their browser cache and cookies, they can use incognito or private mode as an alternative. Visit <a href='https://ask.library.yale.edu/faq/174879' target='_blank'>here</a> for more information.",
+        "text": "One of the first e-resource troubleshooting steps is to clear browser cache and cookies. If users prefer not to clear their browser cache and cookies, they can use incognito or private mode as an alternative. Visit <a href='https://ask.library.yale.edu/faq/174879' target='_blank'>here</a> for more information.",
         "image" : "smaller_images/2.png",
         "answer" : "Clear cache and cookies",
 "choices": {
@@ -53,7 +53,7 @@ const gameData = {
         }
     },
     "6": {
-        "text": "When users know their institution subscribes to a particular journal, they might visit the publisher’s website, such as hbr.org, directly instead of using the library catalog. However, most of Yale's journal subscriptions are accessed through aggregator platforms rather than directly from publishers. To ensure you locate the correct subscription platforms and obtain essential details such as access methods, user limits, content coverage, and embargo periods, always use the library discovery services.",
+        "text": "When users know their institution subscribes to a particular journal, they might visit the publisher’s website, such as hbr.org, directly instead of using the library catalog. However, most of Yale's journal subscriptions are accessed through aggregator platforms rather than directly from publishers. Always use the library catalog to ensure you locate the correct subscription platforms and obtain essential details such as access methods, user limits.",
         "image" : "smaller_images/5.png",
         "answer" : "Yale’s access to the current issue is through EBSCOhost's Business Source Complete, not through hbr.org",
 "choices": {
@@ -73,7 +73,7 @@ const gameData = {
         }
     },
     "8": {
-        "text": "The YUL EZProxy Prefix is https://yale.idm.oclc.org/login?url=. The prefix is used with a link to a resource that allows remote access through IP authentication. <a href='https://guides.library.yale.edu/ezproxy/atyul' target='_blank'>here</a> to learn more about EZProxy",
+        "text": "The YUL EZProxy Prefix is <strong>https://yale.idm.oclc.org/login?url=</strong>. The prefix is used with a link to a resource that allows remote access through IP authentication. Visit <a href='https://guides.library.yale.edu/ezproxy/atyul' target='_blank'>here</a> to learn more about EZProxy at Yale.",
         "image" : "smaller_images/7.png",
         "answer" : "https://yale.idm.oclc.org/login?url=",
 "choices": {
