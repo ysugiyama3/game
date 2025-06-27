@@ -53,9 +53,9 @@ const gameData = {
         }
     },
     "6": {
-        "text": "When users know their institution subscribes to a journal, they might visit the publisher’s website, such as hbr.org, instead of the library catalog or E-journal AZ list, leading to access issues and confusion. Most journal subscriptions are through aggregator platforms, not publishers. Using the library discovery services directs users to Yale's subscription platforms and provides essential details like access method, user limits, content coverage, and embargo periods. See a catalog record for Harvard Business Review",
+        "text": "When users know their institution subscribes to a particular journal, they might visit the publisher’s website, such as hbr.org, directly instead of using the library catalog. However, most of Yale's journal subscriptions are accessed through aggregator platforms rather than directly from publishers. To ensure you locate the correct subscription platforms and obtain essential details such as access methods, user limits, content coverage, and embargo periods, always use the library discovery services.",
         "image" : "smaller_images/5.png",
-        "answer" : "Yale’s access to the current issue is through EBSCOhost's Business Source Complete only",
+        "answer" : "Yale’s access to the current issue is through EBSCOhost's Business Source Complete, not through hbr.org",
 "choices": {
             "Continue": [7,[]]
         }
