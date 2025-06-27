@@ -14,7 +14,7 @@ const gameData = {
         }
     },
     "2": {
-        "text": "One of the first e-resource troubleshooting steps is to clear browser cache and cookies. If a user prefers not to clear their browser cache and cookies, they can use incognito or private mode as an alternative. Incognito or private mode does not store browsing history, cache, or cookies, so each session starts fresh. Visit <a href='https://ask.library.yale.edu/faq/174879' target='_blank'>here</a> for more information.",
+        "text": "One of the first e-resource troubleshooting steps is to clear browser cache and cookies. If a user prefers not to clear their browser cache and cookies, they can use incognito or private mode as an alternative. Visit <a href='https://ask.library.yale.edu/faq/174879' target='_blank'>here</a> for more information.",
         "image" : "smaller_images/2.png",
         "answer" : "Clear cache and cookies",
 "choices": {
@@ -34,8 +34,8 @@ const gameData = {
         }
     },
     "4": {
-        "text": "Eureka.cc is an aggregator database of Canadian and European newspapers and other publications. Access is limited to 3 users at a time. When the user tried to access the resource, the limit may have been reached, and there may have been no available sessions. The problem should be resolved once other users log off.",
-        "image" : "smaller_images/3.png",
+        "text": "<a href='https://library.yale.edu/eresources/access/access-eurekacc' target='_blank'>Eureka.cc</a> is an aggregator database of Canadian and European newspapers and other publications. Access is limited to 3 users at a time. When the user tried to access the resource, the limit may have been reached and there may have been no available sessions. The problem should be resolved once other users log off.",
+        "image" : "smaller_images/4.png",
         "answer" : "All of the above",
 "choices": {
             "Continue": [5,[]]
@@ -48,7 +48,7 @@ const gameData = {
         "answer" : "",
 "choices": {
             "hbr.org is temporarily unavailable due to site upgrade": [6,["Garlic"]],
-            "Yale’s access to the current issue is through EBSCOhost's Business Source Complete only": [6,["Green Bean", "Bok Choy", "Pumpkin"]],
+            "Yale’s access to the current issue is through EBSCOhost's Business Source Complete, not through hbr.org": [6,["Green Bean", "Bok Choy", "Pumpkin"]],
             "Yale does not have access to Harvard Business Review at all": [6,["Leek", "Carrot"]]
         }
     },
