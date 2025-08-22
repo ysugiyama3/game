@@ -133,6 +133,9 @@ const personalities = {
 let currentState = 1;
 
 function renderState(state) {
+    // Scroll to top of page when rendering new state
+    window.scrollTo(0, 0);
+    
     const resultText = document.getElementById('result-text');
     const storyText = document.getElementById('story-text');
     const storyImage = document.getElementById('story-image');
@@ -143,43 +146,55 @@ function renderState(state) {
     let retrievedResponse = sessionStorage.getItem("response"); 
     console.log(retrievedResponse); 
     
+    // Update the page content immediately, regardless of image loading
+    if (retrievedResponse === answer) {
+        resultText.textContent = "Correct!";
+        sessionStorage.clear();
+    } else if (!answer) {
+        resultText.innerHTML = "";
+        sessionStorage.clear();
+    } else {
+        resultText.textContent = "Incorrect.";
+        sessionStorage.clear();
+    }
     
-    const img = new Image();
-    img.src = gameData[state].image;
+    storyText.innerHTML = gameData[state].text;
+    storyText.innerHTML = storyText.innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+    
+    choicesContainer.innerHTML = '';
 
-    img.onload = () => {
-        storyImage.src = img.src;
-
-        if (retrievedResponse === answer) {
-            resultText.textContent = "Correct!";
-            sessionStorage.clear();
-        } else if (!answer) {
-            resultText.innerHTML = "";
-            sessionStorage.clear();
-        } else {
-            resultText.textContent = "Incorrect.";
-            sessionStorage.clear();
-        }
+    for (const [choice, info] of Object.entries(gameData[state].choices)) {
+        const button = document.createElement('button');
+        button.textContent = choice;
+        button.className = 'choice-button';
+        let nextState = info[0];
+        button.onclick = () => {
+            sessionStorage.setItem("response", choice);
+            changeState(nextState, info[1]);
+        }                    
+        choicesContainer.appendChild(button);
+    }
+    
+    // Handle image loading separately - page works even if image fails
+    if (gameData[state].image) {
+        const img = new Image();
+        img.src = gameData[state].image;
         
-        storyText.innerHTML = gameData[state].text; /* storyText.textContent = gameData[state].text; */
-        storyText.innerHTML = storyText.innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+        img.onload = () => {
+            storyImage.src = img.src;
+            storyImage.style.display = 'block';
+        };
         
-        choicesContainer.innerHTML = '';
-
-        for (const [choice, info] of Object.entries(gameData[state].choices)) {
-            const button = document.createElement('button');
-            button.textContent = choice;
-            button.className = 'choice-button';
-            let nextState = info[0];
-            button.onclick = () => {
-                sessionStorage.setItem("response", choice);
-                changeState(nextState, info[1]); /*each time you change state you update the personalities dictionary*/
-            }                    
-            choicesContainer.appendChild(button);
-        }
-    };
+        img.onerror = () => {
+            // Hide image if it fails to load, or show a placeholder
+            storyImage.style.display = 'none';
+            console.warn(`Failed to load image: ${gameData[state].image}`);
+        };
+    } else {
+        // No image specified, hide the image element
+        storyImage.style.display = 'none';
+    }
 }
-
 
 function changeState(newState, selectedPersonalities) { 
     // console.log(personalities); 
@@ -245,6 +260,7 @@ function revealMostSelectedVegetable() {
 
 
 function startGame() {
+    window.scrollTo(0, 0);
     document.querySelector('.title').style.display = 'none';
     document.getElementById('homescreen').style.display = 'none';
     document.querySelector('.start-button').style.display = 'none';
