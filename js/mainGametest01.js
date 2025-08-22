@@ -177,22 +177,29 @@ function renderState(state) {
     
     // Handle image loading separately - page works even if image fails
     if (gameData[state].image) {
+        // Hide image while loading to prevent flicker
+        storyImage.style.opacity = '0';
+        
         const img = new Image();
         img.src = gameData[state].image;
         
         img.onload = () => {
             storyImage.src = img.src;
             storyImage.style.display = 'block';
+            // Fade in the new image smoothly
+            storyImage.style.opacity = '1';
         };
         
         img.onerror = () => {
             // Hide image if it fails to load, or show a placeholder
             storyImage.style.display = 'none';
+            storyImage.style.opacity = '1';
             console.warn(`Failed to load image: ${gameData[state].image}`);
         };
     } else {
         // No image specified, hide the image element
         storyImage.style.display = 'none';
+        storyImage.style.opacity = '1';
     }
 }
 
