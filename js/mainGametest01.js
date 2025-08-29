@@ -53,8 +53,8 @@ const gameData = {
         }
     },
     "6": {
-        "text": "When users know their institution subscribes to a particular journal, they might visit the publisher’s website, such as hbr.org, directly instead of using the library catalog. However, most of Yale's journal subscriptions are accessed through aggregator platforms rather than directly from publishers. Always use the library catalog to ensure you locate the correct subscription platforms and obtain essential details such as access methods, user limits.",
-        "image" : "smaller_images/5.png",
+        "text": "When users know their institution subscribes to a particular journal, they might visit the publisher’s website, such as hbr.org, directly instead of using the library catalog. However, most of Yale's journal subscriptions are accessed through aggregator platforms rather than directly from publishers. Always use the library catalog to ensure you locate the correct subscription platforms and obtain essential details such as access methods, simultaneous user limit, content coverage, and embargo periods.",
+        "image" : "",
         "answer" : "Yale’s access to the current issue is through EBSCOhost's Business Source Complete, not through hbr.org",
 "choices": {
             "Continue": [7,[]]
