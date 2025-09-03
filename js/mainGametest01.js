@@ -325,6 +325,7 @@ function revealMostSelectedVegetable() {
 function startGame() {
     window.scrollTo(0, 0);
     document.querySelector('.title').style.display = 'none';
+    document.querySelector('.subtitle').style.display = 'none';
     document.getElementById('homescreen').style.display = 'none';
     document.querySelector('.start-button').style.display = 'none';
     document.getElementById('game-container').style.display = 'block';
