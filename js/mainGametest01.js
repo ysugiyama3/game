@@ -3,7 +3,7 @@
 const gameData = {
     "1": {
         "topic" : "Browser issue",
-        "text" : "A student has trouble accessing an ebook from their residential college. They get routed to the 404 error message. But you cannot replicate the problem. What would you suggest them to do first?",
+        "text" : "A student has trouble accessing an ebook from their residential college. They get the 404 error message. But you cannot replicate the problem. What would you suggest them to do first?",
         "image" : "smaller_images/1.png",
         "answer" : "",
 "choices": {    
@@ -14,7 +14,7 @@ const gameData = {
         }
     },
     "2": {
-        "text": "One of the first e-resource troubleshooting steps is to clear browser cache and cookies. If users prefer not to clear their browser cache and cookies, they can use incognito or private mode as an alternative. Visit <a href='https://ask.library.yale.edu/faq/174879' target='_blank'>here</a> for more information.",
+        "text": "One of the first e-resource troubleshooting steps is to clear browser cache and cookies. If users prefer not to do it, they can use an incognito or private window as an alternative. Visit <a href='https://ask.library.yale.edu/faq/174879' target='_blank'>here</a> for more information.",
         "image" : "smaller_images/2.png",
         "answer" : "Clear cache and cookies",
 "choices": {
@@ -148,13 +148,13 @@ function renderState(state) {
     
     // Update the page content immediately, regardless of image loading
     if (retrievedResponse === answer) {
-        resultText.textContent = "Correct!";
+        resultText.textContent = "CORRECT!";
         sessionStorage.clear();
     } else if (!answer) {
         resultText.innerHTML = "";
         sessionStorage.clear();
     } else {
-        resultText.textContent = "Incorrect.";
+        resultText.textContent = "INCORRECT.";
         sessionStorage.clear();
     }
     
