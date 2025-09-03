@@ -23,7 +23,7 @@ const gameData = {
     },
     "3": {
         "topic" : "Simultaneous user limit",
-        "text": "A professor has difficulty accessing a French newspaper, Le Monde, though the Eureka.cc database. But you cannot replicate the problem. This database is known to be:",
+        "text": "A professor has difficulty accessing a French newspaper, Le Monde, through the Eureka.cc database. But you cannot replicate the problem. This database is known to be:",
         "image" : "smaller_images/3.png",
         "answer" : "",
 "choices": {
@@ -48,32 +48,31 @@ const gameData = {
         "answer" : "",
 "choices": {
             "hbr.org is temporarily unavailable due to site upgrade": [6,["Garlic"]],
-            "Yale’s access to the current issue is through EBSCOhost's Business Source Complete, not through hbr.org": [6,["Green Bean", "Bok Choy", "Pumpkin"]],
+            "Yale’s access to the current issue is through EBSCOhost Business Source Complete, not through hbr.org": [6,["Green Bean", "Bok Choy", "Pumpkin"]],
             "Yale does not have access to Harvard Business Review at all": [6,["Leek", "Carrot"]]
         }
     },
     "6": {
-        "text": "When users know their institution subscribes to a particular journal, they might visit the publisher’s website, such as hbr.org, directly instead of using the library catalog. However, most of Yale's journal subscriptions are accessed through aggregator platforms rather than directly from publishers. Always use the library catalog to ensure you locate the correct subscription platforms and obtain essential details such as access methods, simultaneous user limit, content coverage, and embargo periods.",
+        "text": "When users know their institution subscribes to a particular journal, they might directly visit the publisher’s website, such as hbr.org, instead of using the library catalog. But most of Yale's journal subscriptions are accessed through aggregator platforms rather than directly from publishers. Always use the library catalog to ensure you locate the correct subscription platforms and obtain essential details such as access methods, simultaneous user limit, content coverage, and embargo periods.",
         "image" : "",
-        "answer" : "Yale’s access to the current issue is through EBSCOhost's Business Source Complete, not through hbr.org",
+        "answer" : "Yale’s access to the current issue is through EBSCOhost Business Source Complete, not through hbr.org",
 "choices": {
             "Continue": [7,[]]
         }
     },
     "7": {
         "topic" : "EZProxy",
-        "text": "Which is the correct YUL EZProxy prefix?",
+        "text": "Which is the correct EZProxy prefix for Yale Library?",
         "image" : "smaller_images/7.png",
         "answer" : "",
 "choices": {
             "https://yale.ezproxy.org/login?url=": [8,["Garlic"]],
-            "https://www.oclc.org/yalelogin?url=": [8,["Green Bean", "Bok Choy", "Pumpkin"]],
-            "https://yale.idm.oclc.org/login?url=": [8,["Leek", "Carrot"]],
-            "https://ezproxy.yale.library.edu/login?url=": [8,["Carrot"]]
+            "https://yale.library.edu/login?url=": [8,["Green Bean", "Bok Choy", "Pumpkin"]],
+            "https://yale.idm.oclc.org/login?url=": [8,["Leek", "Carrot"]]
         }
     },
     "8": {
-        "text": "The YUL EZProxy Prefix is <strong>https://yale.idm.oclc.org/login?url=</strong>. The prefix is used with a link to a resource that allows remote access through IP authentication. Visit <a href='https://guides.library.yale.edu/ezproxy/atyul' target='_blank'>here</a> to learn more about EZProxy at Yale.",
+        "text": "The EZProxy prefix for Yale Library is <strong>https://yale.idm.oclc.org/login?url=</strong>. The prefix is used with a resource link that allows remote access through IP authentication. Visit <a href='https://guides.library.yale.edu/ezproxy' target='_blank'>here</a> to learn more about EZProxy.",
         "image" : "smaller_images/7.png",
         "answer" : "https://yale.idm.oclc.org/login?url=",
 "choices": {
@@ -81,23 +80,80 @@ const gameData = {
         }
     },
     "9": {
+        "topic" : "Access Method",
+        "text": "What is the access method for Kanopy?",
+        "image" : "",
+        "answer" : "",
+"choices": {            
+            "Username/Password": [10,["Carrot"]],
+            "Internet Protocol (IP) address": [10,["Carrot"]],
+            "Single Sign-On (SSO)": [10,["Garlic"]]
+        }
+    },
+    "10": {
+        "text": "Kanopy is accessible through IP authentication, allowing users to access streaming videos if their device is connected from one of Yale's approved IP addresses via the YaleSecure network, EZproxy, or VPN. While IP authentication is the most commonly used access method, Yale Library also employs other methods such as Username/Password and Single Sign-On (SSO) depending on the specific e-resources.",
+        "image" : "",
+        "answer" : "Internet Protocol (IP) address",
+"choices": {
+            "Continue": [11,[]]
+        }
+    },    
+    "11": {
+        "topic" : "E-book Access",
+        "text": "O’Reilly Technical Books (formerly Safari) are unlimited access.",
+        "image" : "",
+        "answer" : "",
+"choices": {            
+            "True": [12,["Carrot"]],
+            "False": [12,["Garlic"]]
+        }
+    },
+    "12": {
+        "text": "O’Reilly titles are unlimited access. They are subscriptions only, so they could disappear from the platform without warning. See the <a href='https://guides.library.yale.edu/eraccess' target='_blank'>list of E-book suppliers</a>",
+        "image" : "",
+        "answer" : "True",
+"choices": {
+            "Continue": [13,[]]
+        }
+    },
+    "13": {
+        "topic" : "Patron affiliation",
+        "text": "A Harvard University student can access many of Yale’s licensed e-resources if they use the followings EXCEPT:",
+        "image" : "",
+        "answer" : "",
+"choices": {            
+            "An e-resource link which includes the Yale Library EZProxy prefix": [14,["Carrot"]],     
+            "A public workstation or other computer connected to Yale’s ethernet": [14,["Carrot"]],
+            "A device that is connected to the YaleSecure wi-fi network": [14,["Garlic"]],
+            "A device that is connected to the Eduroam wi-fi network": [14,["Carrot"]]    
+        }
+    },
+    "14": {
+        "text": "Harvard University students cannot access Yale’s licensed e-resources through Yale's proxied link. This is because proxied links prompt users to authenticate using their Yale NetID and password, which Harvard University students do not possess. However, Harvard University students can access many of Yale’s licensed e-resources on the Yale campus by using a public workstation or another computer connected to Yale’s ethernet, or by connecting their device to the YaleSecure or Eduroam wi-fi networks. For more details on connecting from on campus, visit <a href='https://library.yale.edu/find-request-and-use/use/using-e-resources/connecting-e-resources' target='_blank'>here</a>",
+        "image" : "",
+        "answer" : "An e-resource link which includes the Yale Library EZProxy prefix",
+"choices": {
+            "Continue": [15,[]]
+        }
+    },   
+    "15": {
         "topic" : "Major newspapers/magazines",
         "text": "To which websites/apps can current faculty, student, and staff sign up for a free digital subscription?",
         "image" : "smaller_images/9.png",
         "answer" : "",
 "choices": {            
-            "Financial Times (www.ft.com)": [10,["Green Bean", "Bok Choy", "Pumpkin"]],
-            "New York Times (www.nytimes.com)": [10,["Leek", "Carrot"]],
-            "The Atlantic (www.theatlantic.com)": [10,["Carrot"]],
-            "The Economist (www.economist.com)": [10,["Garlic"]],
-            "Wall Street Journal (www.wsj.com)": [10,["Garlic"]],
-            "Washington Post (www.washingtonpost.com)": [10,["Green Bean", "Bok Choy", "Pumpkin"]],
-            "All of the above": [10,["Jalapeno","Bok Choy"]]
+            "The Atlantic (www.theatlantic.com)": [16,["Carrot"]],
+            "The Economist (www.economist.com)": [16,["Garlic"]],        
+            "Financial Times (www.ft.com)": [16,["Green Bean", "Bok Choy", "Pumpkin"]],
+            "New York Times (www.nytimes.com)": [16,["Leek", "Carrot"]],
+            "Wall Street Journal (www.wsj.com)": [16,["Garlic"]],
+            "Washington Post (www.washingtonpost.com)": [16,["Green Bean", "Bok Choy", "Pumpkin"]],
+            "All of the above": [16,["Jalapeno","Bok Choy"]]
         }
     },
-    "10": {
-        "text": "Yale offers current faculty, staff, and students access to several major newspapers and magazines. Use your @yale.edu email address to set up an account. Please note that authorized users do not include affiliates of Yale New Haven Hospital. Check the links below to create accounts:<br /><a href='https://library.yale.edu/eresources/access/access-financial-times' target='_blank'>Financial Times</a><br /><a href='https://library.yale.edu/eresources/access/access-nytcom' target='_blank'>New York Times</a><br /><a href='https://library.yale.edu/eresources/access/access-economist' target='_blank'>The Economist</a><br /><a href='https://library.yale.edu/eresources/access/access-the-atlantic' target='_blank'>The Atlantic</a><br /><a href='https://library.yale.edu/eresources/access/access-wall-street-journal' target='_blank'>Wall Street Journal</a><br /><a href='https://library.yale.edu/eresources/access/access-washington-post' target='_blank'>Washington Post</a>",
-        "image" : "smaller_images/9.png",
+    "16": {
+        "text": "Yale Library offers current faculty, staff, and students access to several major newspapers and magazines. Use your @yale.edu email address to set up a personal account. Please note that authorized users do not include affiliates of Yale New Haven Hospital. Check the links below to create accounts:<br /><a href='https://library.yale.edu/eresources/access/access-the-atlantic' target='_blank'>The Atlantic</a><br /><a href='https://library.yale.edu/eresources/access/access-economist' target='_blank'>The Economist</a><br /><a href='https://library.yale.edu/eresources/access/access-financial-times' target='_blank'>Financial Times</a><br /><a href='https://library.yale.edu/eresources/access/access-nytcom' target='_blank'>New York Times</a><br /><a href='https://library.yale.edu/eresources/access/access-wall-street-journal' target='_blank'>Wall Street Journal</a><br /><a href='https://library.yale.edu/eresources/access/access-washington-post' target='_blank'>Washington Post</a>",
+        "image" : "",
         "answer" : "All of the above",
 "choices": {
             "Continue": [100,[]]
@@ -248,7 +304,7 @@ function revealMostSelectedVegetable() {
         storyImage.style.display = 'none';
         choicesContainer.style.display = 'none';
     
-        text.textContent = "Drumroll... here is your Veggie ID! Don't lose it! (Right click or hold the image to save)";
+        text.textContent = "Drumroll... here is your E-Resource ID! Thank you for playing the game!";
         text.appendChild(img);
 
         // Share button functionality
