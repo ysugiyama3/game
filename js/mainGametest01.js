@@ -68,12 +68,13 @@ const gameData = {
 "choices": {
             "https://yale.ezproxy.org/login?url=": [8,["Garlic"]],
             "https://yale.library.edu/login?url=": [8,["Green Bean", "Bok Choy", "Pumpkin"]],
-            "https://yale.idm.oclc.org/login?url=": [8,["Leek", "Carrot"]]
+            "https://yale.idm.oclc.org/login?url=": [8,["Leek", "Carrot"]],
+            "https://yale.ezproxy.oclc.org/login?url=": [8,["Green Bean", "Bok Choy", "Pumpkin"]]
         }
     },
     "8": {
         "text": "The EZProxy prefix for Yale Library is <strong>https://yale.idm.oclc.org/login?url=</strong>. The prefix is used with a resource link that allows remote access through IP authentication. Visit <a href='https://guides.library.yale.edu/ezproxy' target='_blank'>here</a> to learn more about EZProxy.",
-        "image" : "smaller_images/7.png",
+        "image" : "",
         "answer" : "https://yale.idm.oclc.org/login?url=",
 "choices": {
             "Continue": [9,[]]
@@ -124,12 +125,11 @@ const gameData = {
 "choices": {            
             "An e-resource link which includes the Yale Library EZProxy prefix": [14,["Carrot"]],     
             "A public workstation or other computer connected to Yale’s ethernet": [14,["Carrot"]],
-            "A device that is connected to the YaleSecure wi-fi network": [14,["Garlic"]],
             "A device that is connected to the Eduroam wi-fi network": [14,["Carrot"]]    
         }
     },
     "14": {
-        "text": "Harvard University students cannot access Yale’s licensed e-resources through Yale's proxied link. This is because proxied links prompt users to authenticate using their Yale NetID and password, which Harvard University students do not possess. However, Harvard University students can access many of Yale’s licensed e-resources on the Yale campus by using a public workstation or another computer connected to Yale’s ethernet, or by connecting their device to the YaleSecure or Eduroam wi-fi networks. For more details on connecting from on campus, visit <a href='https://library.yale.edu/find-request-and-use/use/using-e-resources/connecting-e-resources' target='_blank'>here</a>",
+        "text": "Harvard University students cannot access Yale’s licensed e-resources through Yale's proxied link. This is because proxied links prompt users to authenticate using their Yale NetID and password, which Harvard University students do not possess. However, Harvard University students can access many of Yale’s licensed e-resources on the Yale campus by using a public workstation or another computer connected to Yale’s ethernet, or by connecting their device to the Eduroam wi-fi network. For more details on connecting from on campus, visit <a href='https://library.yale.edu/find-request-and-use/use/using-e-resources/connecting-e-resources' target='_blank'>here</a>",
         "image" : "",
         "answer" : "An e-resource link which includes the Yale Library EZProxy prefix",
 "choices": {
