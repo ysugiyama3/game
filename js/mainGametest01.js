@@ -3,7 +3,7 @@
 const gameData = {
     "1": {
         "topic" : "Browser issue",
-        "text" : "A student has trouble accessing an ebook from their residential college. They get the 404 error message. But you cannot replicate the problem. What would you suggest them to do first?",
+        "text" : "A student is encountering a 404 error when trying to access an ebook from their residential college, but you are unable to replicate the issue. What would you recommend they do first?",
         "image" : "smaller_images/1.png",
         "answer" : "",
 "choices": {    
@@ -14,7 +14,7 @@ const gameData = {
         }
     },
     "2": {
-        "text": "One of the first e-resource troubleshooting steps is to clear browser cache and cookies. If users prefer not to do it, they can use an incognito or private window as an alternative. Visit <a href='https://ask.library.yale.edu/faq/174879' target='_blank'>here</a> for more information.",
+        "text": "One of the first e-resource troubleshooting steps is to clear the browser's cache and cookies. If users prefer not to do this, they can alternatively use an incognito or private window. For more information, please visit <a href='https://ask.library.yale.edu/faq/174879' target='_blank'>here</a>.",
         "image" : "smaller_images/2.png",
         "answer" : "Clear cache and cookies",
 "choices": {
@@ -23,7 +23,7 @@ const gameData = {
     },
     "3": {
         "topic" : "Simultaneous user limit",
-        "text": "A professor has difficulty accessing a French newspaper, Le Monde, through the Eureka.cc database. But you cannot replicate the problem. This database is known to be:",
+        "text": "A professor has trouble accessing a French newspaper, Le Monde, through the Eureka.cc database. But you cannot replicate the problem. This database is known to be:",
         "image" : "smaller_images/3.png",
         "answer" : "",
 "choices": {
@@ -34,7 +34,7 @@ const gameData = {
         }
     },
     "4": {
-        "text": "<a href='https://library.yale.edu/eresources/access/access-eurekacc' target='_blank'>Eureka.cc</a> is an aggregator database of Canadian and European newspapers and other publications. Access is limited to 3 users at a time. When the user tried to access the resource, the limit may have been reached and there may have been no available sessions. The problem should be resolved once other users log off.",
+        "text": "<a href='https://library.yale.edu/eresources/access/access-eurekacc' target='_blank'>Eureka.cc</a> is an aggregator of Canadian and European newspapers and publications, with access limited to 3 users at a time. The user may have encountered the access limit if all sessions were occupied. The issue should resolve once other users log off.",
         "image" : "smaller_images/4.png",
         "answer" : "All of the above",
 "choices": {
