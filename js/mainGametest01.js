@@ -87,21 +87,21 @@ const gameData = {
         "answer" : "",
 "choices": {            
             "Username/Password": [10,["Carrot"]],
-            "Internet Protocol (IP) address": [10,["Carrot"]],
+            "Internet Protocol (IP) authentication": [10,["Carrot"]],
             "Single Sign-On (SSO)": [10,["Garlic"]]
         }
     },
     "10": {
-        "text": "Kanopy is accessible through IP authentication, allowing users to access streaming videos if their device is connected from one of Yale's approved IP addresses via the YaleSecure network, EZproxy, or VPN. While IP authentication is the most commonly used access method, Yale Library also employs other methods such as Username/Password and Single Sign-On (SSO) depending on the specific e-resources.",
+        "text": "<a href='https://search.library.yale.edu/databases/99127780633408651' target='_blank'>Kanopy</a> is accessible through IP authentication, allowing users to access streaming videos if their device is connected from one of Yale's approved IP addresses. While IP authentication is the most common access method, Yale Library also uses Username/Password and Single Sign-On (SSO) for specific e-resources.",
         "image" : "",
-        "answer" : "Internet Protocol (IP) address",
+        "answer" : "Internet Protocol (IP) authentication",
 "choices": {
             "Continue": [11,[]]
         }
     },    
     "11": {
         "topic" : "E-book Access",
-        "text": "O’Reilly Technical Books (formerly Safari) are unlimited access.",
+        "text": "O’Reilly books (formerly Safari books) are unlimited access.",
         "image" : "",
         "answer" : "",
 "choices": {            
@@ -110,7 +110,7 @@ const gameData = {
         }
     },
     "12": {
-        "text": "O’Reilly titles are unlimited access. They are subscriptions only, so they could disappear from the platform without warning. See the <a href='https://guides.library.yale.edu/eraccess' target='_blank'>list of E-book suppliers</a>",
+        "text": "<a href='https://search.library.yale.edu/databases/9964733853408651' target='_blank'>O’Reilly</a> titles offer unlimited access. Please note they are part of a subscription package, meaning libraries do not have control over the content. Titles may be added or removed throughout the year without warning.",
         "image" : "",
         "answer" : "True",
 "choices": {
@@ -119,19 +119,19 @@ const gameData = {
     },
     "13": {
         "topic" : "Patron affiliation",
-        "text": "A Harvard University student can access many of Yale’s licensed e-resources if they use the followings EXCEPT:",
+        "text": "Which of the following methods would NOT allow a Harvard University student to access many of Yale's licensed e-resources?",
         "image" : "",
         "answer" : "",
 "choices": {            
-            "An e-resource link which includes the Yale Library EZProxy prefix": [14,["Carrot"]],     
-            "A public workstation or other computer connected to Yale’s ethernet": [14,["Carrot"]],
-            "A device that is connected to the Eduroam wi-fi network": [14,["Carrot"]]    
+            "An e-resource link that includes Yale's EZProxy prefix while on Harvard's campus": [14,["Carrot"]],        
+            "A public workstation or other computer connected to Yale's ethernet on Yale's campus": [14,["Carrot"]],
+            "A device connected to the Eduroam Wi-Fi network on Yale's campus": [14,["Carrot"]]    
         }
     },
     "14": {
-        "text": "Harvard University students cannot access Yale’s licensed e-resources through Yale's proxied link. This is because proxied links prompt users to authenticate using their Yale NetID and password, which Harvard University students do not possess. However, Harvard University students can access many of Yale’s licensed e-resources on the Yale campus by using a public workstation or another computer connected to Yale’s ethernet, or by connecting their device to the Eduroam wi-fi network. For more details on connecting from on campus, visit <a href='https://library.yale.edu/find-request-and-use/use/using-e-resources/connecting-e-resources' target='_blank'>here</a>",
+        "text": "Harvard University students cannot access Yale's licensed e-resources through Yale's proxied link from Harvard's campus, as these links require authentication with a Yale NetID and password, which they do not have. However, they can access many of Yale's licensed e-resources while on Yale's campus by using a public workstation or another computer connected to Yale's ethernet, or by connecting their device to the Eduroam Wi-Fi network, as Harvard is an Eduroam participating institution. For more details on connecting from on campus, visit <a href='https://library.yale.edu/find-request-and-use/use/using-e-resources/connecting-e-resources' target='_blank'>here</a>",
         "image" : "",
-        "answer" : "An e-resource link which includes the Yale Library EZProxy prefix",
+        "answer" : "An e-resource link that includes Yale's EZProxy prefix while on Harvard's campus",
 "choices": {
             "Continue": [15,[]]
         }
@@ -152,7 +152,7 @@ const gameData = {
         }
     },
     "16": {
-        "text": "Yale Library offers current faculty, staff, and students access to several major newspapers and magazines. Use your @yale.edu email address to set up a personal account. Please note that authorized users do not include affiliates of Yale New Haven Hospital. Check the links below to create accounts:<br /><a href='https://library.yale.edu/eresources/access/access-the-atlantic' target='_blank'>The Atlantic</a><br /><a href='https://library.yale.edu/eresources/access/access-economist' target='_blank'>The Economist</a><br /><a href='https://library.yale.edu/eresources/access/access-financial-times' target='_blank'>Financial Times</a><br /><a href='https://library.yale.edu/eresources/access/access-nytcom' target='_blank'>New York Times</a><br /><a href='https://library.yale.edu/eresources/access/access-wall-street-journal' target='_blank'>Wall Street Journal</a><br /><a href='https://library.yale.edu/eresources/access/access-washington-post' target='_blank'>Washington Post</a>",
+        "text": "Yale Library offers current faculty, staff, and students access to many major newspapers and magazines. Use your @yale.edu email address to set up a personal account. Please note that authorized users do not include affiliates of Yale New Haven Hospital. Check the links below to create accounts:<br /><a href='https://library.yale.edu/eresources/access/access-the-atlantic' target='_blank'>The Atlantic</a><br /><a href='https://library.yale.edu/eresources/access/access-economist' target='_blank'>The Economist</a><br /><a href='https://library.yale.edu/eresources/access/access-financial-times' target='_blank'>Financial Times</a><br /><a href='https://library.yale.edu/eresources/access/access-nytcom' target='_blank'>New York Times</a><br /><a href='https://library.yale.edu/eresources/access/access-wall-street-journal' target='_blank'>Wall Street Journal</a><br /><a href='https://library.yale.edu/eresources/access/access-washington-post' target='_blank'>Washington Post</a>",
         "image" : "",
         "answer" : "All of the above",
 "choices": {
