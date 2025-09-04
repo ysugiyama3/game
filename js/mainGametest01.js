@@ -35,7 +35,7 @@ const gameData = {
     },
     "4": {
         "text": "<a href='https://library.yale.edu/eresources/access/access-eurekacc' target='_blank'>Eureka.cc</a> is an aggregator of Canadian and European newspapers and publications, with access limited to 3 users at a time. The user may have encountered the access limit if all sessions were occupied. The issue should resolve once other users log off.",
-        "image" : "smaller_images/4.png",
+        "image" : "smaller_images/Eureka.png",
         "answer" : "All of the above",
 "choices": {
             "Continue": [5,[]]
@@ -54,7 +54,7 @@ const gameData = {
     },
     "6": {
         "text": "When users know their institution subscribes to a particular journal, they might directly visit the publisher’s website, such as hbr.org, instead of using the library catalog. But most of Yale's journal subscriptions are accessed through aggregator platforms rather than directly from publishers. Always use the library catalog to ensure you locate the correct subscription platforms and obtain essential details such as access methods, simultaneous user limit, content coverage, and embargo periods.",
-        "image" : "",
+        "image" : "smaller_images/HBR.png",
         "answer" : "Yale’s access to the current issue is through EBSCOhost Business Source Complete, not through hbr.org",
 "choices": {
             "Continue": [7,[]]
@@ -74,7 +74,7 @@ const gameData = {
     },
     "8": {
         "text": "The EZProxy prefix for Yale Library is <strong>https://yale.idm.oclc.org/login?url=</strong>. The prefix is used with a resource link that allows remote access through IP authentication. Visit <a href='https://guides.library.yale.edu/ezproxy' target='_blank'>here</a> to learn more about EZProxy.",
-        "image" : "",
+        "image" : "smaller_images/EZProxy.png",
         "answer" : "https://yale.idm.oclc.org/login?url=",
 "choices": {
             "Continue": [9,[]]
@@ -83,7 +83,7 @@ const gameData = {
     "9": {
         "topic" : "Access Method",
         "text": "What is the access method for Kanopy?",
-        "image" : "",
+        "image" : "smaller_images/Kanopy.png",
         "answer" : "",
 "choices": {            
             "Username/Password": [10,["Carrot"]],
@@ -102,7 +102,7 @@ const gameData = {
     "11": {
         "topic" : "E-book Access",
         "text": "O’Reilly books (formerly Safari books) are unlimited access.",
-        "image" : "",
+        "image" : "smaller_images/OReilly.png",
         "answer" : "",
 "choices": {            
             "True": [12,["Carrot"]],
@@ -110,7 +110,7 @@ const gameData = {
         }
     },
     "12": {
-        "text": "<a href='https://search.library.yale.edu/databases/9964733853408651' target='_blank'>O’Reilly</a> titles offer unlimited access. Please note they are part of a subscription package, meaning libraries do not have control over the content. Titles may be added or removed throughout the year without warning.",
+        "text": "<a href='https://search.library.yale.edu/databases/9964733853408651' target='_blank'>O’Reilly</a> titles offer unlimited access. Please note they are part of a subscription package, meaning libraries do not have control over the content. Titles may be added or removed without warning.",
         "image" : "",
         "answer" : "True",
 "choices": {
@@ -161,7 +161,7 @@ const gameData = {
     },
     "100": {
         "text": "Last question! How often do you use e-resources licensed by Yale Library?",
-        "image" : "smaller_images/another_day.png",
+        "image" : "smaller_images/Articles.png",
 "choices" : {
             "Always!": [0,["Napa Cabbage", "Potato", "Carrot"]],
             "Often": [0,["Tomato", "Leek"]],
