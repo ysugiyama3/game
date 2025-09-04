@@ -120,7 +120,7 @@ const gameData = {
     "13": {
         "topic" : "Patron affiliation",
         "text": "Which of the following methods would NOT allow a Harvard University student to access many of Yale's licensed e-resources?",
-        "image" : "",
+        "image" : "smaller_images/Harvard.png",
         "answer" : "",
 "choices": {            
             "An e-resource link that includes Yale's EZProxy prefix while on Harvard's campus": [14,["Carrot"]],        
