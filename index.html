@@ -152,14 +152,22 @@
         }
         
         .responsive-image {
-            max-width: 70%; /* Adjust this percentage as needed - try 70%, 60%, etc. */
-            width: 80%; /* Forces the image to be 80% of container width */
+            width: 100%;
+            max-width: 100%; /* Default for mobile */
             height: auto;
             border-radius: 8px;
-            margin: 10px auto; /* Centers the image */
-            display: block; /* Ensures proper centering */
+            margin: 10px auto;
+            display: block;
         }
-
+        
+        /* Desktop view - apply 70% width for screens 768px and larger */
+        @media (min-width: 768px) {
+            .responsive-image {
+                width: 70%;
+                max-width: 70%;
+            }
+        }
+                
         /* Mobile-specific adjustments */
         @media (max-width: 767px) {
             .container {
