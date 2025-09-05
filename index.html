@@ -127,7 +127,7 @@
 
         .image-container {
             width: 100%;
-            max-width: 450px; /*500px;*/
+            max-width: 400px; /*500px;*/
             margin: 20px auto;
             padding: 0 10px;
         }
@@ -152,10 +152,12 @@
         }
         
         .responsive-image {
-            max-width: 100%;
+            max-width: 80%; /* Adjust this percentage as needed - try 70%, 60%, etc. */
+            width: 80%; /* Forces the image to be 80% of container width */
             height: auto;
             border-radius: 8px;
-            margin: 10px 0;
+            margin: 10px auto; /* Centers the image */
+            display: block; /* Ensures proper centering */
         }
 
         /* Mobile-specific adjustments */
