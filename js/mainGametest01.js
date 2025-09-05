@@ -73,7 +73,7 @@ const gameData = {
         }
     },
     "8": {
-        "text": "The EZProxy prefix for Yale Library is <strong>https://yale.idm.oclc.org/login?url=</strong>. The prefix is used with a resource link that allows remote access through IP authentication. Visit <a href='https://guides.library.yale.edu/ezproxy' target='_blank'>here</a> to learn more about EZProxy.",
+        "text": "The EZProxy prefix is used with a resource link that allows remote access through IP authentication. Visit <a href='https://guides.library.yale.edu/ezproxy' target='_blank'>here</a> to learn more about EZProxy.",
         "image" : "smaller_images/EZProxy.png",
         "answer" : "https://yale.idm.oclc.org/login?url=",
 "choices": {
