@@ -4,7 +4,7 @@ const gameData = {
     "1": {
         "topic" : "Browser issue",
         "text" : "A student is encountering a 404 error when trying to access an ebook from their residential college, but you are unable to replicate the issue. What would you recommend they do first?",
-        "image" : "smaller_images/1.png",
+        "image" : "smaller_images/NotFound.png",
         "answer" : "",
 "choices": {    
             "Reboot the laptop": [2,["Jalapeno","Bok Choy"]],
@@ -24,7 +24,7 @@ const gameData = {
     "3": {
         "topic" : "Simultaneous user limit",
         "text": "A professor has trouble accessing a French newspaper, Le Monde, through the Eureka.cc database. But you cannot replicate the problem. This database is known to be:",
-        "image" : "smaller_images/3.png",
+        "image" : "smaller_images/NoAccess.png",
         "answer" : "",
 "choices": {
             "Aggregator database": [4,["Garlic"]],
@@ -44,7 +44,7 @@ const gameData = {
     "5": {
         "topic" : "Not starting the search from the library site",
         "text": "A graduate student reported that they could not read full-text of the current issue of the Harvard Business Review magazine at https://hbr.org/magazine.",
-        "image" : "smaller_images/5.png",
+        "image" : "smaller_images/Paywall.png",
         "answer" : "",
 "choices": {
             "hbr.org is temporarily unavailable due to site upgrade": [6,["Garlic"]],
@@ -83,7 +83,7 @@ const gameData = {
     "9": {
         "topic" : "Access Method",
         "text": "What is the access method for Kanopy?",
-        "image" : "smaller_images/Kanopy.png",
+        "image" : "smaller_images/StreamingVideo.png",
         "answer" : "",
 "choices": {            
             "Username/Password": [10,["Carrot"]],
@@ -93,7 +93,7 @@ const gameData = {
     },
     "10": {
         "text": "<a href='https://search.library.yale.edu/databases/99127780633408651' target='_blank'>Kanopy</a> is accessible through IP authentication, allowing users to access streaming videos if their device is connected from one of Yale's approved IP addresses. While IP authentication is the most common access method, Yale Library also uses Username/Password and Single Sign-On (SSO) for specific e-resources.",
-        "image" : "",
+        "image" : "smaller_images/Kanopy.png",
         "answer" : "Internet Protocol (IP) authentication",
 "choices": {
             "Continue": [11,[]]
@@ -102,7 +102,7 @@ const gameData = {
     "11": {
         "topic" : "E-book Access",
         "text": "O’Reilly books (formerly Safari books) are unlimited access.",
-        "image" : "smaller_images/OReilly.png",
+        "image" : "smaller_images/ThreeUsers.png",
         "answer" : "",
 "choices": {            
             "True": [12,["Carrot"]],
@@ -111,7 +111,7 @@ const gameData = {
     },
     "12": {
         "text": "<a href='https://search.library.yale.edu/databases/9964733853408651' target='_blank'>O’Reilly</a> titles offer unlimited access. Please note they are part of a subscription package, meaning libraries do not have control over the content. Titles may be added or removed without warning.",
-        "image" : "",
+        "image" : "smaller_images/OReilly.png",
         "answer" : "True",
 "choices": {
             "Continue": [13,[]]
