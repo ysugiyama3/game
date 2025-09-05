@@ -204,13 +204,13 @@ function renderState(state) {
     
     // Update the page content immediately, regardless of image loading
     if (retrievedResponse === answer) {
-        resultText.textContent = "CORRECT!";
+        resultText.textContent = `Correct! The answer is '${answer}'.`;
         sessionStorage.clear();
     } else if (!answer) {
         resultText.innerHTML = "";
         sessionStorage.clear();
     } else {
-        resultText.textContent = "INCORRECT.";
+        resultText.textContent = `Incorrect. The correct answer is '${answer}'.`;
         sessionStorage.clear();
     }
     
