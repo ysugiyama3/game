@@ -8,7 +8,7 @@ const gameData = {
         "answer" : "",
 "choices": {    
             "Reboot the laptop": [2,["Jalapeno","Bok Choy"]],
-            "Clear cache and cookies": [2,["Broccoli", "Garlic", "Pumpkin"]],
+            "Clear cache and cookies": [2,["Pumpkin"]],
             "Request ILL": [2,["Potato", "Leek", "Tomato"]],
             "Contact IT": [2, ["Green Bean", "Carrot"]]
         }
@@ -28,7 +28,7 @@ const gameData = {
         "answer" : "",
 "choices": {
             "Aggregator database": [4,["Garlic"]],
-            "Limited to 3 simultaneous users": [4,["Green Bean", "Bok Choy", "Pumpkin"]],
+            "Limited to 3 simultaneous users": [4,["Pumpkin"]],
             "Limited to valid NetID holders of Yale University and walk-in users": [4,["Leek", "Carrot"]],
             "All of the above": [4,[ "Broccoli", "Tomato"]]
         }
@@ -48,7 +48,7 @@ const gameData = {
         "answer" : "",
 "choices": {
             "hbr.org is temporarily unavailable due to site upgrade": [6,["Garlic"]],
-            "Yale’s access to the current issue is through EBSCOhost Business Source Complete, not through hbr.org": [6,["Green Bean", "Bok Choy", "Pumpkin"]],
+            "Yale’s access to the current issue is through EBSCOhost Business Source Complete, not through hbr.org": [6,["Pumpkin"]],
             "Yale does not have access to Harvard Business Review at all": [6,["Leek", "Carrot"]]
         }
     },
@@ -67,9 +67,9 @@ const gameData = {
         "answer" : "",
 "choices": {
             "https://yale.ezproxy.org/login?url=": [8,["Garlic"]],
-            "https://yale.library.edu/login?url=": [8,["Green Bean", "Bok Choy", "Pumpkin"]],
+            "https://yale.library.edu/login?url=": [8,["Pumpkin"]],
             "https://yale.idm.oclc.org/login?url=": [8,["Leek", "Carrot"]],
-            "https://yale.ezproxy.oclc.org/login?url=": [8,["Green Bean", "Bok Choy", "Pumpkin"]]
+            "https://yale.ezproxy.oclc.org/login?url=": [8,["Pumpkin"]]
         }
     },
     "8": {
@@ -144,10 +144,10 @@ const gameData = {
 "choices": {            
             "The Atlantic (www.theatlantic.com)": [16,["Carrot"]],
             "The Economist (www.economist.com)": [16,["Garlic"]],        
-            "Financial Times (www.ft.com)": [16,["Green Bean", "Bok Choy", "Pumpkin"]],
+            "Financial Times (www.ft.com)": [16,["Pumpkin"]],
             "New York Times (www.nytimes.com)": [16,["Leek", "Carrot"]],
             "Wall Street Journal (www.wsj.com)": [16,["Garlic"]],
-            "Washington Post (www.washingtonpost.com)": [16,["Green Bean", "Bok Choy", "Pumpkin"]],
+            "Washington Post (www.washingtonpost.com)": [16,["Pumpkin"]],
             "All of the above": [16,["Jalapeno","Bok Choy"]]
         }
     },
@@ -161,11 +161,11 @@ const gameData = {
     },
     "100": {
         "text": "Last question! How often do you use e-resources licensed by Yale Library?",
-        "image" : "smaller_images/Articles.png",
+        "image" : "smaller_images/ArticlesPlus.png",
 "choices" : {
-            "Always!": [0,["Napa Cabbage", "Potato", "Carrot"]],
+            "Always!": [0,["Napa Cabbage", "Potato"]],
             "Often": [0,["Tomato", "Leek"]],
-            "Sometimes": [0,["Pumpkin", "Green Bean", "Garlic"]],
+            "Sometimes": [0,["Pumpkin", "Green Bean"]],
             "Rarely": [0, ["Jalapeno", "Bok Choy"]],
             "Never": [0,["Tomato", "Leek"]]
         } 
