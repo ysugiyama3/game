@@ -309,7 +309,7 @@ function revealMostSelectedVegetable() {
 
         // Share button functionality
         shareButton.onclick = () => {
-            const shareMessage = `Check out my Veggie ID! You can create yours at https://ysugiyama3.github.io/game/`;
+            const shareMessage = `Check out my E-Resource ID! You can create yours at https://ysugiyama3.github.io/game/`;
             navigator.clipboard.writeText(shareMessage).then(() => {
                 alert('Link copied to clipboard!');
             }).catch(err => {
