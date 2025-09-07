@@ -63,7 +63,7 @@ const gameData = {
     "7": {
         "topic" : "EZProxy",
         "text": "Which is the correct EZProxy prefix for Yale Library?",
-        "image" : "smaller_images/7.png",
+        "image" : "smaller_images/EZProxyLogo.png",
         "answer" : "",
 "choices": {
             "https://yale.ezproxy.org/login?url=": [8,["Garlic"]],
