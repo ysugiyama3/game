@@ -267,6 +267,9 @@ function changeState(newState, selectedPersonalities) {
         renderState(currentState);
     }
 }
+
+
+/* 
 function revealMostSelectedVegetable() {
     let maxCount = 0;
     let maxVeggie = '';
@@ -314,7 +317,37 @@ function revealMostSelectedVegetable() {
         text.appendChild(shareButton);
     };
 }
+*/
 
+function revealEresource() {
+    // Get all personality names as an array
+    const eresNames = Object.keys(personalities);
+    
+    // Pick a random index
+    const randomIndex = Math.floor(Math.random() * eresNames.length);
+    
+    // Get the random vegetable
+    const maxEres = eresNames[randomIndex];
+
+    const storyImage = document.getElementById('story-image');
+    const text = document.getElementById('story-text');
+    const choicesContainer = document.getElementById('choices');
+    const eresImagePath = `smaller_images/id_cards/${maxEres}.png`;
+
+    // Preload the image
+    const img = new Image();
+    img.src = eresImagePath;
+    img.className = 'responsive-image'; 
+
+    // Once the image is loaded, update the DOM
+    img.onload = () => {
+        storyImage.style.display = 'none';
+        choicesContainer.style.display = 'none';
+    
+        text.textContent = "Drumroll... here is your E-Resource ID! Thank you for playing the game!";
+        text.appendChild(img);
+    };
+}
 
 function startGame() {
     window.scrollTo(0, 0);
