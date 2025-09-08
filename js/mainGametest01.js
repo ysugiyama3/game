@@ -163,11 +163,11 @@ const gameData = {
         "text": "Last question! How often do you use e-resources licensed by Yale Library?",
         "image" : "smaller_images/Quicksearch.png",
 "choices" : {
-            "Always!": [0,["Ejournal", "Ebook"]],
-            "Often": [0,["Database", "Video"]],
-            "Sometimes": [0,["Audio", "Video"]],
-            "Rarely": [0, ["OA", "Ebook"]],
-            "Never": [0,["Ejournal", "Video"]]
+            "Always!": [0,["Ejournal", "Ejournal", "Ejournal"]],
+            "Often": [0,["Video", "Video", "Video"]],
+            "Sometimes": [0,["Ebook", "Ebook", "Ebook"]],
+            "Rarely": [0, ["Database", "Database", "Database"]],
+            "Never": [0,["Audio", "Audio", "OA", "OA"]]
         } 
     }
 };
@@ -268,8 +268,6 @@ function changeState(newState, selectedPersonalities) {
     }
 }
 
-
-/* 
 function revealMostSelectedVegetable() {
     let maxCount = 0;
     let maxVeggie = '';
@@ -317,37 +315,7 @@ function revealMostSelectedVegetable() {
         text.appendChild(shareButton);
     };
 }
-*/
 
-function revealMostSelectedVegetable() {
-    // Get all personality names as an array
-    const vegetableNames = Object.keys(personalities);
-    
-    // Pick a random index
-    const randomIndex = Math.floor(Math.random() * vegetableNames.length);
-    
-    // Get the random vegetable
-    const maxVeggie = vegetableNames[randomIndex];
-
-    const storyImage = document.getElementById('story-image');
-    const text = document.getElementById('story-text');
-    const choicesContainer = document.getElementById('choices');
-    const veggieImagePath = `smaller_images/id_cards/${maxVeggie}.png`;
-
-    // Preload the image
-    const img = new Image();
-    img.src = veggieImagePath;
-    img.className = 'responsive-image'; 
-
-    // Once the image is loaded, update the DOM
-    img.onload = () => {
-        storyImage.style.display = 'none';
-        choicesContainer.style.display = 'none';
-    
-        text.textContent = "Drumroll... here is your E-Resource ID! Thank you for playing the game!";
-        text.appendChild(img);
-    };
-}
 
 function startGame() {
     window.scrollTo(0, 0);
