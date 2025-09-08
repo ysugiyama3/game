@@ -15,7 +15,7 @@ const gameData = {
     },
     "2": {
         "text": "One of the first e-resource troubleshooting steps is to clear the browser's cache and cookies. If users prefer not to do this, they can alternatively use an incognito or private window. For more information, please visit <a href='https://ask.library.yale.edu/faq/174879' target='_blank'>here</a>.",
-        "image" : "smaller_images/2.png",
+        "image" : "smaller_images/DeleteBrowsingData.png",
         "answer" : "Clear cache and cookies",
 "choices": {
              "Continue": [3, []]
