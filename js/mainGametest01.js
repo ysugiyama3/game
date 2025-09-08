@@ -161,7 +161,7 @@ const gameData = {
     },
     "100": {
         "text": "Last question! How often do you use e-resources licensed by Yale Library?",
-        "image" : "smaller_images/ArticlesPlus.png",
+        "image" : "smaller_images/Quicksearch.png",
 "choices" : {
             "Always!": [0,["Napa Cabbage", "Potato"]],
             "Often": [0,["Tomato", "Leek"]],
