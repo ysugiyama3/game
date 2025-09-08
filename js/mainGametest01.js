@@ -7,10 +7,10 @@ const gameData = {
         "image" : "smaller_images/NotFound.png",
         "answer" : "",
 "choices": {    
-            "Reboot the laptop": [2,["Jalapeno","Bok Choy"]],
-            "Clear cache and cookies": [2,["Pumpkin"]],
-            "Request ILL": [2,["Potato", "Leek", "Tomato"]],
-            "Contact IT": [2, ["Green Bean", "Carrot"]]
+            "Reboot the laptop": [2,["OA"]],
+            "Clear cache and cookies": [2,["Database"]],
+            "Request ILL": [2,["Video", "Audio"]],
+            "Contact IT": [2, ["Ebook"]]
         }
     },
     "2": {
@@ -27,10 +27,10 @@ const gameData = {
         "image" : "smaller_images/NoAccess.png",
         "answer" : "",
 "choices": {
-            "Aggregator database": [4,["Garlic"]],
-            "Limited to 3 simultaneous users": [4,["Pumpkin"]],
-            "Limited to valid NetID holders of Yale University and walk-in users": [4,["Leek", "Carrot"]],
-            "All of the above": [4,[ "Broccoli", "Tomato"]]
+            "Aggregator database": [4,["Ebook"]],
+            "Limited to 3 simultaneous users": [4,["Ejournal"]],
+            "Limited to valid NetID holders of Yale University and walk-in users": [4,["OA", "Audio"]],
+            "All of the above": [4,[ "Database", "Video"]]
         }
     },
     "4": {
@@ -47,9 +47,9 @@ const gameData = {
         "image" : "smaller_images/Paywall.png",
         "answer" : "",
 "choices": {
-            "hbr.org is temporarily unavailable due to site upgrade": [6,["Garlic"]],
-            "Yale’s access to the current issue is through EBSCOhost Business Source Complete, not through hbr.org": [6,["Pumpkin"]],
-            "Yale does not have access to Harvard Business Review at all": [6,["Leek", "Carrot"]]
+            "hbr.org is temporarily unavailable due to site upgrade": [6,["OA"]],
+            "Yale’s access to the current issue is through EBSCOhost Business Source Complete, not through hbr.org": [6,["Database", "Ebook", "Video"]],
+            "Yale does not have access to Harvard Business Review at all": [6,["Audio", "Ejournal"]]
         }
     },
     "6": {
@@ -66,10 +66,10 @@ const gameData = {
         "image" : "smaller_images/EZProxyLogo.png",
         "answer" : "",
 "choices": {
-            "https://yale.ezproxy.org/login?url=": [8,["Garlic"]],
-            "https://yale.library.edu/login?url=": [8,["Pumpkin"]],
-            "https://yale.idm.oclc.org/login?url=": [8,["Leek", "Carrot"]],
-            "https://yale.ezproxy.oclc.org/login?url=": [8,["Pumpkin"]]
+            "https://yale.ezproxy.org/login?url=": [8,["Ejournal"]],
+            "https://yale.library.edu/login?url=": [8,["Audio"]],
+            "https://yale.idm.oclc.org/login?url=": [8,["Ebook"]],
+            "https://yale.ezproxy.oclc.org/login?url=": [8,["Video"]]
         }
     },
     "8": {
@@ -86,9 +86,9 @@ const gameData = {
         "image" : "smaller_images/StreamingVideo.png",
         "answer" : "",
 "choices": {            
-            "Username/Password": [10,["Carrot"]],
-            "Internet Protocol (IP) authentication": [10,["Carrot"]],
-            "Single Sign-On (SSO)": [10,["Garlic"]]
+            "Username/Password": [10,["Ebook", "OA"]],
+            "Internet Protocol (IP) authentication": [10,["Database", "Ejournal", "Video"]],
+            "Single Sign-On (SSO)": [10,["Audio"]]
         }
     },
     "10": {
@@ -105,8 +105,8 @@ const gameData = {
         "image" : "smaller_images/ThreeUsers.png",
         "answer" : "",
 "choices": {            
-            "True": [12,["Carrot"]],
-            "False": [12,["Garlic"]]
+            "True": [12,["Database", "Ebook", "Ejournal", "Video"]],
+            "False": [12,["OA", "Audio"]]
         }
     },
     "12": {
@@ -123,9 +123,9 @@ const gameData = {
         "image" : "smaller_images/Harvard.png",
         "answer" : "",
 "choices": {            
-            "An e-resource link that includes Yale's EZProxy prefix while on Harvard's campus": [14,["Carrot"]],        
-            "A public workstation or other computer connected to Yale's ethernet on Yale's campus": [14,["Carrot"]],
-            "A device connected to the Eduroam Wi-Fi network on Yale's campus": [14,["Carrot"]]    
+            "An e-resource link that includes Yale's EZProxy prefix while on Harvard's campus": [14,["Ebook", "Audio"]],        
+            "A public workstation or other computer connected to Yale's ethernet on Yale's campus": [14,["Video"]],
+            "A device connected to the Eduroam Wi-Fi network on Yale's campus": [14,["Ejournal", "Database"]]    
         }
     },
     "14": {
@@ -142,13 +142,13 @@ const gameData = {
         "image" : "smaller_images/9.png",
         "answer" : "",
 "choices": {            
-            "The Atlantic (www.theatlantic.com)": [16,["Carrot"]],
-            "The Economist (www.economist.com)": [16,["Garlic"]],        
-            "Financial Times (www.ft.com)": [16,["Pumpkin"]],
-            "New York Times (www.nytimes.com)": [16,["Leek", "Carrot"]],
-            "Wall Street Journal (www.wsj.com)": [16,["Garlic"]],
-            "Washington Post (www.washingtonpost.com)": [16,["Pumpkin"]],
-            "All of the above": [16,["Jalapeno","Bok Choy"]]
+            "The Atlantic (www.theatlantic.com)": [16,["Database"]],
+            "The Economist (www.economist.com)": [16,["OA"]],        
+            "Financial Times (www.ft.com)": [16,["Audio"]],
+            "New York Times (www.nytimes.com)": [16,["Audio", "Ejournal"]],
+            "Wall Street Journal (www.wsj.com)": [16,["Ejournal"]],
+            "Washington Post (www.washingtonpost.com)": [16,["Video"]],
+            "All of the above": [16,["Ebook","Video"]]
         }
     },
     "16": {
@@ -163,27 +163,21 @@ const gameData = {
         "text": "Last question! How often do you use e-resources licensed by Yale Library?",
         "image" : "smaller_images/Quicksearch.png",
 "choices" : {
-            "Always!": [0,["Napa Cabbage", "Potato"]],
-            "Often": [0,["Tomato", "Leek"]],
-            "Sometimes": [0,["Pumpkin", "Green Bean"]],
-            "Rarely": [0, ["Jalapeno", "Bok Choy"]],
-            "Never": [0,["Tomato", "Leek"]]
+            "Always!": [0,["Ejournal", "Ebook"]],
+            "Often": [0,["Database", "Video"]],
+            "Sometimes": [0,["Audio", "Video"]],
+            "Rarely": [0, ["OA", "Ebook"]],
+            "Never": [0,["Ejournal", "Video"]]
         } 
     }
 };
 const personalities = { 
-    "Onion": 0,
-    "Broccoli": 0,
-    "Garlic": 0, // The Leader
-    "Jalapeno": 0, // The Adventurer
-    "Tomato": 0, // The Analyst
-    "Green Bean": 0, // The Connector
-    "Pumpkin": 0, // The Caregiver
-    "Carrot": 0, // The Visionary
-    "Potato": 0, // The Realist
-    "Napa Cabbage": 0, // The Harmonizer
-    "Bok Choy": 0, // The Performer
-    "Leek": 0 // The Investigator
+    "Audio": 0,
+    "Database": 0,
+    "Ebook": 0, 
+    "Ejournal": 0, 
+    "OA": 0,
+    "Video": 0 
 };
 
 let currentState = 1;
