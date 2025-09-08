@@ -262,7 +262,7 @@ function changeState(newState, selectedPersonalities) {
     currentState = newState;
 
     if (currentState === 0) {
-        revealMostSelectedVegetable();
+        revealEresource();
     } else {
         renderState(currentState);
     }
