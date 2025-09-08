@@ -262,7 +262,7 @@ function changeState(newState, selectedPersonalities) {
     currentState = newState;
 
     if (currentState === 0) {
-        revealEresource();
+        revealMostSelectedVegetable();
     } else {
         renderState(currentState);
     }
@@ -319,24 +319,24 @@ function revealMostSelectedVegetable() {
 }
 */
 
-function revealEresource() {
+function revealMostSelectedVegetable() {
     // Get all personality names as an array
-    const eresNames = Object.keys(personalities);
+    const vegetableNames = Object.keys(personalities);
     
     // Pick a random index
-    const randomIndex = Math.floor(Math.random() * eresNames.length);
+    const randomIndex = Math.floor(Math.random() * vegetableNames.length);
     
     // Get the random vegetable
-    const maxEres = eresNames[randomIndex];
+    const maxVeggie = vegetableNames[randomIndex];
 
     const storyImage = document.getElementById('story-image');
     const text = document.getElementById('story-text');
     const choicesContainer = document.getElementById('choices');
-    const eresImagePath = `smaller_images/id_cards/${maxEres}.png`;
+    const veggieImagePath = `smaller_images/id_cards/${maxVeggie}.png`;
 
     // Preload the image
     const img = new Image();
-    img.src = eresImagePath;
+    img.src = veggieImagePath;
     img.className = 'responsive-image'; 
 
     // Once the image is loaded, update the DOM
