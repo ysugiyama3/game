@@ -23,7 +23,7 @@ const gameData = {
     },
     "3": {
         "topic" : "Simultaneous user limit",
-        "text": "A professor has trouble accessing a French newspaper, Le Monde, through the Eureka.cc database. But you cannot replicate the problem. This database is known to be:",
+        "text": "A professor reported having trouble accessing the French newspaper, Le Monde, through the Eureka.cc database last night. But you are unable to replicate the issue. This database is known to be:",
         "image" : "smaller_images/NoAccess.png",
         "answer" : "",
 "choices": {
@@ -53,7 +53,7 @@ const gameData = {
         }
     },
     "6": {
-        "text": "When users know their institution subscribes to a particular journal, they might directly visit the publisher’s website, such as hbr.org, instead of using the library catalog. But most of Yale's journal subscriptions are accessed through aggregator platforms rather than directly from publishers. Always use the library catalog to ensure you locate the correct subscription platforms and obtain essential details such as access methods, simultaneous user limit, content coverage, and embargo periods.",
+        "text": "When users know their institution subscribes to a particular journal, they might directly visit the publisher’s website, such as hbr.org, instead of using the library catalog. But most of Yale's journal subscriptions are accessed through aggregator platforms rather than directly from publishers. Always use the <a href='https://articles.library.yale.edu/permalink/01YALE_INST/1df2v8b/alma991010351927208651' target='_blank'>library catalog</a> to ensure you locate the correct subscription platforms and obtain essential details such as access methods, simultaneous user limit, content coverage, and embargo periods.",
         "image" : "smaller_images/HBR.png",
         "answer" : "Yale’s access to the current issue is through EBSCOhost Business Source Complete, not through hbr.org",
 "choices": {
@@ -68,8 +68,7 @@ const gameData = {
 "choices": {
             "https://yale.ezproxy.org/login?url=": [8,["Ejournal"]],
             "https://yale.library.edu/login?url=": [8,["Audio"]],
-            "https://yale.idm.oclc.org/login?url=": [8,["Ebook"]],
-            "https://yale.ezproxy.oclc.org/login?url=": [8,["Video"]]
+            "https://yale.idm.oclc.org/login?url=": [8,["Ebook"]]
         }
     },
     "8": {
@@ -138,7 +137,7 @@ const gameData = {
     },   
     "15": {
         "topic" : "Major newspapers/magazines",
-        "text": "To which websites/apps can current faculty, student, and staff sign up for a free digital subscription?",
+        "text": "To which websites/apps can current faculty, student, and staff sign up for a digital subscription with their @yale.edu email address?",
         "image" : "smaller_images/9.png",
         "answer" : "",
 "choices": {            
@@ -163,10 +162,10 @@ const gameData = {
         "text": "Last question! How often do you use e-resources licensed by Yale Library?",
         "image" : "smaller_images/Quicksearch.png",
 "choices" : {
-            "Always!": [0,["Ejournal", "Ejournal", "Ejournal"]],
-            "Often": [0,["Video", "Video", "Video"]],
-            "Sometimes": [0,["Ebook", "Ebook", "Ebook"]],
-            "Rarely": [0, ["Database", "Database", "Database"]],
+            "Always!": [0,["Ejournal", "Ejournal", "Ejournal", "Ejournal"]],
+            "Often": [0,["Video", "Video", "Video", "Audio", "Audio"]],
+            "Sometimes": [0,["Ebook", "Ebook", "Ebook", "Ebook"]],
+            "Rarely": [0, ["Database", "Database", "Database", "Database", "Database"]],
             "Never": [0,["Audio", "Audio", "OA", "OA"]]
         } 
     }
