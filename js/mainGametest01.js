@@ -91,7 +91,7 @@ const gameData = {
         }
     },
     "10": {
-        "text": "<a href='https://search.library.yale.edu/databases/99127780633408651' target='_blank'>Kanopy</a> is accessible through IP authentication, allowing users to access streaming videos if their device is connected from one of Yale's approved IP addresses. While IP authentication is the most common access method, Yale Library also uses Username/Password and Single Sign-On (SSO) for specific e-resources.",
+        "text": "<a href='https://search.library.yale.edu/databases/99127780633408651' target='_blank'>Kanopy</a> is accessible through IP authentication including EZProxy and/or VPN, allowing users to access streaming videos remotely if their device is connected from one of Yale's approved IP addresses. Details about remote access are provided in the local note for each catalog record on the Database AZ List. Although IP authentication is the most common access method, Yale Library also uses Username/Password and Single Sign-On (SSO) for certain e-resources.",
         "image" : "smaller_images/Kanopy.png",
         "answer" : "Internet Protocol (IP) authentication",
 "choices": {
@@ -288,10 +288,12 @@ function revealMostSelectedVegetable() {
     img.src = veggieImagePath;
     img.className = 'responsive-image'; 
 
+    /*
     // Create the share button
     const shareButton = document.createElement('button');
     shareButton.textContent = 'Share the game with Friends';
     shareButton.className = 'choice-button';
+    */
 
     // Once the image is loaded, update the DOM
     img.onload = () => {
@@ -301,6 +303,7 @@ function revealMostSelectedVegetable() {
         text.textContent = "Drumroll... here is your E-Resource ID! Thank you for playing the game!";
         text.appendChild(img);
 
+        /*
         // Share button functionality
         shareButton.onclick = () => {
             const shareMessage = `Check out my E-Resource ID! You can create yours at https://ysugiyama3.github.io/game/`;
@@ -312,6 +315,7 @@ function revealMostSelectedVegetable() {
         };
 
         text.appendChild(shareButton);
+        */
     };
 }
 
