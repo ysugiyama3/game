@@ -303,6 +303,12 @@ function revealMostSelectedVegetable() {
         text.textContent = "Drumroll... here is your E-Resource ID! Thank you for playing the game!";
         text.appendChild(img);
 
+        // Create and add credits text
+        const creditsText = document.createElement('p');
+        // creditsText.className = 'subtitle';
+        creditsText.innerHTML = '<small>Special thanks to: XXX, XXX, XXX, and XXX</small>';
+        text.appendChild(creditsText);
+
         /*
         // Share button functionality
         shareButton.onclick = () => {
