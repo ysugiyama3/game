@@ -109,7 +109,7 @@ const gameData = {
         }
     },
     "12": {
-        "text": "<a href='https://search.library.yale.edu/databases/9964733853408651' target='_blank'>O’Reilly</a> titles offer unlimited access. Please note they are part of a subscription package, meaning libraries do not have control over the content. Titles may be added or removed without warning.",
+        "text": "<a href='https://library.yale.edu/eresources/access/access-safari-books-online' target='_blank'>O’Reilly</a> titles offer unlimited access. Please note they are part of a subscription package, meaning libraries do not have control over the content. Titles may be added or removed without warning.",
         "image" : "smaller_images/OReilly.png",
         "answer" : "True",
 "choices": {
@@ -295,6 +295,10 @@ function revealMostSelectedVegetable() {
     shareButton.className = 'choice-button';
     */
 
+    // Create and add credits text
+    const creditsText = document.createElement('p');
+    creditsText.className = 'subtitle';
+
     // Once the image is loaded, update the DOM
     img.onload = () => {
         storyImage.style.display = 'none';
@@ -304,7 +308,7 @@ function revealMostSelectedVegetable() {
         text.appendChild(img);
 
         // Create and add credits text
-        const creditsText = document.createElement('p');
+        // const creditsText = document.createElement('p');
         // creditsText.className = 'subtitle';
         creditsText.innerHTML = '<small>Special thanks to: XXX, XXX, XXX, and XXX</small>';
         text.appendChild(creditsText);
