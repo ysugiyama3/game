@@ -163,10 +163,10 @@ const gameData = {
         "image" : "smaller_images/Quicksearch.png",
 "choices" : {
             "Always!": [0,["Ejournal", "Ejournal", "Ejournal", "Ejournal"]],
-            "Often": [0,["Video", "Video", "Video", "Audio", "Audio"]],
+            "Often": [0,["Video", "Video", "Video", "Video", "OA", "OA", "OA", "OA"]],
             "Sometimes": [0,["Ebook", "Ebook", "Ebook", "Ebook"]],
-            "Rarely": [0, ["Database", "Database", "Database", "Database", "Database"]],
-            "Never": [0,["Audio", "Audio", "OA", "OA"]]
+            "Rarely": [0, ["Database", "Database", "Database"]],
+            "Never": [0,["Audio", "Audio", "Audio", "Audio"]]
         } 
     }
 };
@@ -310,7 +310,7 @@ function revealMostSelectedVegetable() {
         // Create and add credits text
         // const creditsText = document.createElement('p');
         // creditsText.className = 'subtitle';
-        creditsText.innerHTML = '<small>Special thanks to: XXX, XXX, XXX, and XXX</small>';
+        creditsText.innerHTML = '<small>Special thanks to: Angela, Jennifer, XXX, XXX, and XXX!</small>';
         text.appendChild(creditsText);
 
         /*
