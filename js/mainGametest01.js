@@ -268,6 +268,46 @@ function changeState(newState, selectedPersonalities) {
 }
 
 function revealMostSelectedVegetable() {
+    // Get all personality keys and randomly select one
+    const personalityKeys = Object.keys(personalities);
+    const randomIndex = Math.floor(Math.random() * personalityKeys.length);
+    const maxVeggie = personalityKeys[randomIndex];
+
+    const storyImage = document.getElementById('story-image');
+    const text = document.getElementById('story-text');
+    const choicesContainer = document.getElementById('choices');
+    const veggieImagePath = `smaller_images/id_cards/${maxVeggie}.png`;
+
+    // Preload the image
+    const img = new Image();
+    img.src = veggieImagePath;
+    img.className = 'responsive-image'; 
+
+
+    // Create and add credits text
+    const creditsText = document.createElement('p');
+    creditsText.className = 'subtitle';
+
+    // Once the image is loaded, update the DOM
+    img.onload = () => {
+        storyImage.style.display = 'none';
+        choicesContainer.style.display = 'none';
+    
+        text.textContent = "Drumroll... here is your E-Resource ID! Thank you for playing the game!";
+        text.appendChild(img);
+
+        // Create and add credits text
+        // const creditsText = document.createElement('p');
+        // creditsText.className = 'subtitle';
+        creditsText.innerHTML = '<small>Special thanks to: Angela, Jennifer, XXX, XXX, and XXX!</small>';
+        text.appendChild(creditsText);
+
+    };
+}
+
+
+/*
+function revealMostSelectedVegetable() {
     let maxCount = 0;
     let maxVeggie = '';
 
@@ -288,13 +328,6 @@ function revealMostSelectedVegetable() {
     img.src = veggieImagePath;
     img.className = 'responsive-image'; 
 
-    /*
-    // Create the share button
-    const shareButton = document.createElement('button');
-    shareButton.textContent = 'Share the game with Friends';
-    shareButton.className = 'choice-button';
-    */
-
     // Create and add credits text
     const creditsText = document.createElement('p');
     creditsText.className = 'subtitle';
@@ -312,22 +345,9 @@ function revealMostSelectedVegetable() {
         // creditsText.className = 'subtitle';
         creditsText.innerHTML = '<small>Special thanks to: Angela, Jennifer, XXX, XXX, and XXX!</small>';
         text.appendChild(creditsText);
-
-        /*
-        // Share button functionality
-        shareButton.onclick = () => {
-            const shareMessage = `Check out my E-Resource ID! You can create yours at https://ysugiyama3.github.io/game/`;
-            navigator.clipboard.writeText(shareMessage).then(() => {
-                alert('Link copied to clipboard!');
-            }).catch(err => {
-                alert('Failed to copy link. Please try again.');
-            });
-        };
-
-        text.appendChild(shareButton);
-        */
     };
 }
+*/
 
 
 function startGame() {
