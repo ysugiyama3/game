@@ -299,7 +299,7 @@ function revealMostSelectedVegetable() {
         // Create and add credits text
         // const creditsText = document.createElement('p');
         // creditsText.className = 'subtitle';
-        creditsText.innerHTML = '<small>Special thanks to: Angela, Jennifer, XXX, XXX, and XXX!</small>';
+        creditsText.innerHTML = '';
         text.appendChild(creditsText);
 
     };
@@ -343,7 +343,7 @@ function revealMostSelectedVegetable() {
         // Create and add credits text
         // const creditsText = document.createElement('p');
         // creditsText.className = 'subtitle';
-        creditsText.innerHTML = '';
+        creditsText.innerHTML = '<small>Special thanks to: Angela, Jennifer, XXX, XXX, and XXX!</small>';
         text.appendChild(creditsText);
     };
 }
