@@ -174,7 +174,7 @@ const personalities = {
     "Audio": 0,
     "Database": 0,
     "Ebook": 0, 
-    "EJournal": 0, 
+    "Ejournal": 0, 
     "OA": 0,
     "Video": 0 
 };
