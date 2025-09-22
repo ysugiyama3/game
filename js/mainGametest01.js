@@ -174,7 +174,7 @@ const personalities = {
     "Audio": 0,
     "Database": 0,
     "Ebook": 0, 
-    "Ejournal": 0, 
+    "EJournal": 0, 
     "OA": 0,
     "Video": 0 
 };
@@ -343,7 +343,7 @@ function revealMostSelectedVegetable() {
         // Create and add credits text
         // const creditsText = document.createElement('p');
         // creditsText.className = 'subtitle';
-        creditsText.innerHTML = '<small>Special thanks to: Angela, Jennifer, XXX, XXX, and XXX!</small>';
+        creditsText.innerHTML = '';
         text.appendChild(creditsText);
     };
 }
