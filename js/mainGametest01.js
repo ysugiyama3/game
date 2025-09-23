@@ -129,7 +129,7 @@ const gameData = {
     },
     "14": {
         "text": "Harvard University students cannot access Yale's licensed e-resources through Yale's proxied link from Harvard's campus, as these links require authentication with a Yale NetID and password, which they do not have. However, they can access many of Yale's licensed e-resources while on Yale's campus by using a public workstation or another computer connected to Yale's ethernet, or by connecting their device to the Eduroam Wi-Fi network, as Harvard is an Eduroam participating institution. For more details on connecting from on campus, visit <a href='https://library.yale.edu/find-request-and-use/use/using-e-resources/connecting-e-resources' target='_blank'>here</a>",
-        "image" : "",
+        "image" : "smaller_images/OnCampus.png",
         "answer" : "An e-resource link that includes Yale's EZProxy prefix while on Harvard's campus",
 "choices": {
             "Continue": [15,[]]
