@@ -283,10 +283,14 @@ function revealMostSelectedVegetable() {
     img.src = veggieImagePath;
     img.className = 'responsive-image'; 
 
+    // Create the share button
+    const shareButton = document.createElement('button');
+    shareButton.textContent = 'We welcome your feedback!';
+    shareButton.className = 'choice-button';
 
     // Create and add credits text
-    const creditsText = document.createElement('p');
-    creditsText.className = 'subtitle';
+    //// const creditsText = document.createElement('p');
+    //// creditsText.className = 'subtitle';
 
     // Once the image is loaded, update the DOM
     img.onload = () => {
@@ -296,11 +300,20 @@ function revealMostSelectedVegetable() {
         text.textContent = "Drumroll... here is your E-Resource ID! Thank you for playing the game!";
         text.appendChild(img);
 
+        // Share button functionality - now opens email client
+        shareButton.onclick = () => {
+            const emailSubject = encodeURIComponent('What E-resource Are You Feedback');
+            const mailtoLink = `mailto:yukari.sugiyama@yale.edu?subject=${emailSubject}`;
+            window.open(mailtoLink);
+        };
+        text.appendChild(shareButton);
+
+        
         // Create and add credits text
-        const creditsText = document.createElement('p');
-        creditsText.className = 'subtitle';
-        creditsText.innerHTML = '<a class="choice-button" href="mailto:yukari.sugiyama@yale.edu?subject=What%20E-resource%20Are%20You%20Feedback">We welcome your feedback!</a>';
-        text.appendChild(creditsText);
+        ////const creditsText = document.createElement('p');
+        ////creditsText.className = 'subtitle';
+        ////creditsText.innerHTML = '<a class="choice-button" href="mailto:yukari.sugiyama@yale.edu?subject=What%20E-resource%20Are%20You%20Feedback">We welcome your feedback!</a>';
+        ////text.appendChild(creditsText);
 
     };
 }
