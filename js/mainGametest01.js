@@ -297,9 +297,9 @@ function revealMostSelectedVegetable() {
         text.appendChild(img);
 
         // Create and add credits text
-        // const creditsText = document.createElement('p');
-        // creditsText.className = 'subtitle';
-        creditsText.innerHTML = '';
+        const creditsText = document.createElement('p');
+        creditsText.className = 'subtitle';
+        creditsText.innerHTML = '<a class="buttonstyle" href="mailto:yukari.sugiyama@yale.edu?subject=What%20E-resource%20Are%20You%20Feedback">We welcome your feedback!</a>';
         text.appendChild(creditsText);
 
     };
