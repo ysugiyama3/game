@@ -233,28 +233,30 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="title">What E-resource Are You?</div>        
-        <img id="homescreen" src="smaller_images/homepage.png" alt="What E-resource Are You game homepage illustration"/>
-        <button class="start-button" onclick="startGame()">Start</button>
-        <p class="subtitle"><small>This game was inspired by Sophie Liu's <a href="https://sophie006liu.github.io/vegetal/" target="_blank">What Vegetable Are You?</a> and created by the E-Resources Troubleshooting Team within the E-Resources and Serials Management department at the Yale Library.</small></p>
-        
-        <div class="game-container" id="game-container">
-            <div class="story-text" id="result-text" aria-live="polite"></div>
-            <h2 class="story-text" id="story-text" aria-live="polite" tabindex="-1"></h2> <!-- <div class="story-text" id="story-text" aria-live="polite"></div> -->
-            <div class="image-container">
-                <!-- In placeholder -->
-                <img id="story-image" src="" alt=""/>
+    <main>
+        <div class="container">
+            <div class="title">What E-resource Are You?</div>        
+            <img id="homescreen" src="smaller_images/homepage.png" alt="What E-resource Are You game homepage illustration"/>
+            <button class="start-button" onclick="startGame()">Start</button>
+            <p class="subtitle"><small>This game was inspired by Sophie Liu's <a href="https://sophie006liu.github.io/vegetal/" target="_blank">What Vegetable Are You?</a> and created by the E-Resources Troubleshooting Team within the E-Resources and Serials Management department at the Yale Library.</small></p>
+            
+            <div class="game-container" id="game-container">
+                <div class="story-text" id="result-text" aria-live="polite"></div>
+                <div class="story-text" id="story-text" aria-live="polite"></div>
+                <!-- <h2 class="story-text" id="story-text" aria-live="polite" tabindex="-1"></h2>  <div class="story-text" id="story-text" aria-live="polite"></div> -->
+                <div class="image-container">
+                    <!-- In placeholder -->
+                    <img id="story-image" src="" alt=""/>
+                </div>
+                <div class="choices" id="choices"></div>
             </div>
-            <div class="choices" id="choices"></div>
+    
         </div>
-
-    </div>
-    
-    <script src="js/mainGametest01.js"></script>
-    
-    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
-
+        
+        <script src="js/mainGametest01.js"></script>
+        
+        <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+        <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+    </main>
 </body> 
 </html>
