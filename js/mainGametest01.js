@@ -242,6 +242,7 @@ function renderState(state) {
         img.onerror = () => {
             // Hide image if it fails to load, or show a placeholder
             storyImage.style.display = 'none';
+            storyImage.alt = 'Image unavailable'; 
             storyImage.style.opacity = '1';
             console.warn(`Failed to load image: ${gameData[state].image}`);
         };
