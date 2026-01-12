@@ -223,9 +223,6 @@ function renderState(state) {
         }                    
         choicesContainer.appendChild(button);
     }
-
-    // Move focus to the new question
-    storyText.focus();
     
     // Handle image loading separately - page works even if image fails
     if (gameData[state].image) {
@@ -254,6 +251,9 @@ function renderState(state) {
         storyImage.style.display = 'none';
         storyImage.style.opacity = '1';
     }
+
+    // Move focus to the new question
+    storyText.focus();
 }
 
 function changeState(newState, selectedPersonalities) { 
