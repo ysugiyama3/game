@@ -187,8 +187,7 @@ function renderState(state) {
     
     const resultText = document.getElementById('result-text');
     const storyText = document.getElementById('story-text');
-    const storyImage = document.getElementById('story-image');
-    
+    const storyImage = document.getElementById('story-image');   
     const choicesContainer = document.getElementById('choices');
     
     const answer = gameData[state].answer;
@@ -216,10 +215,33 @@ function renderState(state) {
         const button = document.createElement('button');
         button.textContent = choice;
         button.className = 'choice-button';
+        button.setAttribute('aria-label', `Select answer: ${choice}`);
         let nextState = info[0];
+        
         button.onclick = () => {
+            // 1. Announce to screen readers
+            document.getElementById('status-message').textContent = 
+                `You selected ${choice}. Loading next question.`;
+            
+            // 2. Disable all buttons
+            const allButtons = choicesContainer.querySelectorAll('.choice-button');
+            allButtons.forEach(btn => {
+                btn.disabled = true;
+                btn.setAttribute('aria-disabled', 'true');
+            });
+            
+            // 3. Visual feedback on clicked button
+            button.setAttribute('aria-pressed', 'true');
+            button.classList.add('selected');
+            
+            // 4. Save response and change state
             sessionStorage.setItem("response", choice);
-            changeState(nextState, info[1]);
+            
+            setTimeout(() => {
+                changeState(nextState, info[1]);
+                // Clear status message after transition
+                document.getElementById('status-message').textContent = '';
+            }, 300);      
         }                    
         choicesContainer.appendChild(button);
     }
