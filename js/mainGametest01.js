@@ -219,29 +219,24 @@ function renderState(state) {
         let nextState = info[0];
         
         button.onclick = () => {
-            // 1. Announce to screen readers
-            document.getElementById('status-message').textContent = 
-                `You selected ${choice}. Loading next question.`;
-            
-            // 2. Disable all buttons
+            // Disable all buttons immediately
             const allButtons = choicesContainer.querySelectorAll('.choice-button');
             allButtons.forEach(btn => {
                 btn.disabled = true;
-                btn.setAttribute('aria-disabled', 'true');
+                btn.style.opacity = '0.5';
+                btn.style.cursor = 'not-allowed';
             });
             
-            // 3. Visual feedback on clicked button
+            // Add visual feedback to clicked button
             button.setAttribute('aria-pressed', 'true');
-            button.classList.add('selected');
+            button.style.backgroundColor = '#f3dba7';
             
-            // 4. Save response and change state
             sessionStorage.setItem("response", choice);
             
+            // Brief delay for feedback, then change state
             setTimeout(() => {
                 changeState(nextState, info[1]);
-                // Clear status message after transition
-                document.getElementById('status-message').textContent = '';
-            }, 300);      
+            }, 200);  
         }                    
         choicesContainer.appendChild(button);
     }
@@ -253,10 +248,8 @@ function renderState(state) {
     if (gameData[state].image) {
         // Hide image while loading to prevent flicker
         storyImage.style.opacity = '0';
-        
         const img = new Image();
-        img.src = gameData[state].image;
-        
+        img.src = gameData[state].image;        
         img.onload = () => {
             storyImage.src = img.src;
             storyImage.style.display = 'block';
