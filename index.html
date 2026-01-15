@@ -99,6 +99,18 @@
             outline: 2px solid #d4a574;
         }
 
+        .choice-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            background-color: #e0e0e0;
+        }
+        
+        .choice-button[aria-pressed="true"] {
+            background-color: #f3dba7;
+            border-color: #d4a574;
+            font-weight: bold;
+        }
+        
         .story-text {
             font-size: clamp(14px, 3.5vw, 20px);
             margin-bottom: 20px;
