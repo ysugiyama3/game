@@ -171,10 +171,10 @@ const gameData = {
         "imageAlt": "",
         "answer" : "All of the above",
         "choices": {
-            "Continue": [100,[]]
+            "Continue": [17,[]]
         }
     },
-    "100": {
+    "17": {
         "text": "Last question! How often do you use e-resources licensed by Yale Library?",
         "image" : "smaller_images/Quicksearch.png",
         "imageAlt": "Library quick search interface for finding electronic resources",
