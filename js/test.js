@@ -216,7 +216,6 @@ const personalities = {
 };
 
 let currentState = 1;
-const totalQuestions = 10; // Total number of questions (excluding result screen)
 
 function updateProgressBar() {
     const progressBar = document.getElementById('progress-bar');
@@ -231,21 +230,10 @@ function updateProgressBar() {
     // Show progress bar
     progressBar.parentElement.style.display = 'block';
     
-    // Calculate progress (states 1-15 are questions, state 2,4,6,8,10,12,14,16 are info screens)
-    const questionStates = [1, 3, 5, 7, 9, 11, 13, 15, 100];
-    const currentQuestionIndex = questionStates.indexOf(currentState);
-    
-    let progress = 0;
-    if (currentQuestionIndex >= 0) {
-        progress = ((currentQuestionIndex + 1) / totalQuestions) * 100;
-    } else {
-        // For info screens, use the progress of the previous question
-        const previousQuestion = questionStates.filter(s => s < currentState).pop();
-        const prevIndex = questionStates.indexOf(previousQuestion);
-        if (prevIndex >= 0) {
-            progress = ((prevIndex + 1) / totalQuestions) * 100;
-        }
-    }
+    // Calculate progress based on all states from 1 to 16 (excluding 0 and 100)
+    // States 1-16 represent the main game flow
+    const totalStates = 16;
+    const progress = ((currentState) / totalStates) * 100;
     
     progressBar.style.width = progress + '%';
     progressText.textContent = Math.round(progress) + '%';
