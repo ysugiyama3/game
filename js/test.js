@@ -5,7 +5,7 @@ const gameData = {
         "topic" : "Browser issue",
         "text" : "A student is encountering a 404 error when trying to access an ebook from their residential college, but you are unable to replicate the issue. What would you recommend they do first?",
         "image" : "smaller_images/NotFound.png",
-        "imageAlt": "Screenshot showing a 404 Not Found error page in a web browser",
+        "imageAlt": "An illustration of a bear wearing a navy Yale University hoodie, looking sad to see a 404 Not Found error message displayed on a web browser page on a laptop",
         "answer" : "",
         "choices": {    
             "Reboot the laptop": [2,["OA"]],
@@ -17,7 +17,7 @@ const gameData = {
     "2": {
         "text": "One of the first e-resource troubleshooting steps is to clear the browser's cache and cookies. If users prefer not to do this, they can alternatively use an incognito or private window. For more information, please visit <a href='https://ask.library.yale.edu/faq/174879' target='_blank'>here</a>.",
         "image" : "smaller_images/DeleteBrowsingData.png",
-        "imageAlt": "Browser settings screen showing delete browsing data options including cache and cookies",
+        "imageAlt": "A screenshot example of Chrome settings displaying the options to delete browsing data",
         "answer" : "Clear cache and cookies",
         "choices": {
              "Continue": [3, []]
@@ -27,7 +27,7 @@ const gameData = {
         "topic" : "Simultaneous user limit",
         "text": "A professor reported having trouble accessing the French newspaper, Le Monde, through the Eureka.cc database last night. But you are unable to replicate the issue. This database is known to be:",
         "image" : "smaller_images/NoAccess.png",
-        "imageAlt": "Error message indicating access is temporarily unavailable for a database resource",
+        "imageAlt": "An illustration of a cat looking confused to see a NO Access message displayed on a web browser page on a laptop",
         "answer" : "",
         "choices": {
             "Aggregator database": [4,["Ebook"]],
@@ -39,7 +39,7 @@ const gameData = {
     "4": {
         "text": "<a href='https://library.yale.edu/eresources/access/access-eurekacc' target='_blank'>Eureka.cc</a> is an aggregator of Canadian and European newspapers and publications, with access limited to 3 users at a time. The user may have encountered the access limit if all sessions were occupied. The issue should resolve once other users log off.",
         "image" : "smaller_images/Eureka.png",
-        "imageAlt": "Eureka.cc database homepage showing newspaper and publication search interface",
+        "imageAlt": "A screenshot of the Eureka.cc landing page",
         "answer" : "All of the above",
         "choices": {
             "Continue": [5,[]]
@@ -49,7 +49,7 @@ const gameData = {
         "topic" : "Not starting the search from the library site",
         "text": "A graduate student reported that they could not read full-text of the current issue of the Harvard Business Review magazine at https://hbr.org/magazine.",
         "image" : "smaller_images/Paywall.png",
-        "imageAlt": "Paywall screen blocking access to Harvard Business Review article content",
+        "imageAlt": "An illustration of a confused bunny looking at a PAYWALL message displayed on a web browser page on a laptop",
         "answer" : "",
         "choices": {
             "hbr.org is temporarily unavailable due to site upgrade": [6,["OA"]],
@@ -60,7 +60,7 @@ const gameData = {
     "6": {
         "text": "When users know their institution subscribes to a particular journal, they might directly visit the publisher's website, such as hbr.org, instead of using the library catalog. But most of Yale's journal subscriptions are accessed through aggregator platforms rather than directly from publishers. Always use the <a href='https://articles.library.yale.edu/permalink/01YALE_INST/1df2v8b/alma991010351927208651' target='_blank'>library catalog</a> to ensure you locate the correct subscription platforms and obtain essential details such as access methods, simultaneous user limit, content coverage, and embargo periods.",
         "image" : "smaller_images/HBR.png",
-        "imageAlt": "Library catalog entry for Harvard Business Review showing access information and platform details",
+        "imageAlt": "Yale Library catalog entry for Harvard Business Review showing access information and platform details",
         "answer" : "Yale's access to the current issue is through EBSCOhost Business Source Complete, not through hbr.org",
         "choices": {
             "Continue": [7,[]]
@@ -70,7 +70,7 @@ const gameData = {
         "topic" : "EZProxy",
         "text": "Which is the correct EZProxy prefix for Yale Library?",
         "image" : "smaller_images/EZProxyLogo.png",
-        "imageAlt": "EZProxy logo - a blue and white authentication service logo",
+        "imageAlt": "EZProxy logo",
         "answer" : "",
         "choices": {
             "https://yale.ezproxy.org/login?url=": [8,["Ejournal"]],
@@ -81,7 +81,7 @@ const gameData = {
     "8": {
         "text": "The EZProxy prefix is used with a resource link that allows remote access through IP authentication. Visit <a href='https://guides.library.yale.edu/ezproxy' target='_blank'>here</a> to learn more about EZProxy.",
         "image" : "smaller_images/EZProxy.png",
-        "imageAlt": "Diagram showing how EZProxy connects remote users to library resources through authentication",
+        "imageAlt": "Diagram showing how EZProxy connects Yale remote users to library resources through authentication",
         "answer" : "https://yale.idm.oclc.org/login?url=",
         "choices": {
             "Continue": [9,[]]
@@ -91,7 +91,7 @@ const gameData = {
         "topic" : "Access Method",
         "text": "What is the access method for Kanopy?",
         "image" : "smaller_images/StreamingVideo.png",
-        "imageAlt": "Icon representing streaming video services and online video access",
+        "imageAlt": "An illustration of a panda looking at a visual image displayed on a web browser page on a laptop",
         "answer" : "",
         "choices": {            
             "Username/Password": [10,["Ebook", "OA"]],
@@ -102,7 +102,7 @@ const gameData = {
     "10": {
         "text": "<a href='https://search.library.yale.edu/databases/99127780633408651' target='_blank'>Kanopy</a> is accessible through IP authentication such as EZProxy and VPN, allowing users to access streaming videos remotely if their device is connected from one of Yale's approved IP addresses. Details about remote access are provided in the local note for each catalog record on the Database AZ List. Although IP authentication is the most common access method, Yale Library also uses Username/Password and Single Sign-On (SSO) for certain e-resources.",
         "image" : "smaller_images/Kanopy.png",
-        "imageAlt": "Kanopy streaming service homepage showing featured films and documentaries",
+        "imageAlt": "A screenshot of a local note found on Yale Library's catalog page for Kanopy",
         "answer" : "Internet Protocol (IP) authentication",
         "choices": {
             "Continue": [11,[]]
@@ -112,7 +112,7 @@ const gameData = {
         "topic" : "E-book Access",
         "text": "O'Reilly books (formerly Safari books) are unlimited access.",
         "image" : "smaller_images/ThreeUsers.png",
-        "imageAlt": "Icon showing three user silhouettes representing simultaneous user access limits",
+        "imageAlt": "An illustration of a raccoon, a bear, and a koala, lined up horizontally, each using their own laptop",
         "answer" : "",
         "choices": {            
             "True": [12,["Database", "Ebook", "Ejournal", "Video"]],
@@ -122,7 +122,7 @@ const gameData = {
     "12": {
         "text": "<a href='https://library.yale.edu/eresources/access/access-safari-books-online' target='_blank'>O'Reilly</a> titles offer unlimited access. Please note they are part of a subscription package, meaning libraries do not have control over the content. Titles may be added or removed without warning.",
         "image" : "smaller_images/OReilly.png",
-        "imageAlt": "O'Reilly Learning platform logo and interface showing technology book collection",
+        "imageAlt": "A screenshot of Yale Library's access page for O'Reilly books",
         "answer" : "True",
         "choices": {
             "Continue": [13,[]]
@@ -132,7 +132,7 @@ const gameData = {
         "topic" : "Patron affiliation",
         "text": "Which of the following methods would NOT allow a Harvard University student to access many of Yale's licensed e-resources?",
         "image" : "smaller_images/Harvard.png",
-        "imageAlt": "Harvard University shield logo in crimson color",
+        "imageAlt": "An illustration of a confused squirrel wearing a burgundy Harvard University sweater, looking at a laptop",
         "answer" : "",
         "choices": {            
             "An e-resource link that includes Yale's EZProxy prefix while on Harvard's campus": [14,["Ebook", "Audio"]],        
@@ -143,7 +143,7 @@ const gameData = {
     "14": {
         "text": "Harvard University students cannot access Yale's licensed e-resources through Yale's proxied link from Harvard's campus, as these links require authentication with a Yale NetID and password, which they do not have. However, they can access many of Yale's licensed e-resources while on Yale's campus by using a public workstation or another computer connected to Yale's ethernet, or by connecting their device to the Eduroam Wi-Fi network, as Harvard is an Eduroam participating institution. For more details on connecting from on campus, visit <a href='https://library.yale.edu/find-request-and-use/use/using-e-resources/connecting-e-resources' target='_blank'>here</a>",
         "image" : "smaller_images/OnCampus.png",
-        "imageAlt": "Illustration of a library building representing on-campus access to resources",
+        "imageAlt": "A screenshot of Yale Library's Connecting to E-resources page",
         "answer" : "An e-resource link that includes Yale's EZProxy prefix while on Harvard's campus",
         "choices": {
             "Continue": [15,[]]
@@ -153,7 +153,7 @@ const gameData = {
         "topic" : "Major newspapers/magazines",
         "text": "To which websites/apps can current faculty, student, and staff sign up for a digital subscription?",
         "image" : "smaller_images/Newspaper.png",
-        "imageAlt": "Collection of newspaper icons representing various major publications",
+        "imageAlt": "An illustration of a happy Boston Terrier, looking at an iPhone",
         "answer" : "",
         "choices": {            
             "The Atlantic (www.theatlantic.com)": [16,["Database"]],
@@ -167,8 +167,8 @@ const gameData = {
     },
     "16": {
         "text": "Yale Library offers current faculty, staff, and students access to many major newspapers and magazines. Use your @yale.edu email address or Yale CAS information to set up a personal account. Please note that authorized users do not include affiliates of Yale New Haven Hospital. Check the links below to create accounts:<br /><a href='https://library.yale.edu/eresources/access/access-the-atlantic' target='_blank'>The Atlantic</a><br /><a href='https://library.yale.edu/eresources/access/access-economist' target='_blank'>The Economist</a><br /><a href='https://library.yale.edu/eresources/access/access-financial-times' target='_blank'>Financial Times</a><br /><a href='https://library.yale.edu/eresources/access/access-nytcom' target='_blank'>New York Times</a><br /><a href='https://library.yale.edu/eresources/access/access-wall-street-journal' target='_blank'>Wall Street Journal</a><br /><a href='https://library.yale.edu/eresources/access/access-washington-post' target='_blank'>Washington Post</a>",
-        "image" : "",
-        "imageAlt": "",
+        "image" : "smaller_images/Phone.png",
+        "imageAlt": "An illustration of a mobile phone screen with app icons",
         "answer" : "All of the above",
         "choices": {
             "Continue": [17,[]]
@@ -177,7 +177,7 @@ const gameData = {
     "17": {
         "text": "Last question! How often do you use e-resources licensed by Yale Library?",
         "image" : "smaller_images/Quicksearch.png",
-        "imageAlt": "Library quick search interface for finding electronic resources",
+        "imageAlt": "Logos of Yale Library's three discovery tools: Quicksearch, Articles+, and E-Journal Search",
         "choices" : {
             "Always!": [0,["Ejournal", "Ejournal", "Ejournal", "Ejournal"]],
             "Often": [0,["Video", "Video", "Video", "Video", "OA", "OA", "OA", "OA"]],
