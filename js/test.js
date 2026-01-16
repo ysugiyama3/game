@@ -221,7 +221,7 @@ function updateProgressBar() {
     const progressBar = document.getElementById('progress-bar');
     const progressText = document.getElementById('progress-text');
     
-    if (currentState === 0 || currentState === 100) {
+    if (currentState === 0) {
         // Hide progress bar on final screens
         progressBar.parentElement.style.display = 'none';
         return;
@@ -232,7 +232,7 @@ function updateProgressBar() {
     
     // Calculate progress based on all states from 1 to 16 (excluding 0 and 100)
     // States 1-16 represent the main game flow
-    const totalStates = 16;
+    const totalStates = 17;
     const progress = ((currentState) / totalStates) * 100;
     
     progressBar.style.width = progress + '%';
