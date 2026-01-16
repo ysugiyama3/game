@@ -5,16 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What E-resource Are You?</title>
     <link rel="icon" href="smaller_images/E.png" type="image/png">
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-27VP3BGQ61"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-27VP3BGQ61'); // Replace G-XXXXXXXXXX with your actual Google Analytics ID
-    </script>
-    
+        
     <style>
         @font-face {
             font-family: Arial, sans-serif;
@@ -304,14 +295,14 @@
     <main>
         <div class="container">
             <div class="title">What E-resource Are You?</div>        
-            <img id="homescreen" src="smaller_images/homepage.png" alt="What E-resource Are You game homepage illustration"/>
+            <img id="homescreen" src="smaller_images/homepage.png" alt="An illustration of six e-resource characters with a white open laptop in the background"/>
             <button class="start-button" onclick="startGame()">Start</button>
             <p class="subtitle"><small>This game was inspired by Sophie Liu's <a href="https://sophie006liu.github.io/vegetal/" target="_blank">What Vegetable Are You?</a> and created by the E-Resources Troubleshooting Team within the E-Resources and Serials Management department at the Yale Library.</small></p>
             
             <div class="game-container" id="game-container">
                 <!-- Progress Bar -->
                 <div class="progress-container">
-                    <div class="progress-text" id="progress-text">Question 1 of 10</div>
+                    <div class="progress-text" id="progress-text"></div>
                     <div class="progress-bar-bg">
                         <div class="progress-bar" id="progress-bar"></div>
                     </div>
@@ -327,7 +318,7 @@
     
         </div>
         
-        <script src="js/test.js"></script>
+        <script src="js/main.js"></script>
         
         <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
         <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
