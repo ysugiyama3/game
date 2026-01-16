@@ -189,12 +189,30 @@ const gameData = {
 };
 
 const personalities = { 
-    "Audio": 0,
-    "Database": 0,
-    "Ebook": 0, 
-    "Ejournal": 0, 
-    "OA": 0,
-    "Video": 0 
+    "Audio": {
+        count: 0,
+        imageAlt: "E-Resource ID card showing an Audio resource type with headphones icon"
+    },
+    "Database": {
+        count: 0,
+        imageAlt: "E-Resource ID card showing a Database resource type with database icon"
+    },
+    "Ebook": {
+        count: 0,
+        imageAlt: "E-Resource ID card showing an Ebook resource type with digital book icon"
+    },
+    "Ejournal": {
+        count: 0,
+        imageAlt: "E-Resource ID card showing an E-journal resource type with journal icon"
+    },
+    "OA": {
+        count: 0,
+        imageAlt: "E-Resource ID card showing an Open Access resource type with open lock icon"
+    },
+    "Video": {
+        count: 0,
+        imageAlt: "E-Resource ID card showing a Video resource type with play button icon"
+    }
 };
 
 let currentState = 1;
@@ -230,7 +248,7 @@ function updateProgressBar() {
     }
     
     progressBar.style.width = progress + '%';
-    progressText.textContent = `Question ${Math.min(currentQuestionIndex + 1, totalQuestions)} of ${totalQuestions}`;
+    progressText.textContent = Math.round(progress) + '%';
 }
 
 function renderState(state) {
@@ -330,7 +348,7 @@ function renderState(state) {
 
 function changeState(newState, selectedPersonalities) { 
     selectedPersonalities.forEach(personality => {
-        personalities[personality]++;
+        personalities[personality].count++;
     });
 
     currentState = newState;
@@ -363,7 +381,7 @@ function revealMostSelectedVegetable() {
     const img = new Image();
     img.src = veggieImagePath;
     img.className = 'responsive-image';
-    img.alt = `Your E-Resource ID card showing you are a ${maxVeggie} type`;
+    img.alt = personalities[maxVeggie].imageAlt;
 
     // Once the image is loaded, update the DOM
     img.onload = () => {
@@ -385,17 +403,6 @@ function revealMostSelectedVegetable() {
             location.reload();
         };
         
-        // Email Results button
-        const emailButton = document.createElement('button');
-        emailButton.textContent = 'Email Results';
-        emailButton.className = 'choice-button';
-        emailButton.onclick = () => {
-            const emailSubject = encodeURIComponent('My E-Resource ID Result');
-            const emailBody = encodeURIComponent(`I got ${maxVeggie} as my E-Resource type!`);
-            const mailtoLink = `mailto:?subject=${emailSubject}&body=${emailBody}`;
-            window.open(mailtoLink);
-        };
-        
         // Send Feedback button
         const feedbackButton = document.createElement('button');
         feedbackButton.textContent = 'Send Feedback';
@@ -407,7 +414,6 @@ function revealMostSelectedVegetable() {
         };
         
         buttonContainer.appendChild(playAgainButton);
-        buttonContainer.appendChild(emailButton);
         buttonContainer.appendChild(feedbackButton);
         text.appendChild(buttonContainer);
     };
