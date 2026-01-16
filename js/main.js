@@ -5,8 +5,9 @@ const gameData = {
         "topic" : "Browser issue",
         "text" : "A student is encountering a 404 error when trying to access an ebook from their residential college, but you are unable to replicate the issue. What would you recommend they do first?",
         "image" : "smaller_images/NotFound.png",
+        "imageAlt": "An illustration of a bear wearing a navy Yale University hoodie, looking sad to see a 404 Not Found error message displayed on a web browser page on a laptop",
         "answer" : "",
-"choices": {    
+        "choices": {    
             "Reboot the laptop": [2,["OA"]],
             "Clear cache and cookies": [2,["Database"]],
             "Request ILL": [2,["Video", "Audio"]],
@@ -16,8 +17,9 @@ const gameData = {
     "2": {
         "text": "One of the first e-resource troubleshooting steps is to clear the browser's cache and cookies. If users prefer not to do this, they can alternatively use an incognito or private window. For more information, please visit <a href='https://ask.library.yale.edu/faq/174879' target='_blank'>here</a>.",
         "image" : "smaller_images/DeleteBrowsingData.png",
+        "imageAlt": "A screenshot example of Chrome settings displaying the options to delete browsing data",
         "answer" : "Clear cache and cookies",
-"choices": {
+        "choices": {
              "Continue": [3, []]
         }
     },
@@ -25,8 +27,9 @@ const gameData = {
         "topic" : "Simultaneous user limit",
         "text": "A professor reported having trouble accessing the French newspaper, Le Monde, through the Eureka.cc database last night. But you are unable to replicate the issue. This database is known to be:",
         "image" : "smaller_images/NoAccess.png",
+        "imageAlt": "An illustration of a cat looking confused to see a NO Access message displayed on a web browser page on a laptop",
         "answer" : "",
-"choices": {
+        "choices": {
             "Aggregator database": [4,["Ebook"]],
             "Limited to 3 simultaneous users": [4,["Ejournal"]],
             "Limited to valid NetID holders of Yale University and walk-in users": [4,["OA", "Audio"]],
@@ -36,8 +39,9 @@ const gameData = {
     "4": {
         "text": "<a href='https://library.yale.edu/eresources/access/access-eurekacc' target='_blank'>Eureka.cc</a> is an aggregator of Canadian and European newspapers and publications, with access limited to 3 users at a time. The user may have encountered the access limit if all sessions were occupied. The issue should resolve once other users log off.",
         "image" : "smaller_images/Eureka.png",
+        "imageAlt": "A screenshot of the Eureka.cc landing page",
         "answer" : "All of the above",
-"choices": {
+        "choices": {
             "Continue": [5,[]]
         }
     },
@@ -45,18 +49,20 @@ const gameData = {
         "topic" : "Not starting the search from the library site",
         "text": "A graduate student reported that they could not read full-text of the current issue of the Harvard Business Review magazine at https://hbr.org/magazine.",
         "image" : "smaller_images/Paywall.png",
+        "imageAlt": "An illustration of a confused bunny looking at a PAYWALL message displayed on a web browser page on a laptop",
         "answer" : "",
-"choices": {
+        "choices": {
             "hbr.org is temporarily unavailable due to site upgrade": [6,["OA"]],
-            "Yale’s access to the current issue is through EBSCOhost Business Source Complete, not through hbr.org": [6,["Database", "Ebook", "Video"]],
+            "Yale's access to the current issue is through EBSCOhost Business Source Complete, not through hbr.org": [6,["Database", "Ebook", "Video"]],
             "Yale does not have access to Harvard Business Review at all": [6,["Audio", "Ejournal"]]
         }
     },
     "6": {
-        "text": "When users know their institution subscribes to a particular journal, they might directly visit the publisher’s website, such as hbr.org, instead of using the library catalog. But most of Yale's journal subscriptions are accessed through aggregator platforms rather than directly from publishers. Always use the <a href='https://articles.library.yale.edu/permalink/01YALE_INST/1df2v8b/alma991010351927208651' target='_blank'>library catalog</a> to ensure you locate the correct subscription platforms and obtain essential details such as access methods, simultaneous user limit, content coverage, and embargo periods.",
+        "text": "When users know their institution subscribes to a particular journal, they might directly visit the publisher's website, such as hbr.org, instead of using the library catalog. But most of Yale's journal subscriptions are accessed through aggregator platforms rather than directly from publishers. Always use the <a href='https://articles.library.yale.edu/permalink/01YALE_INST/1df2v8b/alma991010351927208651' target='_blank'>library catalog</a> to ensure you locate the correct subscription platforms and obtain essential details such as access methods, simultaneous user limit, content coverage, and embargo periods.",
         "image" : "smaller_images/HBR.png",
-        "answer" : "Yale’s access to the current issue is through EBSCOhost Business Source Complete, not through hbr.org",
-"choices": {
+        "imageAlt": "Yale Library catalog entry for Harvard Business Review showing access information and platform details",
+        "answer" : "Yale's access to the current issue is through EBSCOhost Business Source Complete, not through hbr.org",
+        "choices": {
             "Continue": [7,[]]
         }
     },
@@ -64,8 +70,9 @@ const gameData = {
         "topic" : "EZProxy",
         "text": "Which is the correct EZProxy prefix for Yale Library?",
         "image" : "smaller_images/EZProxyLogo.png",
+        "imageAlt": "EZProxy logo",
         "answer" : "",
-"choices": {
+        "choices": {
             "https://yale.ezproxy.org/login?url=": [8,["Ejournal"]],
             "https://yale.library.edu/login?url=": [8,["Audio"]],
             "https://yale.idm.oclc.org/login?url=": [8,["Ebook"]]
@@ -74,8 +81,9 @@ const gameData = {
     "8": {
         "text": "The EZProxy prefix is used with a resource link that allows remote access through IP authentication. Visit <a href='https://guides.library.yale.edu/ezproxy' target='_blank'>here</a> to learn more about EZProxy.",
         "image" : "smaller_images/EZProxy.png",
+        "imageAlt": "Diagram showing how EZProxy connects Yale remote users to library resources through authentication",
         "answer" : "https://yale.idm.oclc.org/login?url=",
-"choices": {
+        "choices": {
             "Continue": [9,[]]
         }
     },
@@ -83,8 +91,9 @@ const gameData = {
         "topic" : "Access Method",
         "text": "What is the access method for Kanopy?",
         "image" : "smaller_images/StreamingVideo.png",
+        "imageAlt": "An illustration of a panda looking at a visual image displayed on a web browser page on a laptop",
         "answer" : "",
-"choices": {            
+        "choices": {            
             "Username/Password": [10,["Ebook", "OA"]],
             "Internet Protocol (IP) authentication": [10,["Database", "Ejournal", "Video"]],
             "Single Sign-On (SSO)": [10,["Audio"]]
@@ -93,26 +102,29 @@ const gameData = {
     "10": {
         "text": "<a href='https://search.library.yale.edu/databases/99127780633408651' target='_blank'>Kanopy</a> is accessible through IP authentication such as EZProxy and VPN, allowing users to access streaming videos remotely if their device is connected from one of Yale's approved IP addresses. Details about remote access are provided in the local note for each catalog record on the Database AZ List. Although IP authentication is the most common access method, Yale Library also uses Username/Password and Single Sign-On (SSO) for certain e-resources.",
         "image" : "smaller_images/Kanopy.png",
+        "imageAlt": "A screenshot of a local note found on Yale Library's catalog page for Kanopy",
         "answer" : "Internet Protocol (IP) authentication",
-"choices": {
+        "choices": {
             "Continue": [11,[]]
         }
     },    
     "11": {
         "topic" : "E-book Access",
-        "text": "O’Reilly books (formerly Safari books) are unlimited access.",
+        "text": "O'Reilly books (formerly Safari books) are unlimited access.",
         "image" : "smaller_images/ThreeUsers.png",
+        "imageAlt": "An illustration of a raccoon, a bear, and a koala, lined up horizontally, each using their own laptop",
         "answer" : "",
-"choices": {            
+        "choices": {            
             "True": [12,["Database", "Ebook", "Ejournal", "Video"]],
             "False": [12,["OA", "Audio"]]
         }
     },
     "12": {
-        "text": "<a href='https://library.yale.edu/eresources/access/access-safari-books-online' target='_blank'>O’Reilly</a> titles offer unlimited access. Please note they are part of a subscription package, meaning libraries do not have control over the content. Titles may be added or removed without warning.",
+        "text": "<a href='https://library.yale.edu/eresources/access/access-safari-books-online' target='_blank'>O'Reilly</a> titles offer unlimited access. Please note they are part of a subscription package, meaning libraries do not have control over the content. Titles may be added or removed without warning.",
         "image" : "smaller_images/OReilly.png",
+        "imageAlt": "A screenshot of Yale Library's access page for O'Reilly books",
         "answer" : "True",
-"choices": {
+        "choices": {
             "Continue": [13,[]]
         }
     },
@@ -120,8 +132,9 @@ const gameData = {
         "topic" : "Patron affiliation",
         "text": "Which of the following methods would NOT allow a Harvard University student to access many of Yale's licensed e-resources?",
         "image" : "smaller_images/Harvard.png",
+        "imageAlt": "An illustration of a confused squirrel wearing a burgundy Harvard University sweater, looking at a laptop",
         "answer" : "",
-"choices": {            
+        "choices": {            
             "An e-resource link that includes Yale's EZProxy prefix while on Harvard's campus": [14,["Ebook", "Audio"]],        
             "A public workstation or other computer connected to Yale's ethernet on Yale's campus": [14,["Video"]],
             "A device connected to the Eduroam Wi-Fi network on Yale's campus": [14,["Ejournal", "Database"]]    
@@ -130,8 +143,9 @@ const gameData = {
     "14": {
         "text": "Harvard University students cannot access Yale's licensed e-resources through Yale's proxied link from Harvard's campus, as these links require authentication with a Yale NetID and password, which they do not have. However, they can access many of Yale's licensed e-resources while on Yale's campus by using a public workstation or another computer connected to Yale's ethernet, or by connecting their device to the Eduroam Wi-Fi network, as Harvard is an Eduroam participating institution. For more details on connecting from on campus, visit <a href='https://library.yale.edu/find-request-and-use/use/using-e-resources/connecting-e-resources' target='_blank'>here</a>",
         "image" : "smaller_images/OnCampus.png",
+        "imageAlt": "A screenshot of Yale Library's Connecting to E-resources page",
         "answer" : "An e-resource link that includes Yale's EZProxy prefix while on Harvard's campus",
-"choices": {
+        "choices": {
             "Continue": [15,[]]
         }
     },   
@@ -139,8 +153,9 @@ const gameData = {
         "topic" : "Major newspapers/magazines",
         "text": "To which websites/apps can current faculty, student, and staff sign up for a digital subscription?",
         "image" : "smaller_images/Newspaper.png",
+        "imageAlt": "An illustration of a happy Boston Terrier, looking at an iPhone",
         "answer" : "",
-"choices": {            
+        "choices": {            
             "The Atlantic (www.theatlantic.com)": [16,["Database"]],
             "The Economist (www.economist.com)": [16,["OA"]],        
             "Financial Times (www.ft.com)": [16,["Audio"]],
@@ -152,16 +167,18 @@ const gameData = {
     },
     "16": {
         "text": "Yale Library offers current faculty, staff, and students access to many major newspapers and magazines. Use your @yale.edu email address or Yale CAS information to set up a personal account. Please note that authorized users do not include affiliates of Yale New Haven Hospital. Check the links below to create accounts:<br /><a href='https://library.yale.edu/eresources/access/access-the-atlantic' target='_blank'>The Atlantic</a><br /><a href='https://library.yale.edu/eresources/access/access-economist' target='_blank'>The Economist</a><br /><a href='https://library.yale.edu/eresources/access/access-financial-times' target='_blank'>Financial Times</a><br /><a href='https://library.yale.edu/eresources/access/access-nytcom' target='_blank'>New York Times</a><br /><a href='https://library.yale.edu/eresources/access/access-wall-street-journal' target='_blank'>Wall Street Journal</a><br /><a href='https://library.yale.edu/eresources/access/access-washington-post' target='_blank'>Washington Post</a>",
-        "image" : "",
+        "image" : "smaller_images/Phone.png",
+        "imageAlt": "An illustration of a mobile phone screen with app icons",
         "answer" : "All of the above",
-"choices": {
-            "Continue": [100,[]]
+        "choices": {
+            "Continue": [17,[]]
         }
     },
-    "100": {
+    "17": {
         "text": "Last question! How often do you use e-resources licensed by Yale Library?",
         "image" : "smaller_images/Quicksearch.png",
-"choices" : {
+        "imageAlt": "Logos of Yale Library's three discovery tools: Quicksearch, Articles+, and E-Journal Search",
+        "choices" : {
             "Always!": [0,["Ejournal", "Ejournal", "Ejournal", "Ejournal"]],
             "Often": [0,["Video", "Video", "Video", "Video", "OA", "OA", "OA", "OA"]],
             "Sometimes": [0,["Ebook", "Ebook", "Ebook", "Ebook"]],
@@ -170,16 +187,57 @@ const gameData = {
         } 
     }
 };
+
 const personalities = { 
-    "Audio": 0,
-    "Database": 0,
-    "Ebook": 0, 
-    "Ejournal": 0, 
-    "OA": 0,
-    "Video": 0 
+    "Audio": {
+        count: 0,
+        imageAlt: "E-Resource ID card showing an Audio resource type with headphones icon"
+    },
+    "Database": {
+        count: 0,
+        imageAlt: "E-Resource ID card showing a Database resource type with database icon"
+    },
+    "Ebook": {
+        count: 0,
+        imageAlt: "E-Resource ID card showing an Ebook resource type with digital book icon"
+    },
+    "Ejournal": {
+        count: 0,
+        imageAlt: "E-Resource ID card showing an E-journal resource type with journal icon"
+    },
+    "OA": {
+        count: 0,
+        imageAlt: "E-Resource ID card showing an Open Access resource type with open lock icon"
+    },
+    "Video": {
+        count: 0,
+        imageAlt: "E-Resource ID card showing a Video resource type with play button icon"
+    }
 };
 
 let currentState = 1;
+
+function updateProgressBar() {
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
+    
+    if (currentState === 0) {
+        // Hide progress bar on final screens
+        progressBar.parentElement.style.display = 'none';
+        return;
+    }
+    
+    // Show progress bar
+    progressBar.parentElement.style.display = 'block';
+    
+    // Calculate progress based on all states from 1 to 16 (excluding 0 and 100)
+    // States 1-16 represent the main game flow
+    const totalStates = 17;
+    const progress = ((currentState) / totalStates) * 100;
+    
+    progressBar.style.width = progress + '%';
+    progressText.textContent = Math.round(progress) + '%';
+}
 
 function renderState(state) {
     // Scroll to top of page when rendering new state
@@ -193,6 +251,9 @@ function renderState(state) {
     const answer = gameData[state].answer;
     let retrievedResponse = sessionStorage.getItem("response"); 
     console.log(retrievedResponse); 
+    
+    // Update progress bar
+    updateProgressBar();
     
     // Update the page content immediately, regardless of image loading
     if (retrievedResponse === answer) {
@@ -252,6 +313,7 @@ function renderState(state) {
         img.src = gameData[state].image;        
         img.onload = () => {
             storyImage.src = img.src;
+            storyImage.alt = gameData[state].imageAlt || 'Game image';
             storyImage.style.display = 'block';
             // Fade in the new image smoothly
             storyImage.style.opacity = '1';
@@ -260,7 +322,7 @@ function renderState(state) {
         img.onerror = () => {
             // Hide image if it fails to load, or show a placeholder
             storyImage.style.display = 'none';
-            storyImage.alt = 'Image unavailable'; 
+            storyImage.alt = gameData[state].imageAlt || 'Image unavailable'; 
             storyImage.style.opacity = '1';
             console.warn(`Failed to load image: ${gameData[state].image}`);
         };
@@ -268,13 +330,13 @@ function renderState(state) {
         // No image specified, hide the image element
         storyImage.style.display = 'none';
         storyImage.style.opacity = '1';
+        storyImage.alt = '';
     }
 }
 
 function changeState(newState, selectedPersonalities) { 
-    // console.log(personalities); 
     selectedPersonalities.forEach(personality => {
-        personalities[personality]++;
+        personalities[personality].count++;
     });
 
     currentState = newState;
@@ -287,6 +349,12 @@ function changeState(newState, selectedPersonalities) {
 }
 
 function revealMostSelectedVegetable() {
+    // Hide progress bar on final screen
+    const progressContainer = document.querySelector('.progress-container');
+    if (progressContainer) {
+        progressContainer.style.display = 'none';
+    }
+    
     // Get all personality keys and randomly select one
     const personalityKeys = Object.keys(personalities);
     const randomIndex = Math.floor(Math.random() * personalityKeys.length);
@@ -300,16 +368,8 @@ function revealMostSelectedVegetable() {
     // Preload the image
     const img = new Image();
     img.src = veggieImagePath;
-    img.className = 'responsive-image'; 
-
-    // Create the share button
-    const shareButton = document.createElement('button');
-    shareButton.textContent = 'We welcome your feedback!';
-    shareButton.className = 'choice-button';
-
-    // Create and add credits text
-    //// const creditsText = document.createElement('p');
-    //// creditsText.className = 'subtitle';
+    img.className = 'responsive-image';
+    img.alt = personalities[maxVeggie].imageAlt;
 
     // Once the image is loaded, update the DOM
     img.onload = () => {
@@ -319,68 +379,33 @@ function revealMostSelectedVegetable() {
         text.textContent = "Drumroll... here is your E-Resource ID! Thank you for playing the game!";
         text.appendChild(img);
 
-        // Share button functionality - now opens email client
-        shareButton.onclick = () => {
+        // Create button container
+        const buttonContainer = document.createElement('div');
+        buttonContainer.className = 'final-buttons';
+        
+        // Play Again button
+        const playAgainButton = document.createElement('button');
+        playAgainButton.textContent = 'Play Again';
+        playAgainButton.className = 'choice-button';
+        playAgainButton.onclick = () => {
+            location.reload();
+        };
+        
+        // Send Feedback button
+        const feedbackButton = document.createElement('button');
+        feedbackButton.textContent = 'Send Feedback';
+        feedbackButton.className = 'choice-button';
+        feedbackButton.onclick = () => {
             const emailSubject = encodeURIComponent('What E-resource Are You Feedback');
             const mailtoLink = `mailto:yukari.sugiyama@yale.edu?subject=${emailSubject}`;
             window.open(mailtoLink);
         };
-        text.appendChild(shareButton);
-
         
-        // Create and add credits text
-        ////const creditsText = document.createElement('p');
-        ////creditsText.className = 'subtitle';
-        ////creditsText.innerHTML = '<a class="choice-button" href="mailto:yukari.sugiyama@yale.edu?subject=What%20E-resource%20Are%20You%20Feedback">We welcome your feedback!</a>';
-        ////text.appendChild(creditsText);
-
+        buttonContainer.appendChild(playAgainButton);
+        buttonContainer.appendChild(feedbackButton);
+        text.appendChild(buttonContainer);
     };
 }
-
-
-/* 
-function revealMostSelectedVegetable() {
-    let maxCount = 0;
-    let maxVeggie = '';
-
-    for (const [vegetable, count] of Object.entries(personalities)) {
-        if (count > maxCount) {
-            maxCount = count;
-            maxVeggie = vegetable;
-        }
-    }
-
-    const storyImage = document.getElementById('story-image');
-    const text = document.getElementById('story-text');
-    const choicesContainer = document.getElementById('choices');
-    const veggieImagePath = `smaller_images/id_cards/${maxVeggie}.png`;
-
-    // Preload the image
-    const img = new Image();
-    img.src = veggieImagePath;
-    img.className = 'responsive-image'; 
-
-    // Create and add credits text
-    const creditsText = document.createElement('p');
-    creditsText.className = 'subtitle';
-
-    // Once the image is loaded, update the DOM
-    img.onload = () => {
-        storyImage.style.display = 'none';
-        choicesContainer.style.display = 'none';
-    
-        text.textContent = "Drumroll... here is your E-Resource ID! Thank you for playing the game!";
-        text.appendChild(img);
-
-        // Create and add credits text
-        // const creditsText = document.createElement('p');
-        // creditsText.className = 'subtitle';
-        creditsText.innerHTML = '<small>Special thanks to: Angela, Jennifer, XXX, XXX, and XXX!</small>';
-        text.appendChild(creditsText);
-    };
-}
-*/
-
 
 function startGame() {
     window.scrollTo(0, 0);
