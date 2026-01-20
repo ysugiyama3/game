@@ -220,23 +220,22 @@ let currentState = 1;
 function updateProgressBar() {
     const progressBar = document.getElementById('progress-bar');
     const progressText = document.getElementById('progress-text');
+    const progressBarBg = progressBar.parentElement;
     
     if (currentState === 0) {
-        // Hide progress bar on final screens
-        progressBar.parentElement.style.display = 'none';
+        progressBar.parentElement.parentElement.style.display = 'none';
         return;
     }
     
-    // Show progress bar
-    progressBar.parentElement.style.display = 'block';
-    
     // Calculate progress based on all states from 1 to 16 (excluding 0 and 100)
-    // States 1-16 represent the main game flow
     const totalStates = 17;
     const progress = ((currentState) / totalStates) * 100;
     
     progressBar.style.width = progress + '%';
     progressText.textContent = Math.round(progress) + '%';
+    
+    // Update ARIA attributes
+    progressBarBg.setAttribute('aria-valuenow', Math.round(progress));
 }
 
 function renderState(state) {
@@ -257,21 +256,39 @@ function renderState(state) {
     
     // Update the page content immediately, regardless of image loading
     if (retrievedResponse === answer) {
-        resultText.textContent = `Correct! The answer is '${answer}'.`;
+        resultText.innerHTML = `<span class="correct-icon" aria-hidden="true">✓</span> Correct! The answer is '${answer}'.`;
+        resultText.className = 'story-text result-correct';
         sessionStorage.clear();
     } else if (!answer) {
         resultText.innerHTML = "";
+        resultText.className = 'story-text';
         sessionStorage.clear();
     } else {
-        resultText.textContent = `Incorrect. The correct answer is '${answer}'.`;
+        resultText.innerHTML = `<span class="incorrect-icon" aria-hidden="true">✗</span> Incorrect. The correct answer is '${answer}'.`;
+        resultText.className = 'story-text result-incorrect';
         sessionStorage.clear();
     }
     
-    storyText.innerHTML = gameData[state].text;
-    storyText.innerHTML = storyText.innerHTML.replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+    storyText.innerHTML = gameData[state].text.replace(
+        "target='_blank'", 
+        "target='_blank' rel='noopener noreferrer' aria-label='opens in new tab'"
+    );
     
     choicesContainer.innerHTML = '';
 
+    // Create fieldset to group the choices
+    const fieldset = document.createElement('fieldset');
+    fieldset.style.border = 'none';
+    fieldset.style.padding = '0';
+    fieldset.style.margin = '0';
+
+    // Create legend (can be visually hidden but still read by screen readers)
+    const legend = document.createElement('legend');
+    legend.className = 'sr-only'; // Visually hidden but accessible
+    legend.textContent = 'Select your answer';
+    fieldset.appendChild(legend);
+    
+    // Create buttons and add to fieldset
     for (const [choice, info] of Object.entries(gameData[state].choices)) {
         const button = document.createElement('button');
         button.textContent = choice;
@@ -298,12 +315,20 @@ function renderState(state) {
             setTimeout(() => {
                 changeState(nextState, info[1]);
             }, 200);  
-        }                    
-        choicesContainer.appendChild(button);
+        }
+
+        fieldset.appendChild(button); // Add to fieldset instead of directly to choicesContainer
     }
 
-    // Move focus to the new question
-    storyText.focus();
+    // Add the complete fieldset to the choices container
+    choicesContainer.appendChild(fieldset);
+    
+    // Move focus to the result text if there is one, otherwise to story text
+    if (resultText.innerHTML) {
+        resultText.focus();
+    } else {
+        storyText.focus();
+    }
     
     // Handle image loading separately - page works even if image fails
     if (gameData[state].image) {
@@ -320,9 +345,9 @@ function renderState(state) {
         };
         
         img.onerror = () => {
-            // Hide image if it fails to load, or show a placeholder
-            storyImage.style.display = 'none';
-            storyImage.alt = gameData[state].imageAlt || 'Image unavailable'; 
+            // Keep the alt text accessible by using a blank SVG as placeholder
+            storyImage.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"/>';
+            storyImage.alt = gameData[state].imageAlt || 'Image unavailable';
             storyImage.style.opacity = '1';
             console.warn(`Failed to load image: ${gameData[state].image}`);
         };
