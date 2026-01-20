@@ -20,7 +20,8 @@
         }
 
         .container {
-            min-height: 100vh;
+            /* min-height: 100vh; */
+            height: 100%;
             width: 100%;
             max-width: 800px;
             margin: 0 auto; 
@@ -294,22 +295,26 @@
 <body>
     <main>
         <div class="container">
-            <div class="title">What E-resource Are You?</div>        
+            <h1 class="title">What E-resource Are You?</h1>        
             <img id="homescreen" src="smaller_images/homepage.png" alt="An illustration of six e-resource characters with a white open laptop in the background"/>
             <button class="start-button" onclick="startGame()">Start</button>
             <p class="subtitle"><small>This game was inspired by Sophie Liu's <a href="https://sophie006liu.github.io/vegetal/" target="_blank">What Vegetable Are You?</a> and created by the E-Resources Troubleshooting Team within the E-Resources and Serials Management department at the Yale Library.</small></p>
             
             <div class="game-container" id="game-container">
                 <!-- Progress Bar -->
-                <div class="progress-container">
-                    <div class="progress-text" id="progress-text"></div>
-                    <div class="progress-bar-bg">
+                <div class="progress-container" role="region" aria-label="Quiz progress">
+                    <div class="progress-text" id="progress-text" aria-live="polite"></div>
+                    <div class="progress-bar-bg" role="progressbar" 
+                         aria-valuenow="0" 
+                         aria-valuemin="0" 
+                         aria-valuemax="100"
+                         aria-labelledby="progress-text">
                         <div class="progress-bar" id="progress-bar"></div>
                     </div>
                 </div>
                 
                 <div class="story-text" id="result-text" aria-live="polite"></div>
-                <div class="story-text" id="story-text" aria-live="polite" tabindex="-1"></div>
+                <div class="story-text" id="story-text" aria-live="polite"></div>
                 <div class="image-container">
                     <img id="story-image" src="" alt=""/>
                 </div>
