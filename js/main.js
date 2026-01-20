@@ -301,7 +301,12 @@ function renderState(state) {
         const button = document.createElement('button');
         button.textContent = choice;
         button.className = 'choice-button';
-        button.setAttribute('aria-label', `Select answer: ${choice}`);
+        button.type = 'button'; // Prevent form submission behavior
+        
+        // Set appropriate aria-label based on button type
+        const ariaLabel = choice === 'Continue' ? `Proceed with: ${choice}` : `Select answer: ${choice}`;
+        button.setAttribute('aria-label', ariaLabel);
+        
         let nextState = info[0];
         
         button.onclick = () => {
