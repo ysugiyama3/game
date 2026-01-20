@@ -20,8 +20,7 @@
         }
 
         .container {
-            /* min-height: 100vh; */
-            height: 100%;
+            min-height: 100vh;
             width: 100%;
             max-width: 800px;
             margin: 0 auto; 
@@ -97,6 +96,18 @@
             border-radius: 10px;
         }
 
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+        
         .choices {        
             display: flex;
             flex-direction: column;
