@@ -278,15 +278,23 @@ function renderState(state) {
 
     // Create fieldset to group the choices
     const fieldset = document.createElement('fieldset');
+    /* 
     fieldset.style.border = 'none';
     fieldset.style.padding = '0';
     fieldset.style.margin = '0';
+    */
 
     // Create legend (can be visually hidden but still read by screen readers)
-    const legend = document.createElement('legend');
-    legend.className = 'sr-only'; // Visually hidden but accessible
-    legend.textContent = 'Select your answer';
-    fieldset.appendChild(legend);
+    const choiceEntries = Object.entries(gameData[state].choices);
+    const isSingleContinueButton = choiceEntries.length === 1 && choiceEntries[0][0] === 'Continue';
+    // Only add legend if it's not a single "Continue" button
+    if (!isSingleContinueButton) {
+        const legend = document.createElement('legend');
+        legend.className = 'sr-only';
+        legend.textContent = 'Select your answer';
+        fieldset.appendChild(legend);
+    }
+
     
     // Create buttons and add to fieldset
     for (const [choice, info] of Object.entries(gameData[state].choices)) {
