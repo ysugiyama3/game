@@ -107,7 +107,24 @@
             white-space: nowrap;
             border-width: 0;
         }
+
+        /* Reset fieldset styles to prevent interference with existing layout */
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+            min-width: 0; /* Prevents fieldset from expanding beyond container */
+        }
         
+        /* Ensure choices container and fieldset don't add extra styling */
+        .choices fieldset {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+        }
+
         .choices {        
             display: flex;
             flex-direction: column;
