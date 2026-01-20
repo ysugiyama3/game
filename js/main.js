@@ -151,7 +151,7 @@ const gameData = {
     },   
     "15": {
         "topic" : "Major newspapers/magazines",
-        "text": "To which websites/apps can current faculty, student, and staff sign up for a digital subscription?",
+        "text": "To which websites/apps can current faculty, student, and staff sign up for a digital subscription? Select only one answer.",
         "image" : "smaller_images/Newspaper.png",
         "imageAlt": "An illustration of a happy Boston Terrier, looking at an iPhone",
         "answer" : "",
