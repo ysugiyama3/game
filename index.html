@@ -316,8 +316,48 @@
             .choice-button {
                 font-size: 20px;
                 max-width: 500px;
-            }
+            }            
         }
+
+        /* Score display styles */
+        .score-header {
+            font-size: clamp(20px, 5vw, 32px);
+            color: #2c5f2d;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        
+        .score-message {
+            font-size: clamp(16px, 4vw, 22px);
+            color: #444;
+            margin: 15px 0;
+            line-height: 1.5;
+            font-style: italic;
+        }
+        
+        /* Result feedback styles */
+        .result-correct {
+            color: #2c5f2d;
+        }
+        
+        .result-incorrect {
+            color: #8b4513;
+        }
+        
+        .correct-icon,
+        .incorrect-icon {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        
+        .correct-icon {
+            color: #4CAF50;
+        }
+        
+        .incorrect-icon {
+            color: #d32f2f;
+        }  
     </style>
 </head>
 <body>
@@ -351,7 +391,7 @@
     
         </div>
         
-        <script src="js/main.js"></script>
+        <script src="js/test.js"></script>
         
         <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
         <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
