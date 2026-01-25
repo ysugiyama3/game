@@ -488,6 +488,10 @@ function revealMostSelectedVegetable() {
 
 function startGame() {
     window.scrollTo(0, 0);
+
+    // Clear any previous game data when starting a new game
+    sessionStorage.clear();
+    
     document.querySelector('.title').style.display = 'none';
     document.querySelector('.subtitle').style.display = 'none';
     document.getElementById('homescreen').style.display = 'none';
@@ -497,5 +501,7 @@ function startGame() {
 }
 
 window.onload = () => {
+    // Clear session storage on page load to reset the game
+    sessionStorage.clear();
     renderState(currentState);
 }
