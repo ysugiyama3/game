@@ -254,21 +254,24 @@ function renderState(state) {
     // Update progress bar
     updateProgressBar();
     
-    // Update the page content immediately, regardless of image loading
-    if (retrievedResponse === answer) {
+    // Track score for questions with answers
+    if (retrievedResponse === answer && answer) {
         resultText.innerHTML = `<span class="correct-icon" aria-hidden="true">✓</span> Correct! The answer is '${answer}'.`;
         resultText.className = 'story-text result-correct';
-        sessionStorage.clear();
+        // Increment score
+        let currentScore = parseInt(sessionStorage.getItem("score") || "0");
+        sessionStorage.setItem("score", currentScore + 1);
+        sessionStorage.removeItem("response");
     } else if (!answer) {
         resultText.innerHTML = "";
         resultText.className = 'story-text';
-        sessionStorage.clear();
-    } else {
+        sessionStorage.removeItem("response");
+    } else if (answer) {
         resultText.innerHTML = `<span class="incorrect-icon" aria-hidden="true">✗</span> Incorrect. The correct answer is '${answer}'.`;
         resultText.className = 'story-text result-incorrect';
-        sessionStorage.clear();
+        sessionStorage.removeItem("response");
     }
-    
+        
     storyText.innerHTML = gameData[state].text.replace(
         "target='_blank'", 
         "target='_blank' rel='noopener noreferrer' aria-label='opens in new tab'"
@@ -278,15 +281,14 @@ function renderState(state) {
 
     // Create fieldset to group the choices
     const fieldset = document.createElement('fieldset');
-    /* 
     fieldset.style.border = 'none';
     fieldset.style.padding = '0';
     fieldset.style.margin = '0';
-    */
 
     // Create legend (can be visually hidden but still read by screen readers)
     const choiceEntries = Object.entries(gameData[state].choices);
     const isSingleContinueButton = choiceEntries.length === 1 && choiceEntries[0][0] === 'Continue';
+    
     // Only add legend if it's not a single "Continue" button
     if (!isSingleContinueButton) {
         const legend = document.createElement('legend');
@@ -294,7 +296,6 @@ function renderState(state) {
         legend.textContent = 'Select your answer';
         fieldset.appendChild(legend);
     }
-
     
     // Create buttons and add to fieldset
     for (const [choice, info] of Object.entries(gameData[state].choices)) {
@@ -386,12 +387,35 @@ function changeState(newState, selectedPersonalities) {
     }
 }
 
+function getScoreMessage(score, total) {
+    const percentage = (score / total) * 100;
+    
+    if (percentage === 100) {
+        return "Perfect score! You're an e-resource troubleshooting expert! 🌟";
+    } else if (percentage >= 75) {
+        return "Great job! You have strong knowledge of e-resource troubleshooting! 💪";
+    } else if (percentage >= 50) {
+        return "Good work! You're on your way to becoming an e-resource pro! 👍";
+    } else if (percentage >= 25) {
+        return "Nice try! Keep learning about e-resources and you'll improve! 📚";
+    } else {
+        return "Thanks for playing! There's lots to learn about e-resource troubleshooting! 🎓";
+    }
+}
+
 function revealMostSelectedVegetable() {
     // Hide progress bar on final screen
     const progressContainer = document.querySelector('.progress-container');
     if (progressContainer) {
         progressContainer.style.display = 'none';
     }
+
+    // Get final score
+    const finalScore = parseInt(sessionStorage.getItem("score") || "0");
+    const totalQuestions = 8;
+    
+    // Get score message based on performance
+    const scoreMessage = getScoreMessage(finalScore, totalQuestions);
     
     // Get all personality keys and randomly select one
     const personalityKeys = Object.keys(personalities);
@@ -414,7 +438,23 @@ function revealMostSelectedVegetable() {
         storyImage.style.display = 'none';
         choicesContainer.style.display = 'none';
     
-        text.textContent = "Drumroll... here is your E-Resource ID! Thank you for playing the game!";
+        // Create score display
+        const scoreHeader = document.createElement('h2');
+        scoreHeader.className = 'score-header';
+        scoreHeader.textContent = `You got ${finalScore} out of ${totalQuestions}!`;
+        
+        const scoreText = document.createElement('p');
+        scoreText.className = 'score-message';
+        scoreText.textContent = scoreMessage;
+        
+        const resultIntro = document.createElement('p');
+        resultIntro.textContent = "Drumroll... here is your E-Resource ID!";
+
+        // Clear and rebuild text content
+        text.innerHTML = '';
+        text.appendChild(scoreHeader);
+        text.appendChild(scoreText);
+        text.appendChild(resultIntro);
         text.appendChild(img);
 
         // Create button container
@@ -426,6 +466,7 @@ function revealMostSelectedVegetable() {
         playAgainButton.textContent = 'Play Again';
         playAgainButton.className = 'choice-button';
         playAgainButton.onclick = () => {
+            sessionStorage.clear();
             location.reload();
         };
         
@@ -447,6 +488,10 @@ function revealMostSelectedVegetable() {
 
 function startGame() {
     window.scrollTo(0, 0);
+
+    // Clear any previous game data when starting a new game
+    sessionStorage.clear();
+    
     document.querySelector('.title').style.display = 'none';
     document.querySelector('.subtitle').style.display = 'none';
     document.getElementById('homescreen').style.display = 'none';
@@ -456,5 +501,7 @@ function startGame() {
 }
 
 window.onload = () => {
+    // Clear session storage on page load to reset the game
+    sessionStorage.clear();
     renderState(currentState);
 }
