@@ -20,7 +20,7 @@ const gameData = {
         "imageAlt": "A screenshot example of Chrome settings displaying the options to delete browsing data",
         "answer" : "Clear cache and cookies",
         "choices": {
-             "Continue": [3, []]
+             "Continue": [3]
         }
     },
     "3": {
@@ -47,7 +47,7 @@ const gameData = {
     },
     "5": {
         "topic" : "Not starting the search from the library site",
-        "text": "A graduate student reported that they could not read full-text of the <strong>current issue</strong> of the Harvard Business Review magazine at <strong>https://hbr.org/magazine</strong>.",
+        "text": "A graduate student reported that they could not read full-text of the <strong>current issue</strong> of the Harvard Business Review magazine at https://hbr.org/magazine.",
         "image" : "smaller_images/Paywall.png",
         "imageAlt": "An illustration of a confused bunny looking at a PAYWALL message displayed on a web browser page on a laptop",
         "answer" : "",
@@ -74,7 +74,7 @@ const gameData = {
         "answer" : "",
         "choices": {
             "https://yale.ezproxy.org/login?url=": [8,["Ejournal"]],
-            "https://yale.library.edu/login?url=": [8,["Audio"]],
+            "https://yale.library.edu/ezproxy?url=": [8,["Audio"]],
             "https://yale.idm.oclc.org/login?url=": [8,["Ebook"]]
         }
     },
@@ -130,7 +130,7 @@ const gameData = {
     },
     "13": {
         "topic" : "Patron affiliation",
-        "text": "Which of the following methods would NOT allow a Harvard University student to access many of Yale's licensed e-resources?",
+        "text": "Which of the following methods would <strong>NOT</strong> allow a Harvard University student to access many of Yale's licensed e-resources?",
         "image" : "smaller_images/Harvard.png",
         "imageAlt": "An illustration of a confused squirrel wearing a burgundy Harvard University sweater, looking at a laptop",
         "answer" : "",
