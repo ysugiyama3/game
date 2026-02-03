@@ -47,7 +47,7 @@ const gameData = {
     },
     "5": {
         "topic" : "Not starting the search from the library site",
-        "text": "A graduate student reported that they could not read full-text of the current issue of the Harvard Business Review magazine at https://hbr.org/magazine.",
+        "text": "A graduate student reported that they could not read full-text of the <strong>current issue</strong> of the Harvard Business Review magazine at <strong>https://hbr.org/magazine</strong>.",
         "image" : "smaller_images/Paywall.png",
         "imageAlt": "An illustration of a confused bunny looking at a PAYWALL message displayed on a web browser page on a laptop",
         "answer" : "",
@@ -100,7 +100,7 @@ const gameData = {
         }
     },
     "10": {
-        "text": "<a href='https://search.library.yale.edu/databases/99127780633408651' target='_blank'>Kanopy</a> is accessible through IP authentication such as EZProxy and VPN, allowing users to access streaming videos remotely if their device is connected from one of Yale's approved IP addresses. Details about remote access are provided in the local note for each catalog record on the Database AZ List. Although IP authentication is the most common access method, Yale Library also uses Username/Password and Single Sign-On (SSO) for certain e-resources.",
+        "text": "<a href='https://search.library.yale.edu/databases/99127780633408651' target='_blank'>Kanopy</a> is accessible through IP authentication such as <a href='https://www.oclc.org/en/ezproxy.html' target='_blank'>EZProxy</a> and <a href='https://library.yale.edu/find-request-and-use/use/using-e-resources/virtual-private-network-vpn' target='_blank'>VPN</a>, allowing users to access streaming videos remotely if their device is connected from one of Yale's approved IP addresses. Details about remote access are provided in the local note for each catalog record on the Database AZ List. Although IP authentication is the most common access method, Yale Library also uses Username/Password and Single Sign-On (SSO) for certain e-resources.",
         "image" : "smaller_images/Kanopy.png",
         "imageAlt": "A screenshot of a local note found on Yale Library's catalog page for Kanopy",
         "answer" : "Internet Protocol (IP) authentication",
@@ -141,7 +141,7 @@ const gameData = {
         }
     },
     "14": {
-        "text": "Harvard University students cannot access Yale's licensed e-resources through Yale's proxied link from Harvard's campus, as these links require authentication with a Yale NetID and password, which they do not have. However, they can access many of Yale's licensed e-resources while on Yale's campus by using a public workstation or another computer connected to Yale's ethernet, or by connecting their device to the Eduroam Wi-Fi network, as Harvard is an Eduroam participating institution. For more details on connecting from on campus, visit <a href='https://library.yale.edu/find-request-and-use/use/using-e-resources/connecting-e-resources' target='_blank'>here</a>",
+        "text": "Harvard University students cannot access Yale's licensed e-resources through Yale's proxied link from Harvard's campus, because these links require a Yale NetID and password, which they do not have. However, they can access many of Yale's licensed e-resources while on Yale's campus by using a public workstation, a computer connected to Yale's ethernet, or by connecting to the Eduroam Wi-Fi network. Harvard is an Eduroam participating institution. Visit <a href='https://library.yale.edu/find-request-and-use/use/using-e-resources/connecting-e-resources' target='_blank'>here</a> for more details",
         "image" : "smaller_images/OnCampus.png",
         "imageAlt": "A screenshot of Yale Library's Connecting to E-resources page",
         "answer" : "An e-resource link that includes Yale's EZProxy prefix while on Harvard's campus",
@@ -151,7 +151,7 @@ const gameData = {
     },   
     "15": {
         "topic" : "Major newspapers/magazines",
-        "text": "To which websites/apps can current faculty, student, and staff sign up for a digital subscription? Select only one answer.",
+        "text": "To which websites/apps can current faculty, student, and staff sign up for a digital subscription? <strong>Select only one answer</strong>.",
         "image" : "smaller_images/Newspaper.png",
         "imageAlt": "An illustration of a happy Boston Terrier, looking at an iPhone",
         "answer" : "",
