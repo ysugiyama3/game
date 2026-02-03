@@ -8,10 +8,10 @@ const gameData = {
         "imageAlt": "An illustration of a bear wearing a navy Yale University hoodie, looking sad to see a 404 Not Found error message displayed on a web browser page on a laptop",
         "answer" : "",
         "choices": {    
-            "Reboot the laptop": [2,["OA"]],
-            "Clear cache and cookies": [2,["Database"]],
-            "Request ILL": [2,["Video", "Audio"]],
-            "Contact IT": [2, ["Ebook"]]
+            "Reboot the laptop": [2,[]],
+            "Clear cache and cookies": [2,[]],
+            "Request ILL": [2,[]],
+            "Contact IT": [2,[]]
         }
     },
     "2": {
@@ -20,7 +20,7 @@ const gameData = {
         "imageAlt": "A screenshot example of Chrome settings displaying the options to delete browsing data",
         "answer" : "Clear cache and cookies",
         "choices": {
-             "Continue": [3]
+             "Continue": [3,[]]
         }
     },
     "3": {
@@ -30,10 +30,10 @@ const gameData = {
         "imageAlt": "An illustration of a cat looking confused to see a NO Access message displayed on a web browser page on a laptop",
         "answer" : "",
         "choices": {
-            "Aggregator database": [4,["Ebook"]],
-            "Limited to 3 simultaneous users": [4,["Ejournal"]],
-            "Limited to valid NetID holders of Yale University and walk-in users": [4,["OA", "Audio"]],
-            "All of the above": [4,[ "Database", "Video"]]
+            "Aggregator database": [4,[]],
+            "Limited to 3 simultaneous users": [4,[]],
+            "Limited to valid NetID holders of Yale University and walk-in users": [4,[]],
+            "All of the above": [4,[]]
         }
     },
     "4": {
@@ -52,9 +52,9 @@ const gameData = {
         "imageAlt": "An illustration of a confused bunny looking at a PAYWALL message displayed on a web browser page on a laptop",
         "answer" : "",
         "choices": {
-            "hbr.org is temporarily unavailable due to site upgrade": [6,["OA"]],
-            "Yale's access to the current issue is through EBSCOhost Business Source Complete, not through hbr.org": [6,["Database", "Ebook", "Video"]],
-            "Yale does not have access to Harvard Business Review at all": [6,["Audio", "Ejournal"]]
+            "hbr.org is temporarily unavailable due to site upgrade": [6,[]],
+            "Yale's access to the current issue is through EBSCOhost Business Source Complete, not through hbr.org": [6,[]],
+            "Yale does not have access to Harvard Business Review at all": [6,[]]
         }
     },
     "6": {
@@ -73,9 +73,9 @@ const gameData = {
         "imageAlt": "EZProxy logo",
         "answer" : "",
         "choices": {
-            "https://yale.ezproxy.org/login?url=": [8,["Ejournal"]],
-            "https://yale.library.edu/ezproxy?url=": [8,["Audio"]],
-            "https://yale.idm.oclc.org/login?url=": [8,["Ebook"]]
+            "https://yale.ezproxy.org/login?url=": [8,[]],
+            "https://yale.library.edu/ezproxy?url=": [8,[]],
+            "https://yale.idm.oclc.org/login?url=": [8,[]]
         }
     },
     "8": {
@@ -94,9 +94,9 @@ const gameData = {
         "imageAlt": "An illustration of a panda looking at a visual image displayed on a web browser page on a laptop",
         "answer" : "",
         "choices": {            
-            "Username/Password": [10,["Ebook", "OA"]],
-            "Internet Protocol (IP) authentication": [10,["Database", "Ejournal", "Video"]],
-            "Single Sign-On (SSO)": [10,["Audio"]]
+            "Username/Password": [10,[]],
+            "Internet Protocol (IP) authentication": [10,[]],
+            "Single Sign-On (SSO)": [10,[]]
         }
     },
     "10": {
@@ -115,8 +115,8 @@ const gameData = {
         "imageAlt": "An illustration of a raccoon, a bear, and a koala, lined up horizontally, each using their own laptop",
         "answer" : "",
         "choices": {            
-            "True": [12,["Database", "Ebook", "Ejournal", "Video"]],
-            "False": [12,["OA", "Audio"]]
+            "True": [12,[]],
+            "False": [12,[]]
         }
     },
     "12": {
@@ -135,9 +135,9 @@ const gameData = {
         "imageAlt": "An illustration of a confused squirrel wearing a burgundy Harvard University sweater, looking at a laptop",
         "answer" : "",
         "choices": {            
-            "An e-resource link that includes Yale's EZProxy prefix while on Harvard's campus": [14,["Ebook", "Audio"]],        
-            "A public workstation or other computer connected to Yale's ethernet on Yale's campus": [14,["Video"]],
-            "A device connected to the Eduroam Wi-Fi network on Yale's campus": [14,["Ejournal", "Database"]]    
+            "An e-resource link that includes Yale's EZProxy prefix while on Harvard's campus": [14,[]],        
+            "A public workstation or other computer connected to Yale's ethernet on Yale's campus": [14,[]],
+            "A device connected to the Eduroam Wi-Fi network on Yale's campus": [14,[]]    
         }
     },
     "14": {
@@ -156,13 +156,13 @@ const gameData = {
         "imageAlt": "An illustration of a happy Boston Terrier, looking at an iPhone",
         "answer" : "",
         "choices": {            
-            "The Atlantic (www.theatlantic.com)": [16,["Database"]],
-            "The Economist (www.economist.com)": [16,["OA"]],        
-            "Financial Times (www.ft.com)": [16,["Audio"]],
-            "New York Times (www.nytimes.com)": [16,["Audio", "Ejournal"]],
-            "Wall Street Journal (www.wsj.com)": [16,["Ejournal"]],
-            "Washington Post (www.washingtonpost.com)": [16,["Video"]],
-            "All of the above": [16,["Ebook","Video"]]
+            "The Atlantic (www.theatlantic.com)": [16,[]],
+            "The Economist (www.economist.com)": [16,[]],        
+            "Financial Times (www.ft.com)": [16,[]],
+            "New York Times (www.nytimes.com)": [16,[]],
+            "Wall Street Journal (www.wsj.com)": [16,[]],
+            "Washington Post (www.washingtonpost.com)": [16,[]],
+            "All of the above": [16,[]]
         }
     },
     "16": {
@@ -179,11 +179,11 @@ const gameData = {
         "image" : "smaller_images/Quicksearch.png",
         "imageAlt": "Logos of Yale Library's three discovery tools: Quicksearch, Articles+, and E-Journal Search",
         "choices" : {
-            "Always!": [0,["Ejournal", "Ejournal", "Ejournal", "Ejournal"]],
-            "Often": [0,["Video", "Video", "Video", "Video", "OA", "OA", "OA", "OA"]],
-            "Sometimes": [0,["Ebook", "Ebook", "Ebook", "Ebook"]],
-            "Rarely": [0, ["Database", "Database", "Database"]],
-            "Never": [0,["Audio", "Audio", "Audio", "Audio"]]
+            "Always!": [0,[]],
+            "Often": [0,[]],
+            "Sometimes": [0,[]],
+            "Rarely": [0,[]],
+            "Never": [0,[]]
         } 
     }
 };
@@ -327,7 +327,7 @@ function renderState(state) {
             
             // Brief delay for feedback, then change state
             setTimeout(() => {
-                changeState(nextState, info[1]);
+                changeState(nextState);
             }, 200);  
         }
 
@@ -373,11 +373,7 @@ function renderState(state) {
     }
 }
 
-function changeState(newState, selectedPersonalities) { 
-    selectedPersonalities.forEach(personality => {
-        personalities[personality].count++;
-    });
-
+function changeState(newState) { 
     currentState = newState;
 
     if (currentState === 0) {
